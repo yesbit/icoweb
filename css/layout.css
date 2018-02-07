@@ -33,7 +33,14 @@ html, html a, body {
 }
 
 body {
-  font-family: 'b';
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: #000000;
+      font-family: 'b';
 }
 
 p {
@@ -864,6 +871,11 @@ fieldset[disabled] .btn-theme {
   width: 100%;
   height: 100%;
 }
+
+.icon-wrapper {
+  padding: 10px;
+}
+
 /*------------------------------------------------------------------
   	[Contact]
 ------------------------------------------------------------------*/
@@ -1340,6 +1352,7 @@ fieldset[disabled] .btn-theme {
   /* margin-left: 0; */
   max-width: 90%;
   width: 1150px;
+  border-bottom: solid thin rgba(255,255,255,0.14);
 
 }
 
@@ -1445,11 +1458,12 @@ fieldset[disabled] .btn-theme {
 }
 
 .margin-b-20 {
-  margin-bottom: 20px !important;
+  margin-bottom: 50px !important;
+  text-align: center;
 }
 
 .margin-b-30 {
-  margin-bottom: 30px !important;
+  margin-bottom: 50px !important;
 }
 
 .margin-b-40 {
@@ -1670,25 +1684,10 @@ fieldset[disabled] .btn-theme {
   margin-bottom: 100px;
 }
 
-
-
 /*--------------------------------------------------
     [Event Slider]
 ----------------------------------------------------*/
 
-    
-    body {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      outline: 0;
-      font-size: 100%;
-      vertical-align: baseline;
-      background: #000000;
-    /* padding: 60px 0px; */
-    /* background-color: rgb(220, 220, 220); */
-  }
-    
     .event-list {
     list-style: none;
     font-family: 'b';
@@ -1935,7 +1934,65 @@ fieldset[disabled] .btn-theme {
 }
 
 /*--------------------------------------------------
+    [About]
+----------------------------------------------------*/
+  .logo {
+    width: 100px !important;
+    height: 100px;
+    color: #a6a7aa;
+  }
+
+  .container h2 {
+    color: #fff;
+  }
+
+  #about .margin-b-30 {
+    height: 250px;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    }
+
+/*--------------------------------------------------
+    [Usecase]
+----------------------------------------------------*/
+  #usecase .margin-b-50 {
+    margin-top: 50px;
+    width: auto;
+    text-align: center;
+  }
+
+  #usecase .sm-margin-b-50 {
+    text-align: center;
+  }
+
+  #usecase img {
+    height: auto;
+    width: auto;
+    position: relative;
+  }
+
+  @media screen and (max-width: 1080px) {
+    #bowl {
+    }
+
+    #usecase .margin-b-50 img {
+      height: 70%;
+      width: 70%;
+    }
+  }
+
+
+  @media screen and (max-width: 750px) {
+    #usecase img {
+      height: 50%;
+      width: 50%;
+    }
+  }
+
+/*--------------------------------------------------
     [EventDetail Page]
 ----------------------------------------------------*/
+
 
 

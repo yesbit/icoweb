@@ -72,12 +72,62 @@ var Layout = function () {
        });
     }
 
+    
+    var handleCube = function(){
+        var canvasDiv = document.getElementById('particle-canvas');
+        var options = {
+          particleColor: '#888',
+          background: '../img/bgd.jpg',
+          interactive: true,
+          speed: 'medium',
+          density: 'high'
+        };
+        var particleCanvas = new ParticleNetwork(canvasDiv, options);
+    }
+
+    
+    var handlePie = function(){
+        var chart = AmCharts.makeChart( "chartdiv", {
+            "type": "pie",
+            "theme": "black",
+            "dataProvider": [ {
+              "country": "Lithuania",
+              "value": 260
+            }, {
+              "country": "Ireland",
+              "value": 201
+            }, {
+              "country": "Germany",
+              "value": 65
+            }, {
+              "country": "Australia",
+              "value": 39
+            }, {
+              "country": "UK",
+              "value": 19
+            }, {
+              "country": "Latvia",
+              "value": 10
+            } ],
+            "valueField": "value",
+            "titleField": "country",
+            "outlineAlpha": 0.4,
+            "depth3D": 15,
+            "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+            "angle": 30,
+            "export": {
+              "enabled": false
+            }
+        });
+    }
+    
     return {
         init: function () {
             handleHeaderOnScroll(); // initial setup for fixed header
             handleCarousel(); // initial setup for carousel
             handleHeight(); // initial setup for group element height
-
+            handleCube(); //canvas initialisation
+            handlePie(); //piechart initialisation
             // handle minimized header on page scroll
             $(window).scroll(function() {
                 handleHeaderOnScroll();
@@ -98,14 +148,4 @@ $('a[href^="#"]').click(function() {
 
 $(document).ready(function() {
     Layout.init();
-    //canvas initialisation
-    var canvasDiv = document.getElementById('particle-canvas');
-    var options = {
-      particleColor: '#888',
-      background: '../img/bgd.jpg',
-      interactive: true,
-      speed: 'medium',
-      density: 'high'
-    };
-    var particleCanvas = new ParticleNetwork(canvasDiv, options);
 });

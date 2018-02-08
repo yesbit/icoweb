@@ -91,33 +91,29 @@ var Layout = function () {
             "type": "pie",
             "theme": "black",
             "dataProvider": [ {
-              "country": "Lithuania",
-              "value": 260
+              "group": "Foundraise",
+              "value": .4
             }, {
-              "country": "Ireland",
-              "value": 201
+              "group": "Team",
+              "value": .3
             }, {
-              "country": "Germany",
-              "value": 65
+              "group": "Foundation",
+              "value": .2
             }, {
-              "country": "Australia",
-              "value": 39
-            }, {
-              "country": "UK",
-              "value": 19
-            }, {
-              "country": "Latvia",
-              "value": 10
-            } ],
+              "group": "Society",
+              "value": .1
+            }],
             "valueField": "value",
-            "titleField": "country",
+            "titleField": "group",
             "outlineAlpha": 0.4,
             "depth3D": 15,
             "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
             "angle": 30,
             "export": {
               "enabled": false
-            }
+            },
+            "hideCredits": true,
+            "visibleInLegendField": "group"
         });
     }
     

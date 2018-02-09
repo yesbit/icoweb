@@ -58,7 +58,12 @@
         <!-- amcharts -->
         <script src="amcharts/amcharts.js" type="text/javascript"></script>
         <script src="amcharts/pie.js" type="text/javascript"></script>
+        <script src="amcharts/serial.js"></script>
         <script src="amcharts/themes/black.js"></script>
+        <script src="amcharts/themes/light.js"></script>
+        <!-- <script src="amcharts/plugins/export/export.min.js"></script>
+		<link rel="stylesheet" href="amcharts/plugins/export/export.css" type="text/css" media="all" /> -->
+
     </head>
 
 	<body>
@@ -173,10 +178,6 @@
 
                     </div>
                 </div>
-
-                <<!-- div class="col-sm-3 col-sm-offset-1">
-                    <img class="img-responsive" src="img/640x380/01.jpg" alt="Our Office">
-                </div> -->
             </div>
         </div>
         <!-- End About -->
@@ -235,7 +236,7 @@
                     <p>用手里的加密货币二次投资</p>
                 </div>  
             </div>
-			<video width="630" height="473" controls>
+			<video width="504" height="378" controls>
 				<source src="https://pro.yesbit.ca/Yesbit.mp4" type="video/mp4">
 			</video> 
 		</div>
@@ -246,35 +247,54 @@
 			<div class="row margin-b-20">
                 <div class="col">
                     <h2>INTRODUCING YIC TOKEN</h2>
-<!--                     <h3>案例 USECASES</h3> -->
-                    <p>用手里的加密货币二次投资</p>
+                    <p>Yesbit 初期的代币将基于以太坊公链发行，发行总量为 2亿</p>
                 </div>  
             </div>
-            <div id="chartdiv"></div>
+            <!-- <div class="row"> -->
+            	<div class="col-sm-8">
+            		<div id="pieChart"></div>
+            	</div>
+            	<div class="col-sm-4" id="pie-legend-wrapper">
+            		<div id="legendDiv"></div>>
+            	</div>
+            <!-- </div> -->
 		</div>
 		<!-- END TOKEN CHART -->
-		
 
-
-	<!-- Contacts -->
-		<div id="ContactRedirect" class="contacts" >
-			<a name="contact"></a>
-				<p><h2>Contacts</h2><hr>
-					<div class="contacts-block" id="contacts-left">
-					<ul><li class="contacts-address"><img src="img/widgets/gmap-pin.png">
-						<a href="http://map.utoronto.ca/" title="Campus Maps">1(647)873-9955</a></li>
-						<li> <img src="img/widgets/gmap-pin.png"><a href="/" title="U of T Homepage">Web: http://yes-bit.com </a></li>
-						<li> <img src="img/widgets/gmap-pin.png">Tel: 416-978-2011</li>
-					</ul>
-					</div>
-				<div class="contacts-block" id="contacts-left">
-					<ul><li> <img src="img/widgets/gmap-pin.png"><a href="/" title="U of T Homepage">Web: http://yes-bit.com </a></li>
-						<li> <img src="img/widgets/gmap-pin.png">Tel: 1(647)873-9955</li>
-						<li> <img src="img/widgets/gmap-pin.png">On Campus: Dial 1000</li>
-					</ul>
-				</div>
+		<!-- GROW CHART -->
+		<div class="content-lg container" id="growChart">
+			<div class="row margin-b-20">
+                <div class="col">
+                    <h2>GORWTH COMPARISON </h2>
+                    <h3>Expected growth of the bitcoin(BTC) compares to USD</h3>
+                </div>  
+            </div>
+			<div class="col">
+				<div id="lineChart"></div>
+			</div> 
 		</div>
-	<!-- End Contacts -->
+		<!-- END GROW CHART -->
+
+		<footer>
+			<div class="contacts" >
+				<a name="contact"></a>
+						<p><h2>Contacts</h2><hr>
+							<div class="contacts-block" id="contacts-left">
+							<ul><li class="contacts-address"><img src="img/widgets/gmap-pin.png">
+								<a href="http://map.utoronto.ca/" title="Campus Maps">Campus Maps</a></li>
+								<li> <img src="img/widgets/gmap-pin.png"><a href="/" title="U of T Homepage">Web: www.utoronto.ca </a></li>
+								<li> <img src="img/widgets/gmap-pin.png">Tel: 416-978-2011</li>
+							</ul>
+							</div>
+						<div class="contacts-block" id="contacts-left">
+							<ul><li> <img src="img/widgets/gmap-pin.png"><a href="/" title="U of T Homepage">Facebook </a></li>
+								<li> <img src="img/widgets/gmap-pin.png">Wechat</li>
+								<li> <img src="img/widgets/gmap-pin.png">Linkedin</li>
+							</ul>
+						</div>
+			</div>
+		</footer>
+
     </body>
 </html>
 

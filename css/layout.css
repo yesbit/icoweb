@@ -876,14 +876,7 @@ fieldset[disabled] .btn-theme {
   padding: 10px;
 }
 
-/*------------------------------------------------------------------
-  	[Contact]
-------------------------------------------------------------------*/
-.contact-list > li {
-  font-size: 13px;
-  color: #81848f;
-  margin-bottom: 10px;
-}
+
 
 /*--------------------------------------------------
     [Back To Top Theme Button]
@@ -1311,24 +1304,6 @@ fieldset[disabled] .btn-theme {
   padding-bottom: 100px;
 }
 
-.contacts {
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-bottom: 100px;
-
-}
-
-.contacts-block {
-   float: left;
-   padding-right:50px;
-   width:400px;
-}
-
-.contacts-block ul{
-  list-style-type: none;
-}
-
-
 /*------------------------------------------------------------------
     [Parallax Content]
 ------------------------------------------------------------------*/
@@ -1684,261 +1659,16 @@ fieldset[disabled] .btn-theme {
 }
 
 /*--------------------------------------------------
-    [Event Slider]
-----------------------------------------------------*/
-
-    .event-list {
-    list-style: none;
-    font-family: 'b';
-    margin: 0px;
-    padding: 0px;
-    height: 300px;
-    overflow: scroll;
-  }
-  .event-list > li {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 5px rgb(51, 51, 51);
-    box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
-    padding: 0px;
-    margin: 0px 0px 20px;
-  }
-  .event-list > li > time {
-    display: inline-block;
-    width: 100%;
-    color: rgb(255, 255, 255);
-    background-color:   #000000;
-    padding: 5px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .event-list > li:nth-child(even) > time {
-    background-color:   #A9A9A9;
-  }
-  .event-list > li > time > span {
-    display: none;
-  }
-  .event-list > li > time > .day {
-    display: block;
-    font-size: 50pt;
-    font-weight: normal;
-    line-height: 1;
-  }
-  .event-list > li time > .month {
-    display: block;
-    font-size: 24pt;
-    font-weight: bold;
-    line-height: 1;
-  }
-  .event-list > li > img {
-    width: 100%;
-  }
-  .event-list > li > .info {
-    padding-top: 5px;
-    text-align: center;
-  }
-  .event-list > li > .info > .title {
-    font-size: 17pt;
-    font-weight: 700;
-    margin: 0px;
-  }
-  .event-list > li > .info > .desc {
-    font-size: 13pt;
-    font-weight: 300;
-    margin: 0px;
-  }
-  .event-list > li > .info > ul,
-  .event-list > li > .social > ul {
-    display: table;
-    list-style: none;
-    margin: 10px 0px 0px;
-    padding: 0px;
-    width: 100%;
-    text-align: center;
-  }
-  .event-list > li > .social > ul {
-    margin: 0px;
-  }
-  .event-list > li > .info > ul > li,
-  .event-list > li > .social > ul > li {
-    display: table-cell;
-    cursor: pointer;
-    color: rgb(30, 30, 30);
-    font-size: 11pt;
-    font-weight: 300;
-        padding: 3px 0px;
-  }
-    .event-list > li > .info > ul > li > a {
-    display: block;
-    width: 100%;
-    color: rgb(30, 30, 30);
-    text-decoration: none;
-  } 
-    .event-list > li > .social > ul > li {    
-        padding: 0px;
-    }
-    .event-list > li > .social > ul > li > a {
-        padding: 3px 0px;
-  } 
-  .event-list > li > .info > ul > li:hover,
-  .event-list > li > .social > ul > li:hover {
-    color: rgb(30, 30, 30);
-    background-color: rgb(200, 200, 200);
-  }
-  .facebook a,
-  .instagram a,
-  .weixin a {
-    display: block;
-    width: 100%;
-    color: rgb(75, 110, 168) !important;
-  }
-  .instagram a {
-    color: rgb(128,128,128) !important;
-  }
-  .weixin a {
-    color: rgb(50,205,50) !important;
-  }
-  .facebook:hover a {
-    color: rgb(255, 255, 255) !important;
-    background-color: rgb(75, 110, 168) !important;
-  }
-  .instagram:hover a {
-    color: rgb(255, 255, 255) !important;
-    background-color: rgb(128,128,128) !important;
-  }
-  .weixin:hover a {
-    color: rgb(255, 255, 255) !important;
-    background-color: rgb(50,205,50) !important;
-  }
-
-  @media (min-width: 768px) {
-    .event-list > li {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: 120px;
-      padding: 0px;
-    }
-    .event-list > li > time,
-    .event-list > li > img  {
-      display: inline-block;
-    }
-    .event-list > li > time,
-    .event-list > li > img {
-      width: 120px;
-      float: left;
-    }
-    .event-list > li > .info {
-      background-color: rgb(245, 245, 245);
-      overflow: hidden;
-    }
-    .event-list > li > time,
-    .event-list > li > img {
-      width: 120px;
-      height: 120px;
-      padding: 0px;
-      margin: 0px;
-    }
-    .event-list > li > .info {
-      position: relative;
-      height: 120px;
-      text-align: left;
-      padding-right: 40px;
-    } 
-    .event-list > li > .info > .title, 
-    .event-list > li > .info > .desc {
-      padding: 0px 10px;
-    }
-    .event-list > li > .info > ul {
-      position: absolute;
-      left: 0px;
-      bottom: 0px;
-    }
-    .event-list > li > .social {
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      display: block;
-      width: 40px;
-    }
-        .event-list > li > .social > ul {
-            border-left: 1px solid rgb(230, 230, 230);
-        }
-    .event-list > li > .social > ul > li {      
-      display: block;
-            padding: 0px;
-    }
-    .event-list > li > .social > ul > li > a {
-      display: block;
-      width: 40px;
-      padding: 10px 0px 9px;
-    }
-  }
-
-
-/*--------------------------------------------------
-    [Contact]
-----------------------------------------------------*/
-
-.contacts{
-  text-decoration:none;
-  font-family: 'b';
-  font-weight: 100;
-  margin:70px 10px 70px 10px;
-  line-height:60px;
-}
-
-.contacts img{
-  margin-right: 20px;
-}
-
-.contacts img{
-  width:40px;
-  height:40px;
-}
-
-.contacts-left{
-  float: left;
-  position: relative;
-}
-
-.contacts-right{
-  float: right;
-  position: relative;
-
-}
-
-
-@media screen and (min-width: 750px) {
-
-    .contacts::after {
-        clear: both;
-        content: '';
-        display: table;
-        height: 0;
-        visibility: hidden;
-
-    }
-
-    .contacts #contacts-left{
-        float: left;
-    }
-
-    .contacts #contacts-right{
-    float: right;}
-
-    /* Re-style here... */
-    .contacts #contacts-left{width:50%;}
-    .contacts #contacts-right{width:50%;}
-
-}
-
-/*--------------------------------------------------
     [About]
 ----------------------------------------------------*/
-  .logo {
+  .icon-wrapper .logo{
     width: 100px !important;
     height: 100px;
     color: #a6a7aa;
+  }
+
+  .logo:hover {
+    color: #EB8909;
   }
 
   .container h2 {
@@ -1994,16 +1724,117 @@ fieldset[disabled] .btn-theme {
   }
 
 /*--------------------------------------------------
-  [Usecase]
+  [TokenChart]
 ----------------------------------------------------*/ 
-  #chartdiv {
+  #pieChart {
     width: 100%;
-    height: 500px;
+    height: 250px;
+  }
+
+  #pie-legend-wrapper {
+    height: 250px;
+    vertical-align: middle;
+  }
+
+  #legendDiv {
+    position: relative;
+    top: 22%;
+  }
+
+  @media(max-width: 750px) {
+    #legendDiv {
+      top: 0;
+    }
+
+    #pie-legend-wrapper {
+      height: auto;
+    }
+  }
+
+  
+/*--------------------------------------------------
+    [LineChart]
+----------------------------------------------------*/
+  #lineChart {
+    width: 100%;
+    height: 400px;
   }
 
 /*--------------------------------------------------
-    [EventDetail Page]
+    [Contact]
 ----------------------------------------------------*/
+  .contacts {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 100px;
+
+  }
+
+  .contacts-block {
+     float: left;
+     padding-right:50px;
+     width:400px;
+  }
+
+  .contacts-block ul{
+    list-style-type: none;
+  }
+
+  .contacts{
+  text-decoration:none;
+  font-family: 'b';
+  font-weight: 100;
+  margin:70px 10px 70px 10px;
+  line-height:60px;
+  }
+
+  .contacts img{
+    margin-right: 20px;
+  }
+
+  .contacts img{
+    width:40px;
+    height:40px;
+  }
+
+  .contacts-left{
+    float: left;
+    position: relative;
+  }
+
+  .contacts-right{
+    float: right;
+    position: relative;
+  }
+
+  .contact-list > li {
+    font-size: 13px;
+    color: #81848f;
+    margin-bottom: 10px;
+  }
 
 
+  @media screen and (min-width: 750px) {
+
+      .contacts::after {
+          clear: both;
+          content: '';
+          display: table;
+          height: 0;
+          visibility: hidden;
+
+      }
+
+      .contacts #contacts-left{
+          float: left;
+      }
+
+      .contacts #contacts-right{
+      float: right;}
+
+      /* Re-style here... */
+      .contacts #contacts-left{width:50%;}
+      .contacts #contacts-right{width:50%;}
+
+  }
 

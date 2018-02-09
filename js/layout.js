@@ -87,21 +87,25 @@ var Layout = function () {
 
     
     var handlePie = function(){
-        var chart = AmCharts.makeChart( "chartdiv", {
+        var pieChart = AmCharts.makeChart( "pieChart", {
             "type": "pie",
             "theme": "black",
             "dataProvider": [ {
               "group": "Foundraise",
-              "value": .4
+              "value": .4,
+              "showInLegend": true
             }, {
               "group": "Team",
-              "value": .3
+              "value": .3,
+              "showInLegend": true
             }, {
               "group": "Foundation",
-              "value": .2
+              "value": .2,
+              "showInLegend": true
             }, {
               "group": "Society",
-              "value": .1
+              "value": .1,
+              "showInLegend": true
             }],
             "valueField": "value",
             "titleField": "group",
@@ -113,10 +117,110 @@ var Layout = function () {
               "enabled": false
             },
             "hideCredits": true,
-            "visibleInLegendField": "group"
+            "marginTop": 0,
+            "visibleInLegendField": "showInLegend",
+            "legend": {
+                "markerType": "circle",
+                "markerColor": "transparent",
+                "align": "center",
+                "divId": "legendDiv"
+            }
         });
     }
     
+
+
+    var handleLine = function(){
+        function generateChartData() {
+            var chartData = [];
+            var firstDate = new Date();
+            firstDate.setDate(firstDate.getDate() - 100);
+
+                var visits = 1600;
+                var hits = 2900;
+                var views = 8700;
+
+
+            for (var i = 0; i < 100; i++) {
+                // we create date objects here. In your data, you can have date strings
+                // and then set format of your dates using chart.dataDateFormat property,
+                // however when possible, use date objects, as this will speed up chart rendering.
+                var newDate = new Date(firstDate);
+                newDate.setDate(newDate.getDate() + i);
+
+                visits += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
+                hits += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
+                views += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
+
+                chartData.push({
+                    date: newDate,
+                    visits: visits,
+                    hits: hits,
+                    views: views
+                });
+            }
+            return chartData;
+        }
+        var chartData = generateChartData();
+        var lineChart = AmCharts.makeChart( "lineChart", {
+            "type": "serial",
+            "theme": "black",
+            "marginTop":0,
+            "marginRight": 80,
+            "dataProvider": chartData,
+            "valueAxes": [{
+                    "id":"v1",
+                    "axisColor": "#FF6600",
+                    "axisThickness": 2,
+                    "axisAlpha": 1,
+                    "position": "left"
+                }, {
+                    "id":"v2",
+                    "axisColor": "#FCD202",
+                    "axisThickness": 2,
+                    "axisAlpha": 1,
+                    "position": "right"
+                }],
+            "graphs": [{
+                "valueAxis": "v1",
+                "lineColor": "#FF6600",
+                "bullet": "round",
+                "bulletBorderThickness": 1,
+                "hideBulletsCount": 30,
+                "title": "BTC",
+                "valueField": "visits",
+                "fillAlphas": 0,
+                "type": "smoothedLine"
+            }, {
+                "valueAxis": "v2",
+                "lineColor": "#FCD202",
+                "bullet": "square",
+                "bulletBorderThickness": 1,
+                "hideBulletsCount": 30,
+                "title": "USD",
+                "valueField": "hits",
+                "fillAlphas": 0,
+                "type": "smoothedLine"
+            }],
+            "chartScrollbar": {},
+            "chartCursor": {
+                "cursorPosition": "mouse"
+            },
+            "categoryField": "date",
+            "categoryAxis": {
+                "parseDates": true,
+                "axisColor": "#DADADA",
+                "minorGridEnabled": true
+            },
+            "hideCredits": true,
+            "legend": {
+                "markerType": "circle",
+                "markerColor": "transparent",
+                "align": "center"
+            }
+        });
+    }
+
     return {
         init: function () {
             handleHeaderOnScroll(); // initial setup for fixed header
@@ -124,6 +228,7 @@ var Layout = function () {
             handleHeight(); // initial setup for group element height
             handleCube(); //canvas initialisation
             handlePie(); //piechart initialisation
+            handleLine();
             // handle minimized header on page scroll
             $(window).scroll(function() {
                 handleHeaderOnScroll();

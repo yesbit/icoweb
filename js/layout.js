@@ -77,7 +77,7 @@ var Layout = function () {
         var canvasDiv = document.getElementById('particle-canvas');
         var options = {
           particleColor: '#888',
-          background: '../img/background1.jpg',
+          background: '/img/bgd.jpg',
           interactive: true,
           speed: 'medium',
           density: 'high'

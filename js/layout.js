@@ -117,9 +117,6 @@ var Layout = function () {
               "enabled": false
             },
             "hideCredits": true,
-            "responsive": {
-                "enabled": true
-            },
             "marginTop": 0,
             "visibleInLegendField": "showInLegend",
             "legend": {
@@ -127,6 +124,16 @@ var Layout = function () {
                 "markerColor": "transparent",
                 "align": "center",
                 "divId": "legendDiv"
+            },
+            "responsive": {
+                "enabled": true,
+                "rules": [{
+                    "maxWidth": 600,
+                    "minWidth": 0,
+                    "overrides": {
+                        "hideLabelsPercent": 100
+                    }
+                }]
             }
         });
     }
@@ -216,6 +223,7 @@ var Layout = function () {
                 "minorGridEnabled": true
             },
             "hideCredits": true,
+            "pulledField": "pullOut",
             "legend": {
                 "markerType": "circle",
                 "markerColor": "transparent",

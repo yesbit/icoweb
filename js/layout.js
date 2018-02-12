@@ -117,6 +117,9 @@ var Layout = function () {
               "enabled": false
             },
             "hideCredits": true,
+            "responsive": {
+                "enabled": true
+            },
             "marginTop": 0,
             "visibleInLegendField": "showInLegend",
             "legend": {

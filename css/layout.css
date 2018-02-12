@@ -22,7 +22,6 @@
   	[The "base.scss" contains basic default element styles
   		(colors, typography, margins & padding).]
 ------------------------------------------------------------------*/
-
 html {
   overflow-x: hidden;
 }
@@ -1719,6 +1718,11 @@ fieldset[disabled] .btn-theme {
     #usecase img {
       height: 50%;
       width: 50%;
+    }
+
+    #usecase video {
+      height: 60%;
+      width: 60%;
     }
   }
 

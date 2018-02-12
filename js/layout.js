@@ -77,7 +77,7 @@ var Layout = function () {
         var canvasDiv = document.getElementById('particle-canvas');
         var options = {
           particleColor: '#888',
-          background: 'https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/img/demo-bg.jpg',
+          background: 'https://raw.githubusercontent.com/yesbit/icoweb/master/img/bgd.jpg',
           interactive: true,
           speed: 'medium',
           density: 'high'

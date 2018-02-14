@@ -1,6 +1,5 @@
 var Layout = function () {
     'use strict';
-    
     // handle on page scroll
     var handleHeaderOnScroll = function() {
         if ($(window).scrollTop() > 60) {
@@ -71,8 +70,7 @@ var Layout = function () {
             }
        });
     }
-
-    
+   
     var handleCube = function(){
         var canvasDiv = document.getElementById('particle-canvas');
         var options = {
@@ -129,9 +127,9 @@ var Layout = function () {
                 "enabled": true,
                 "rules": [{
                     "maxWidth": 600,
-                    "minWidth": 0,
+                    "minWidth": 400,
                     "overrides": {
-                        "hideLabelsPercent": 100
+                        "hideLabelsPercent": 100,
                     }
                 }]
             }
@@ -228,7 +226,17 @@ var Layout = function () {
                 "markerType": "circle",
                 "markerColor": "transparent",
                 "align": "center"
+            },
+            "responsive": {
+                "enabled": true,
+                "rules": [{
+                    "maxWidth": 600,
+                    "minWidth": 0,
+                    "overrides": {
+                    }
+                }]
             }
+
         });
     }
 

@@ -89,7 +89,7 @@ var Layout = function () {
             "type": "pie",
             "theme": "black",
             "dataProvider": [ {
-              "group": "Foundraise",
+              "group": "Found Raising",
               "value": .4,
               "showInLegend": true
             }, {
@@ -97,11 +97,11 @@ var Layout = function () {
               "value": .3,
               "showInLegend": true
             }, {
-              "group": "Foundation",
+              "group": "Derivatives Foundation",
               "value": .2,
               "showInLegend": true
             }, {
-              "group": "Society",
+              "group": "Community Contributors",
               "value": .1,
               "showInLegend": true
             }],
@@ -121,18 +121,11 @@ var Layout = function () {
                 "markerType": "circle",
                 "markerColor": "transparent",
                 "align": "center",
-                "divId": "legendDiv"
+                "divId": "legendDiv",
+
             },
-            "responsive": {
-                "enabled": true,
-                "rules": [{
-                    "maxWidth": 600,
-                    "minWidth": 400,
-                    "overrides": {
-                        "hideLabelsPercent": 100,
-                    }
-                }]
-            }
+            "minRadius": 40,
+            "maxLabelWidth": 100
         });
     }
     
@@ -142,12 +135,10 @@ var Layout = function () {
         function generateChartData() {
             var chartData = [];
             var firstDate = new Date();
-            firstDate.setDate(firstDate.getDate() - 100);
+            firstDate.setDate(firstDate.getDate() - 365);
 
-                var visits = 1600;
-                var hits = 2900;
-                var views = 8700;
-
+                var USD = 1600;
+                var BTC = 1600;
 
             for (var i = 0; i < 100; i++) {
                 // we create date objects here. In your data, you can have date strings
@@ -156,15 +147,12 @@ var Layout = function () {
                 var newDate = new Date(firstDate);
                 newDate.setDate(newDate.getDate() + i);
 
-                visits += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
-                hits += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
-                views += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
-
+                USD += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
+                BTC += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
                 chartData.push({
                     date: newDate,
-                    visits: visits,
-                    hits: hits,
-                    views: views
+                    USD: USD,
+                    BTC: BTC
                 });
             }
             return chartData;
@@ -173,7 +161,6 @@ var Layout = function () {
         var lineChart = AmCharts.makeChart( "lineChart", {
             "type": "serial",
             "theme": "black",
-            "marginTop":0,
             "marginRight": 80,
             "dataProvider": chartData,
             "valueAxes": [{
@@ -181,13 +168,8 @@ var Layout = function () {
                     "axisColor": "#FF6600",
                     "axisThickness": 2,
                     "axisAlpha": 1,
-                    "position": "left"
-                }, {
-                    "id":"v2",
-                    "axisColor": "#FCD202",
-                    "axisThickness": 2,
-                    "axisAlpha": 1,
-                    "position": "right"
+                    "position": "left",
+                    "max": 1800
                 }],
             "graphs": [{
                 "valueAxis": "v1",
@@ -196,21 +178,23 @@ var Layout = function () {
                 "bulletBorderThickness": 1,
                 "hideBulletsCount": 30,
                 "title": "BTC",
-                "valueField": "visits",
+                "valueField": "BTC",
                 "fillAlphas": 0,
                 "type": "smoothedLine"
             }, {
-                "valueAxis": "v2",
+                "valueAxis": "v1",
                 "lineColor": "#FCD202",
                 "bullet": "square",
                 "bulletBorderThickness": 1,
                 "hideBulletsCount": 30,
                 "title": "USD",
-                "valueField": "hits",
+                "valueField": "USD",
                 "fillAlphas": 0,
                 "type": "smoothedLine"
             }],
-            "chartScrollbar": {},
+            "chartScrollbar": {
+                "enabled": false
+            },
             "chartCursor": {
                 "cursorPosition": "mouse"
             },
@@ -218,7 +202,9 @@ var Layout = function () {
             "categoryAxis": {
                 "parseDates": true,
                 "axisColor": "#DADADA",
-                "minorGridEnabled": true
+                "minorGridEnabled": true,
+                "equalSpacing": false,
+                "twoLineMode": true
             },
             "hideCredits": true,
             "pulledField": "pullOut",
@@ -226,17 +212,7 @@ var Layout = function () {
                 "markerType": "circle",
                 "markerColor": "transparent",
                 "align": "center"
-            },
-            "responsive": {
-                "enabled": true,
-                "rules": [{
-                    "maxWidth": 600,
-                    "minWidth": 0,
-                    "overrides": {
-                    }
-                }]
             }
-
         });
     }
 

@@ -173,6 +173,14 @@ h4 {
   text-decoration: none;
 }
 
+.d-flex {
+  display: flex!important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap!important;
+}
+
 /*------------------------------------------------------------------
   	[Blockquote]
 ------------------------------------------------------------------*/
@@ -556,7 +564,7 @@ fieldset[disabled] .btn-theme {
   width: 21px;
   height: 1px;
   display: inline-block;
-  background: #515769;
+  background: #fff;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -565,7 +573,7 @@ fieldset[disabled] .btn-theme {
 .header .navbar-toggle .toggle-icon:before, .header .navbar-toggle .toggle-icon:after {
   position: absolute;
   left: 0;
-  background: #515769;
+  background: #fff;
   content: " ";
 }
 
@@ -579,6 +587,7 @@ fieldset[disabled] .btn-theme {
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  background: #fff;
 }
 
 .header .navbar-toggle .toggle-icon:after {
@@ -591,10 +600,11 @@ fieldset[disabled] .btn-theme {
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  background: #fff;
 }
 
 .header .navbar-toggle:hover .toggle-icon {
-  background: #000;
+  background: #fff;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -603,7 +613,7 @@ fieldset[disabled] .btn-theme {
 .header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
   width: 21px;
   height: 1px;
-  background: #000;
+  background: #fff;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -623,7 +633,7 @@ fieldset[disabled] .btn-theme {
 
 .header .logo-wrap {
   display: inline-block;
-  padding: 5px;
+  padding: 10px 5px;
 }
 
 .header .logo-wrap:focus, .header .logo-wrap:hover {
@@ -761,7 +771,7 @@ fieldset[disabled] .btn-theme {
   }
   /* Navbar Nav */
   .header .nav-item-child {
-    color: #515769;
+    color: #fff;
     line-height: 1.4;
     padding: 12px 12px 12px 15px;
   }
@@ -1678,7 +1688,17 @@ fieldset[disabled] .btn-theme {
     text-align: center;
     width: 90%;
     padding: 20px;
+  }
+
+  @media(max-width: 360px) {
+    #about .margin-b-30 {
+      height: 330px;
     }
+
+    #about .margin-b-30 p{
+      line-height: 1.2;
+    }
+  }
 
 /*--------------------------------------------------
     [Usecase]
@@ -1774,77 +1794,62 @@ fieldset[disabled] .btn-theme {
     [Contact]
 ----------------------------------------------------*/
   .contacts {
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-bottom: 100px;
-
+    text-decoration:none;
+    font-family: 'b';
+    font-weight: 100;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin:20px 10px;
+    line-height:60px;
+    text-align: center;
   }
 
-  .contacts-block {
-     float: left;
-     padding-right:50px;
-     width:400px;
+  .contacts h2{
+    color: #EB8909;
   }
 
-  .contacts-block ul{
-    list-style-type: none;
+  .contact-wrap {
   }
 
-  .contacts{
-  text-decoration:none;
-  font-family: 'b';
-  font-weight: 100;
-  margin:70px 10px 70px 10px;
-  line-height:60px;
-  }
-
-  .contacts img{
-    margin-right: 20px;
-  }
-
-  .contacts img{
-    width:40px;
-    height:40px;
-  }
-
-  .contacts-left{
-    float: left;
-    position: relative;
-  }
-
-  .contacts-right{
-    float: right;
-    position: relative;
-  }
-
-  .contact-list > li {
+  .contact-list {
     font-size: 13px;
     color: #81848f;
-    margin-bottom: 10px;
+    margin: 10px;
+    list-style-type: none;
+    padding: 0 3px 0 3px;
+    text-align: center;
+  }
+
+  .contact-list li {
+    font-size: 1.8rem;
+    padding: 5px;
+    line-height: 1.5;
+    margin: 3px 30px;
+    display: inline-block;
+  }
+
+  .contact-list .logo{
+    height: 30px;
+    width: 30px;
+    color: #EB8909;
+  }
+
+  .contact-list .logo:hover{
+    background-color:#EB8909;
+    color: #000000;
   }
 
 
   @media screen and (min-width: 750px) {
 
-      .contacts::after {
-          clear: both;
-          content: '';
-          display: table;
-          height: 0;
-          visibility: hidden;
-
-      }
-
-      .contacts #contacts-left{
-          float: left;
-      }
-
-      .contacts #contacts-right{
-      float: right;}
-
-      /* Re-style here... */
-      .contacts #contacts-left{width:50%;}
-      .contacts #contacts-right{width:50%;}
-
   }
+
+/*--------------------------------------------------
+    [Sub]
+----------------------------------------------------*/
+
+.sub {
+
+}
+
 

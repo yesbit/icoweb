@@ -866,7 +866,7 @@ fieldset[disabled] .btn-theme {
     [Banner]
 ------------------------------------------------------------------*/
 #particle-canvas {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 

@@ -39,6 +39,7 @@ body {
       vertical-align: baseline;
       background: #000000;
       font-family: 'b';
+      line-height: 1.5;
 }
 
 p {
@@ -493,40 +494,9 @@ fieldset[disabled] .btn-theme {
   	[Footer]
 ------------------------------------------------------------------*/
 .footer {
-  background: url(../img/1920x1080/03.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-color: #000000;  
 }
 
-.footer .footer-seperator {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.footer .footer-list {
-  margin-bottom: 0;
-}
-
-.footer .footer-list-item {
-  color: #cbd3e1;
-  margin-bottom: 25px;
-}
-
-.footer .footer-list-link {
-  color: #cbd3e1;
-}
-
-.footer .footer-list-link:hover {
-  color: #fff;
-}
-
-.footer .footer-input {
-  background: rgba(0, 0, 0, 0.15);
-}
-
-.footer .footer-logo {
-  width: 85px;
-  height: auto;
-}
 
 /*------------------------------------------------------------------
   	[Header]
@@ -1723,6 +1693,28 @@ fieldset[disabled] .btn-theme {
     position: relative;
   }
 
+  iframe{
+    max-width: 100% !important;
+  }
+
+  .videoWrapper {
+    padding: 5px;
+  }
+
+ /*  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 25px;
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  } */
+
   @media screen and (max-width: 1080px) {
     #bowl {
     }
@@ -1743,6 +1735,11 @@ fieldset[disabled] .btn-theme {
     #usecase video {
       height: 60%;
       width: 60%;
+    }
+
+    iframe {
+      height: 60% !important;
+      width: 60% !important;
     }
   }
 
@@ -1797,8 +1794,8 @@ fieldset[disabled] .btn-theme {
     text-decoration:none;
     font-family: 'b';
     font-weight: 100;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin:20px 10px;
     line-height:60px;
     text-align: center;
@@ -1806,9 +1803,7 @@ fieldset[disabled] .btn-theme {
 
   .contacts h2{
     color: #EB8909;
-  }
-
-  .contact-wrap {
+    margin-bottom: 20px;
   }
 
   .contact-list {
@@ -1829,9 +1824,10 @@ fieldset[disabled] .btn-theme {
   }
 
   .contact-list .logo{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     color: #EB8909;
+    border-radius: 8px;
   }
 
   .contact-list .logo:hover{
@@ -1840,16 +1836,110 @@ fieldset[disabled] .btn-theme {
   }
 
 
-  @media screen and (min-width: 750px) {
+  @media (max-width: 450px) {
+    .contact-list li {
+      margin:  3px 5px;
+    }
+
 
   }
 
 /*--------------------------------------------------
     [Sub]
 ----------------------------------------------------*/
+.sub h2{
+    color: #EB8909;
+    margin-bottom: 20px;
+  }
 
-.sub {
+.input-group {
+  position: relative;
+  display: flex;
+  /* width: 100%; */
+  padding-top: 3px;
+}
 
+.sub input {
+  vertical-align: top;
+  font-size: 12px;
+  outline: 0;
+  overflow: visible;
+  border-radius: 5px;
+}
+
+.sub .form-control {
+  position: relative;
+  z-index:  2;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-left: -1px;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 5px .75px;form
+  line-height: 1.25;
+  color: #EB8909;
+  background-color: #fff;
+  background-clip: padding-box;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space:  nowrap;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  min-height: 1px;
+  background-color: #EB8909;
+  padding: 0;
+  width: 100%;
+}
+
+.group-btn {
+  vertical-align: middle;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 1.25;
+  transition: all .15 ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0!important;
+  letter-spacing: 1px!important;
+  font-size: 15px;
+  z-index: 2;
+  margin-left: -1px;
+}
+.subscribe-btn {
+  color: #EB8909;
+  padding-left: 16px;
+  min-width: 115px;
+}
+
+.sub-btn {
+  background-color: transparent;
+  font-size: 15px;
+  width: 100%;
+  color: #000000;
+}
+
+.subscribe-success {
+  display: none;
+}
+
+.loader {
+  display: none;
 }
 
 

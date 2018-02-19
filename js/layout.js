@@ -88,24 +88,30 @@ var Layout = function () {
         var pieChart = AmCharts.makeChart( "pieChart", {
             "type": "pie",
             "theme": "black",
+            "labelRadius": -35,
+            "labelText": "[[percents]]%",
             "dataProvider": [ {
               "group": "Found Raising",
+              "token": 80,
               "value": .4,
               "showInLegend": true
             }, {
               "group": "Team",
+              "token": 60,
               "value": .3,
               "showInLegend": true
             }, {
               "group": "Derivatives Foundation",
+              "token": 40,
               "value": .2,
               "showInLegend": true
             }, {
               "group": "Community Contributors",
+              "token": 20,
               "value": .1,
               "showInLegend": true
             }],
-            "valueField": "value",
+            "valueField": "token",
             "titleField": "group",
             "outlineAlpha": 0.4,
             "depth3D": 15,
@@ -121,14 +127,20 @@ var Layout = function () {
                 "markerType": "circle",
                 "markerColor": "transparent",
                 "align": "center",
-                "divId": "legendDiv",
-
+                "divId": "legendDiv"
             },
             "minRadius": 40,
             "maxLabelWidth": 100
         });
     }
     
+    var handleSubscribe = function(){
+        $(".subscribe").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#sub").offset().top},
+                'slow');
+        });
+    }
 
 
     var handleLine = function(){
@@ -137,7 +149,7 @@ var Layout = function () {
             var firstDate = new Date();
             firstDate.setDate(firstDate.getDate() - 365);
 
-                var USD = 1600;
+                var SP500Index = 1600;
                 var BTC = 1600;
 
             for (var i = 0; i < 100; i++) {
@@ -147,11 +159,11 @@ var Layout = function () {
                 var newDate = new Date(firstDate);
                 newDate.setDate(newDate.getDate() + i);
 
-                USD += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
+                SP500Index += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
                 BTC += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
                 chartData.push({
                     date: newDate,
-                    USD: USD,
+                    SP500Index: SP500Index,
                     BTC: BTC
                 });
             }
@@ -187,8 +199,8 @@ var Layout = function () {
                 "bullet": "square",
                 "bulletBorderThickness": 1,
                 "hideBulletsCount": 30,
-                "title": "USD",
-                "valueField": "USD",
+                "title": "S&P 500 Index",
+                "valueField": "SP500Index",
                 "fillAlphas": 0,
                 "type": "smoothedLine"
             }],
@@ -224,6 +236,7 @@ var Layout = function () {
             handleCube(); //canvas initialisation
             handlePie(); //piechart initialisation
             handleLine();
+            handleSubscribe();
             // handle minimized header on page scroll
             $(window).scroll(function() {
                 handleHeaderOnScroll();

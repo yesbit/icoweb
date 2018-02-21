@@ -89,6 +89,7 @@ var Layout = function () {
             "type": "pie",
             "theme": "black",
             "labelRadius": -35,
+            "fontSize": 14,
             "labelText": "[[percents]]%",
             "dataProvider": [ {
               "group": "Fund Raising (Million tokens)",

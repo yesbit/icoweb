@@ -97,17 +97,17 @@ var Layout = function () {
              // "value": "Million Tokens",
               "showInLegend": true
             }, {
-              "group": "Team (Million tokens)",
+              "group": "Team",
               "token": 60,
              // "value": "Million Tokens",
               "showInLegend": true
             }, {
-              "group": "Derivatives Foundation (Million tokens)",
+              "group": "Derivatives Foundation",
               "token": 40,
               //"value": "Million Tokens",
               "showInLegend": true
             }, {
-              "group": "Community Contributors (Million tokens)",
+              "group": "Community Contributors",
               "token": 20,
               //"value": "Million Tokens",
               "showInLegend": true

@@ -43,7 +43,7 @@ body {
 }
 
 p {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   font-family: 'b';
   color: #a6a7aa;
@@ -101,6 +101,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-family: 'b';
   color: #515769;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+h2 {
+  font-weight: 700;
+  font-family: 'b';
+  color: #eb8908;
   line-height: 1.4;
   margin: 0 0 15px;
 }
@@ -933,7 +940,7 @@ fieldset[disabled] .btn-theme {
   	[Form Control]
 ------------------------------------------------------------------*/
 .form-control {
-  height: 50px;
+  height: 40px;
   font-size: 14px;
   font-weight: 400;
   color: #a6a7aa;

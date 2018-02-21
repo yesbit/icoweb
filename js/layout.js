@@ -91,31 +91,32 @@ var Layout = function () {
             "labelRadius": -35,
             "labelText": "[[percents]]%",
             "dataProvider": [ {
-              "group": "Found Raising",
+              "group": "Fund Raising (Million tokens)",
               "token": 80,
-              "value": .4,
+             // "value": "Million Tokens",
               "showInLegend": true
             }, {
-              "group": "Team",
+              "group": "Team (Million tokens)",
               "token": 60,
-              "value": .3,
+             // "value": "Million Tokens",
               "showInLegend": true
             }, {
-              "group": "Derivatives Foundation",
+              "group": "Derivatives Foundation (Million tokens)",
               "token": 40,
-              "value": .2,
+              //"value": "Million Tokens",
               "showInLegend": true
             }, {
-              "group": "Community Contributors",
+              "group": "Community Contributors (Million tokens)",
               "token": 20,
-              "value": .1,
+              //"value": "Million Tokens",
               "showInLegend": true
             }],
             "valueField": "token",
             "titleField": "group",
+            //"descriptionField": "value",
             "outlineAlpha": 0.4,
             "depth3D": 15,
-            "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+            "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> </span>",
             "angle": 30,
             "export": {
               "enabled": false
@@ -129,6 +130,10 @@ var Layout = function () {
                 "align": "center",
                 "divId": "legendDiv"
             },
+            "percentFormatter": {
+				"precision": 0
+				
+     	    },
             "minRadius": 40,
             "maxLabelWidth": 100
         });
@@ -149,8 +154,8 @@ var Layout = function () {
             var firstDate = new Date();
             firstDate.setDate(firstDate.getDate() - 365);
 
-                var SP500Index = 1600;
-                var BTC = 1600;
+                var SP500Index = 0;
+                var BTC = 0;
 
             for (var i = 0; i < 100; i++) {
                 // we create date objects here. In your data, you can have date strings
@@ -159,8 +164,8 @@ var Layout = function () {
                 var newDate = new Date(firstDate);
                 newDate.setDate(newDate.getDate() + i);
 
-                SP500Index += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
-                BTC += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
+                SP500Index += Math.round((Math.random()<0.53?1:-1)*Math.random()*10);
+                BTC += Math.round((Math.random()<0.6?1:-1)*Math.random()*10);
                 chartData.push({
                     date: newDate,
                     SP500Index: SP500Index,

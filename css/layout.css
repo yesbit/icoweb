@@ -98,13 +98,7 @@ span {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  font-family: 'b';
-  color: #515769;
-  line-height: 1.4;
-  margin: 0 0 15px;
-}
-h2 {
+  /* font-weight: 700; */
   font-weight: 700;
   font-family: 'b';
   color: #eb8908;
@@ -498,14 +492,6 @@ fieldset[disabled] .btn-theme {
 }
 
 /*------------------------------------------------------------------
-  	[Footer]
-------------------------------------------------------------------*/
-.footer {
-  background-color: #000000;  
-}
-
-
-/*------------------------------------------------------------------
   	[Header]
 ------------------------------------------------------------------*/
 /* Fixed Top */
@@ -610,7 +596,7 @@ fieldset[disabled] .btn-theme {
 
 .header .logo-wrap {
   display: inline-block;
-  padding: 10px 5px;
+  padding: 5px 5px;
 }
 
 .header .logo-wrap:focus, .header .logo-wrap:hover {
@@ -819,6 +805,9 @@ fieldset[disabled] .btn-theme {
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
+  .page-on-scroll .header .container {
+    border: none;
   }
 
 
@@ -1270,7 +1259,7 @@ fieldset[disabled] .btn-theme {
   	[Content]
 ------------------------------------------------------------------*/
 .content {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -1667,6 +1656,10 @@ fieldset[disabled] .btn-theme {
     padding: 20px;
   }
 
+  .icon-wrapper h4{
+    border: none;
+  }
+
   @media(max-width: 360px) {
     #about .margin-b-30 {
       height: 330px;
@@ -1794,6 +1787,47 @@ fieldset[disabled] .btn-theme {
     }
   }
 
+/*------------------------------------------------------------------
+    [Footer]
+------------------------------------------------------------------*/
+  .footer {
+    background-color: #000000;  
+  }
+
+  .footer h3, h4 {
+    border-bottom: 1px solid #EB8909;
+    margin-bottom: 20px;
+    min-width: 100px;
+    overflow: hidden;
+    text-transform: uppercase;
+  }
+
+  .footer h4 {
+    max-width: 300px;
+  }
+
+
+  .footer .footer-info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 2px;
+    margin-top: 0;
+  }
+
+  .footer ul li a {
+    line-height: 1.9;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .footer ul li:hover {
+    background-color: #EB8909;
+  }
 /*--------------------------------------------------
     [Contact]
 ----------------------------------------------------*/
@@ -1801,16 +1835,17 @@ fieldset[disabled] .btn-theme {
     text-decoration:none;
     font-family: 'b';
     font-weight: 100;
-    padding-left: 10px;
-    padding-right: 10px;
     margin:20px 10px;
     line-height:60px;
     text-align: center;
   }
 
-  .contacts h2{
+  .contacts h4 {
+    display: none;
     color: #EB8909;
     margin-bottom: 20px;
+    min-width: 100px;
+    overflow: hidden;
   }
 
   .contact-list {
@@ -1826,7 +1861,7 @@ fieldset[disabled] .btn-theme {
     font-size: 1.8rem;
     padding: 5px;
     line-height: 1.5;
-    margin: 3px 30px;
+    margin: 3px 20px;
     display: inline-block;
   }
 
@@ -1843,51 +1878,45 @@ fieldset[disabled] .btn-theme {
   }
 
 
-  @media (max-width: 450px) {
+  @media (max-width: 460px) {
     .contact-list li {
       margin:  3px 5px;
     }
 
+    .contacts h3 {
+      display: none;
+    }
+
+    .contacts h4 {
+      display: inline-block;
+    }
 
   }
 
 /*--------------------------------------------------
-    [Sub]
+    [Subscribe]
 ----------------------------------------------------*/
-.sub h2{
-    color: #EB8909;
-    margin-bottom: 20px;
-  }
-
-.input-group {
-  position: relative;
-  display: flex;
-  /* width: 100%; */
-  padding-top: 3px;
+.sub {
+  text-decoration:none;
+  font-family: 'b';
+  font-weight: 100;
+  margin: 20px 10px;
+  line-height:60px;
+  text-align: center;
 }
 
-.sub input {
-  vertical-align: top;
-  font-size: 12px;
-  outline: 0;
-  overflow: visible;
-  border-radius: 5px;
-}
-
-.sub .form-control {
-  position: relative;
-  z-index:  2;
-  flex: 1 1 auto;
-  width: 1%;
-  margin-left: -1px;
-  margin-bottom: 0;
-  padding-left: 10px;
+.sub h4 {
+  display: none;
+  color: #EB8909;
+  margin-bottom: 20px;
+  min-width: 100px;
+  overflow: hidden;
 }
 
 .form-control {
   display: block;
   width: 100%;
-  padding: 5px .75px;form
+  min-width: 100px;
   line-height: 1.25;
   color: #EB8909;
   background-color: #fff;
@@ -1895,58 +1924,35 @@ fieldset[disabled] .btn-theme {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-.input-group-btn {
-  position: relative;
-  font-size: 0;
-  white-space:  nowrap;
-  vertical-align: middle;
-  display: flex;
-  align-items: center;
-  min-height: 1px;
-  background-color: #EB8909;
-  padding: 0;
-  width: 100%;
-}
-
-.group-btn {
-  vertical-align: middle;
-}
-
 .btn {
-  cursor: pointer;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
   line-height: 1.25;
-  transition: all .15 ease-in-out;
   text-transform: uppercase;
-  border-radius: 0!important;
   letter-spacing: 1px!important;
   font-size: 15px;
   z-index: 2;
   margin-left: -1px;
 }
-.subscribe-btn {
-  color: #EB8909;
-  padding-left: 16px;
-  min-width: 115px;
+
+
+@media(max-width: 1199px) {
+  .sub {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+  }
 }
 
-.sub-btn {
-  background-color: transparent;
-  font-size: 15px;
-  width: 100%;
-  color: #000000;
+@media(max-width: 460px) {
+  .sub h3 {
+    display: none;
+  }
+
+  .sub h4 {
+    display: inline-block;
+  }
 }
-
-.subscribe-success {
-  display: none;
-}
-
-.loader {
-  display: none;
-}
-
-

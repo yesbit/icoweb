@@ -1697,7 +1697,7 @@ fieldset[disabled] .btn-theme {
     max-width: 100% !important;
   }
 
-  .videoWrapper {
+  .video-wrapper {
     padding: 5px;
   }
 
@@ -1787,6 +1787,48 @@ fieldset[disabled] .btn-theme {
     }
   }
 
+
+/*--------------------------------------------------
+    [Video]
+----------------------------------------------------*/
+  .video-wrapper {
+      position: relative;
+  }
+
+  .video-wrapper > video {
+      width: 100%;
+      vertical-align: middle;
+  }
+
+  .video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+      display: none;
+  }
+
+  .video-overlay-play-button {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      padding: 10px calc(50% - 50px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      opacity: 0.95;
+      cursor: pointer;
+      background-image: linear-gradient(transparent, #000);
+      transition: opacity 150ms;
+  }
+
+  .video-overlay-play-button:hover {
+      opacity: 1;
+  }
+
+  .video-overlay-play-button.is-hidden {
+      display: none;
+  }
+
+
+
 /*------------------------------------------------------------------
     [Footer]
 ------------------------------------------------------------------*/
@@ -1794,7 +1836,7 @@ fieldset[disabled] .btn-theme {
     background-color: #000000;  
   }
 
-  .footer h3, h4 {
+  .footer h3{
     border-bottom: 1px solid #EB8909;
     margin-bottom: 20px;
     min-width: 100px;
@@ -1804,6 +1846,11 @@ fieldset[disabled] .btn-theme {
 
   .footer h4 {
     max-width: 300px;
+    border-bottom: 1px solid #EB8909;
+    margin-bottom: 20px;
+    min-width: 100px;
+    overflow: hidden;
+    text-transform: uppercase;
   }
 
 
@@ -1842,10 +1889,16 @@ fieldset[disabled] .btn-theme {
 
   .contacts h4 {
     display: none;
-    color: #EB8909;
+    /* color: #EB8909;
+    margin-bottom: 20px;
+    min-width: 100px;
+    overflow: hidden; */
+    max-width: 300px;
+    border-bottom: 1px solid #EB8909;
     margin-bottom: 20px;
     min-width: 100px;
     overflow: hidden;
+    text-transform: uppercase;
   }
 
   .contact-list {
@@ -1952,7 +2005,7 @@ fieldset[disabled] .btn-theme {
     display: none;
   }
 
-  .sub h4 {
+  /* .sub h4 {
     display: inline-block;
-  }
+  } */
 }

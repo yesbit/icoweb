@@ -238,22 +238,20 @@ var Layout = function () {
         //add filter 
         $(document).ready(function(){
             $('.video-container').css({
-            'width':$('.video-container video').width(),
-            'height':$('.video-container video').height()
+            'width': 420,
+            'height':280
             });
-            $('.video-container').append('<div class="video-filter-controls"><span class="filter"></span><span class="clear"></span></div><div class="video-filter"></div>')
-            // $('.video-container .video-filter-controls span').on('click',function(){
-            $('.video-container .video-filter').css('background-color', $(this).attr('#696969'));
-            // });
-
+            // $('.video-container').append('<div class="video-filter"></div>')
         });
 
         //control play 
-        var videoPlayButton, videoWrapper, videos, i;
+        var videoPlayButton, videoWrapper, videos, i, filters;
         videoWrapper = document.getElementsByClassName('video-container');
         videos = document.getElementsByClassName('videos');
+        filters = document.getElementsByClassName('video-filter');
         for (var i=0; i < videos.length; i++) {
             var video = videos[i];
+            console.log(filters);
             // console.log(videoWrapper[i]);
             console.log(video);
             var videoMethods = {
@@ -278,16 +276,35 @@ var Layout = function () {
                 hideVideoPlayButton: function() {
                     console.log("now we are here " + JSON.stringify(video));
                     video.play();
+                    filters.setAttribute("style", "background-color: #fff;");
                     videoPlayButton.classList.add('is-hidden');
                     videoPlayButton.classList.add('is-hidden');
                     video.classList.remove('has-media-controls-hidden');
                     video.setAttribute('controls', 'controls');
+
                 }
             };
             videoMethods.renderVideoPlayButton();  
         }
     }
 
+    function play(i) {   
+        var element = document.getElementById(i); 
+        console.log(element);
+    }
+    
+    // var slowScroll  = function() {
+    //     $('a[href^="#"]').click(function() {
+    //         console.log("here!!!");
+    //         var target = $(this.hash);
+    //         if (target.length) {
+    //             $('html, body').animate({
+    //             scrollTop: target.offset().top
+    //         }, 700);
+    //         return false;
+    //         }
+    //     });
+    // }
 
     return {
         init: function () {
@@ -299,6 +316,7 @@ var Layout = function () {
             handleLine();
             handleSubscribe();
             // handleVideo();
+            // play();
             // handle minimized header on page scroll
             $(window).scroll(function() {
                 handleHeaderOnScroll();
@@ -306,16 +324,13 @@ var Layout = function () {
         }
     };
 }();
+//Scroll down
 
-$('a[href^="#"]').click(function() {
-      var target = $(this.hash);
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 700);
-        return false;
-      }
-});
+
+
+
+//hide filter
+
 
 $(document).ready(function() {
     Layout.init();

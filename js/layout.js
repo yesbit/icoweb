@@ -234,12 +234,28 @@ var Layout = function () {
     }
 
     var handleVideo = function(){
+
+        //add filter 
+        $(document).ready(function(){
+            $('.video-container').css({
+            'width':$('.video-container video').width(),
+            'height':$('.video-container video').height()
+            });
+            $('.video-container').append('<div class="video-filter-controls"><span class="filter"></span><span class="clear"></span></div><div class="video-filter"></div>')
+            // $('.video-container .video-filter-controls span').on('click',function(){
+            $('.video-container .video-filter').css('background-color', $(this).attr('#696969'));
+            // });
+
+        });
+
+        //control play 
         var videoPlayButton, videoWrapper, videos, i;
-        videoWrapper = document.getElementsByClassName('video-wrapper');
+        videoWrapper = document.getElementsByClassName('video-container');
         videos = document.getElementsByClassName('videos');
         for (var i=0; i < videos.length; i++) {
             var video = videos[i];
-            console.log(videoWrapper);
+            // console.log(videoWrapper[i]);
+            console.log(video);
             var videoMethods = {
                 renderVideoPlayButton: function() {
                     if (videoWrapper[i].contains(video)) {
@@ -260,15 +276,18 @@ var Layout = function () {
                 },
 
                 hideVideoPlayButton: function() {
+                    console.log("now we are here " + JSON.stringify(video));
                     video.play();
+                    videoPlayButton.classList.add('is-hidden');
                     videoPlayButton.classList.add('is-hidden');
                     video.classList.remove('has-media-controls-hidden');
                     video.setAttribute('controls', 'controls');
                 }
             };
-            videoMethods.renderVideoPlayButton();
+            videoMethods.renderVideoPlayButton();  
         }
     }
+
 
     return {
         init: function () {

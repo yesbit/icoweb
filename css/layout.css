@@ -605,10 +605,8 @@ fieldset[disabled] .btn-theme {
 
 .header .logo-img {
   display: inline-block;
-  width: 60px;
+  width: 180px;
   height: 60px;
-  max-width: 200%;
-  max-height: 200%;
   vertical-align: middle;
 }
 
@@ -725,13 +723,6 @@ fieldset[disabled] .btn-theme {
   .header .menu-container:after {
     clear: both;
   }
-  /* Logo */
-  .header .logo .logo-img-main {
-    display: none;
-  }
-  .header .logo .logo-img-active {
-    display: inline-block;
-  }
   /* Navbar Nav */
   .header .nav-item-child {
     color: #fff;
@@ -741,6 +732,9 @@ fieldset[disabled] .btn-theme {
   .header .nav-item-hover:after {
     position: absolute;
     top: 19px;
+  }
+  .header .logo-img-main {
+    margin-top: 16px;
   }
 }
 
@@ -764,15 +758,10 @@ fieldset[disabled] .btn-theme {
     margin-left: 0;
     margin-right: 0;
   }
-
-  .header .logo-img {
-    width: 40px;
-    height: 40px;
-  }
 }
 
-/* Media Queries above 992px */
-@media (min-width: 992px) {
+/* Media Queries above 991px */
+@media (min-width: 991px) {
   /* Navbar */
   .header .navbar-nav-right {
     float: right;
@@ -811,7 +800,7 @@ fieldset[disabled] .btn-theme {
   }
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .page-on-scroll .header .navbar {
     background: #transparent;
     transition-duration: 300ms;
@@ -823,12 +812,14 @@ fieldset[disabled] .btn-theme {
     transition-duration: 400ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+    margin-top: 16px;
   }
   .page-on-scroll .header .logo-img-active {
     display: inline-block;
     transition-duration: 400ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+    margin-top: 16px;
   }
   .page-on-scroll .header .nav-item-child {
     color: #fff;
@@ -1697,24 +1688,6 @@ fieldset[disabled] .btn-theme {
     max-width: 100% !important;
   }
 
-  .video-wrapper {
-    padding: 5px;
-  }
-
- /*  .videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; 
-    padding-top: 25px;
-    height: 0;
-  }
-  .videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  } */
-
   @media screen and (max-width: 1080px) {
     #bowl {
     }
@@ -1791,41 +1764,92 @@ fieldset[disabled] .btn-theme {
 /*--------------------------------------------------
     [Video]
 ----------------------------------------------------*/
-  .video-wrapper {
-      position: relative;
+  .video-container {
+    position: relative;
+    padding: 5px;
+    position: relative;
+    margin: 50px auto 0;
+    -webkit-box-shadow: 0 0 100px 0 rgba(255,255,255,.3);
+    -moz-box-shadow: 0 0 100px 0 rgba(255,255,255,.3);
+    box-shadow: 0 0 100px 0 rgba(255,255,255,.3);
   }
 
-  .video-wrapper > video {
-      width: 100%;
-      vertical-align: middle;
+  .video-container > video {
+    width: 100%;
+    vertical-align: middle;
   }
 
-  .video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
-      display: none;
+  .video-container > video.has-media-controls-hidden::-webkit-media-controls {
+    display: none;
   }
 
   .video-overlay-play-button {
-      box-sizing: border-box;
-      width: 100%;
-      height: 100%;
-      padding: 10px calc(50% - 50px);
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      opacity: 0.95;
-      cursor: pointer;
-      background-image: linear-gradient(transparent, #000);
-      transition: opacity 150ms;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px calc(50% - 50px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 0.95;
+    cursor: pointer;
+    background-image: linear-gradient(transparent, #000);
+    transition: opacity 150ms;
   }
 
   .video-overlay-play-button:hover {
-      opacity: 1;
+    opacity: 1;
   }
 
   .video-overlay-play-button.is-hidden {
-      display: none;
+    display: none;
   }
+
+  .video-container {
+    position: relative;
+    margin: 50px auto 0;
+    -webkit-box-shadow: 0 0 100px 0 rgba(255,255,255,.3);
+    -moz-box-shadow: 0 0 100px 0 rgba(255,255,255,.3);
+    box-shadow: 0 0 100px 0 rgba(255,255,255,.3);
+  }
+
+  .video-container .video-filter {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    pointer-events: none; /*Unofficial and Won't Validate*/
+    background-color: rgba(50,100,200,.5)
+  }
+
+  .video-container .video-filter-controls {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    width: 30px;
+    height: auto;
+    background-color: orange;
+  }
+
+  .video-container .video-filter-controls .clear {
+    background-color: #fff;
+  }
+  .video-container .video-filter-controls .filter {
+    background-color: #696969;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.1);
+  }
+
+  .video-container .video-filter-controls span {
+    display: block;
+    width: 100%;
+    height: 20px;
+  }
+
 
 
 
@@ -2009,3 +2033,98 @@ fieldset[disabled] .btn-theme {
     display: inline-block;
   } */
 }
+
+
+/*--------------------------------------------------
+    [Main Playbutton]
+----------------------------------------------------*/
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6.25rem;
+  height: 5rem;
+  margin-top: 0rem;
+  margin-left: -3.125rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.play-button > .circle {
+  position: relative;
+  width: 2.125em;
+  height: 2.125em;
+  margin: auto;
+}
+.play-button > .circle > .icon {
+  position: absolute;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.75em;
+  height: 0.875em;
+  margin-top: -0.4375em;
+  margin-left: -0.375em;
+  display: none;
+  margin-left: -0.29em;
+}
+.play-button > .circle > .black {
+  z-index: 4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-top: -31px;
+  margin-left: -31px;
+  opacity: 0.9;
+}
+.play-button > .circle > .yellow {
+  position: absolute;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  margin-top: -24px;
+  margin-left: -24px;
+}
+.play-button > .circle > .border {
+  position: absolute;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72px;
+  height: 72px;
+  margin-top: -36px;
+  margin-left: -36px;
+}
+.play-button > .circle > .white {
+  position: absolute;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-left: -60px;
+  opacity: 0.1;
+}
+.play-button > .circle > .lines {
+  position: absolute;
+  display: none;
+}
+.play-button > .text {
+  position: relative;
+  margin-top: 2.375em;
+  font-size: 0.75em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+

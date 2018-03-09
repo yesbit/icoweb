@@ -227,12 +227,6 @@ var Layout = function () {
 
     var handleVideo = function(){ 
         $(document).ready(function(){
-            //add filter 
-            $('.video-container').css({
-                'width': 420,
-                'height':290
-            });
-
             //control play 
             $(".video-overlay-play-button").click(function() {   
                 if (this.style.display === "none") {

@@ -77,7 +77,7 @@ var Layout = function () {
           particleColor: '#888',
           background: 'https://raw.githubusercontent.com/yesbit/icoweb/master/img/bgd.jpg',
           interactive: true,
-          speed: 'medium',
+          speed: 'slow',
           density: 'high'
         };
         var particleCanvas = new ParticleNetwork(canvasDiv, options);
@@ -137,14 +137,6 @@ var Layout = function () {
      	    },
             "minRadius": 40,
             "maxLabelWidth": 100
-        });
-    }
-    
-    var handleSubscribe = function(){
-        $(".subscribe").click(function() {
-            $('html,body').animate({
-                scrollTop: $("#sub").offset().top},
-                'slow');
         });
     }
 
@@ -233,78 +225,25 @@ var Layout = function () {
         });
     }
 
-    var handleVideo = function(){
-
-        //add filter 
+    var handleVideo = function(){ 
         $(document).ready(function(){
+            //add filter 
             $('.video-container').css({
-            'width': 420,
-            'height':280
+                'width': 420,
+                'height':290
             });
-            // $('.video-container').append('<div class="video-filter"></div>')
+
+            //control play 
+            $(".video-overlay-play-button").click(function() {   
+                if (this.style.display === "none") {
+                    this.style.display = "block";
+                    this.video.play();
+                } else {
+                    this.style.display = "none";
+                }             
+            });
         });
-
-        //control play 
-        var videoPlayButton, videoWrapper, videos, i, filters;
-        videoWrapper = document.getElementsByClassName('video-container');
-        videos = document.getElementsByClassName('videos');
-        filters = document.getElementsByClassName('video-filter');
-        for (var i=0; i < videos.length; i++) {
-            var video = videos[i];
-            console.log(filters);
-            // console.log(videoWrapper[i]);
-            console.log(video);
-            var videoMethods = {
-                renderVideoPlayButton: function() {
-                    if (videoWrapper[i].contains(video)) {
-                        this.formatVideoPlayButton();
-                        video.classList.add('has-media-controls-hidden');
-                        videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0];
-                        videoPlayButton.addEventListener('click', this.hideVideoPlayButton);
-                    }
-                },
-
-                formatVideoPlayButton: function() {
-                    videoWrapper[i].insertAdjacentHTML('beforeend', '\
-                        <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
-                            <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/>\
-                            <polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\
-                        </svg>\
-                    ');
-                },
-
-                hideVideoPlayButton: function() {
-                    console.log("now we are here " + JSON.stringify(video));
-                    video.play();
-                    filters.setAttribute("style", "background-color: #fff;");
-                    videoPlayButton.classList.add('is-hidden');
-                    videoPlayButton.classList.add('is-hidden');
-                    video.classList.remove('has-media-controls-hidden');
-                    video.setAttribute('controls', 'controls');
-
-                }
-            };
-            videoMethods.renderVideoPlayButton();  
-        }
     }
-
-    function play(i) {   
-        var element = document.getElementById(i); 
-        console.log(element);
-    }
-    
-    // var slowScroll  = function() {
-    //     $('a[href^="#"]').click(function() {
-    //         console.log("here!!!");
-    //         var target = $(this.hash);
-    //         if (target.length) {
-    //             $('html, body').animate({
-    //             scrollTop: target.offset().top
-    //         }, 700);
-    //         return false;
-    //         }
-    //     });
-    // }
 
     return {
         init: function () {
@@ -314,9 +253,7 @@ var Layout = function () {
             handleCube(); //canvas initialisation
             handlePie(); //piechart initialisation
             handleLine();
-            handleSubscribe();
-            // handleVideo();
-            // play();
+            handleVideo();
             // handle minimized header on page scroll
             $(window).scroll(function() {
                 handleHeaderOnScroll();
@@ -324,14 +261,9 @@ var Layout = function () {
         }
     };
 }();
-//Scroll down
-
-
-
-
-//hide filter
 
 
 $(document).ready(function() {
     Layout.init();
+
 });

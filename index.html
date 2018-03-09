@@ -16,10 +16,13 @@
         <link rel="stylesheet" href="css/flipclock.css" type="text/css"/>
         <link href="css/animate.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
         <!-- THEME STYLES -->
         <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+
         <!-- FONTS -->
         <link href="css/font.css" rel="stylesheet" type="text/css"/>
+
         <!-- FAVICON -->
         <link rel="icon" sizes="57x57" href="favicon.ico/fav.png">
         <meta name="msapplication-TileColor" content="#ffffff">
@@ -56,6 +59,7 @@
 		<!-- CANVAS ANIMATION -->
         <script src='https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js' type="text/javascript"></script>
         <script src="js/particle.js" type="text/javascript"></script>
+
         <!-- AMCHARTS -->
         <script src="amcharts/amcharts.js" type="text/javascript"></script>
         <script src="amcharts/pie.js" type="text/javascript"></script>
@@ -241,6 +245,8 @@
 
             </div>
 		</div> -->
+
+        <!-- INTRO VIDEO -->
 		<section class="about-us" id="video">
     		<div class="content-lg container" id="usecase">
     			<div class="row margin-b-20">
@@ -255,7 +261,11 @@
     					<video id="video1" class="videos" width="420" height="280"  name="Introducing YESBIT" controls>
     						<source src="https://yesbit.github.io/YesbitVideo/Yesbit_EN_Feb16_MOV_5.mp4">
     					</video>
-                        <div class="video-filter" onclick="play()"></div>
+                        <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">
+                            <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/>
+                            <polygon points="70, 55 70, 145 145, 100" fill="#fff">
+                        </svg>
+                        <div class="video-filter"></div>
     				</div>
     			</div>
                 <div class="col-md-6">
@@ -263,7 +273,11 @@
     					<video id="video2" class="videos" width="420" height="280" name="Use Bitcoin to buy Stock Index" controls>
     						<source src="https://pro.yesbit.ca/Yesbit.mp4" type="video/mp4">
     					</video>
-                        <div class="video-filter" onclick="play()"></div>
+                        <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">
+                            <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/>
+                            <polygon points="70, 55 70, 145 145, 100" fill="#fff">
+                        </svg>
+                        <div class="video-filter"></div>
     				</div>
     			</div>
 
@@ -282,7 +296,7 @@
 
     		</div>
 		</section>
-		<!-- END EXAMPLES -->
+		<!-- END VIDEO -->
 
 		<!-- TOKEN CHART -->
 		<div class="content-lg container" id="tokenChart">
@@ -318,8 +332,78 @@
 		</div>
 		<!-- END GROW CHART -->
 
-        <!--   -->
+        <!-- ROADMAP -->
+        <div class="content-lg container" id="roadmap">
+            <div class="row margin-b-20">
+                <div class="col">
+                    <h2>Yesbit Roadmap</h2>
+                </div>
+                <!-- <div class="roadline"></div> -->
+                <ol class='timeline'>
+                    <li class="year first">2017</li>
+                    <li class='event offset-first'>
+                        <div class="ctn left">
+                            <div class="content ">
+                                Btcoin Hot/Cold Server Solution
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event'>
+                        <div class="ctn right">
+                            <div class="content">
+                                PHP+Javascripts+Mysql website Development
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event">
+                        <div class="ctn left">
+                            <div class="content">
+                                JAVA trading System
+                            </div>
+                        </div>
+                    </li>
+                    <li class="year first">2018.01</li>
+                    <li class="event">
+                        <div class="ctn left">
+                            <div class="content">
+                                Leverage Trading System
+                            </div>
+                        </div>
+                    </li>
 
+                    <li class="year first">2018.03</li>
+                    <li class="event offset-first">
+                        <div class="ctn left">
+                            <div class="content">
+                                ETH contract pair solution
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event">
+                        <div class="ctn right">
+                            <div class="content">
+                                Beta launch!
+                            </div>
+                        </div>
+                    </li>
+                </ol> 
+            </div>
+
+
+        </div>
+        <!-- END ROADMAP -->
+
+        <!-- FAQ -->
+        <div class="content-lg container" id="FAQ">
+            
+        </div>
+        <!-- END FAQ -->
+
+        <!-- TEAM -->
+        <div class="content-lg container" id="Team">
+            
+        </div>
+        <!-- END TEAM -->
 						
 		<div class="footer">
 			<div class="content container" id="footer">

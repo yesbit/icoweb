@@ -1257,7 +1257,7 @@ fieldset[disabled] .btn-theme {
 .content {
   margin:  0 10px;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
   -webkit-transition: background 0.30s linear;
   -moz-transition: background 0.30s linear;
@@ -2169,7 +2169,7 @@ fieldset[disabled] .btn-theme {
   text-align: center;
 }
 .timeline .year:first-of-type {
-  margin-top: 0 !important;
+  margin-top: 0;
 }
 
 .timeline .event {
@@ -2221,7 +2221,7 @@ fieldset[disabled] .btn-theme {
   position: absolute;
   width: 9px;
   height: 9px;
-  right: 49.3%;
+  right: 49.2%;
   background:  #9d9d9d;
   border: 2px solid #000000;
   top: 47px;
@@ -2249,24 +2249,29 @@ fieldset[disabled] .btn-theme {
 }
 
 
-/* @media (max-width: 700px) {
+@media (max-width: 700px) {
   .timeline .year {
-    margin: none;
-    float: left;
+    left: 5%;
+    margin: 5%;
+    text-align: left
   }
-
-  .timeline .event.offset-first {
-    margin-top: 0;
-  }
-
 
   .timeline::after {
-    content: '';
-    position: absolute; 
-    height: 100%;
-    width: 1px;
-    left: 0;
-    top: 0;
-    background: #9b9b9b;
-    z-index: -1; 
-  } */
+    left: 5%;
+  }
+
+  .content {
+    width: 100%；
+  }
+
+  .right {
+    left: 5%;
+  }
+
+  .left {
+    left: 5%;
+  }
+
+  .timeline .event::after {
+    left: 4.4%;
+  }

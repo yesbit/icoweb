@@ -231,9 +231,13 @@ var Layout = function () {
             $(".video-overlay-play-button").click(function() {   
                 if (this.style.display === "none") {
                     this.style.display = "block";
-                    this.video.play();
-                } else {
+                    
+                } 
+                else {
                     this.style.display = "none";
+                    this.parentElement.children[2].setAttribute("style", "display: none");
+                    this.parentElement.children[0].play();
+
                 }             
             });
         });

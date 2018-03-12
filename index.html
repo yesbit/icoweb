@@ -71,6 +71,9 @@
         <!-- <script src="amcharts/plugins/export/export.min.js"></script>
 		<link rel="stylesheet" href="amcharts/plugins/export/export.css" type="text/css" media="all" /> -->
 
+        <!-- AOS Animation -->
+        <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+        <script src="bower_components/aos/dist/aos.js"></script>
     </head>
 
 	<body>
@@ -137,7 +140,7 @@
     <!--==========S LIDER==========-->
 
         <!-- About YESBIT -->
-        <div class="content-lg container" id="about">
+        <div class="content-lg container" id="about" data-aos="fade-down" class="aoi-init aos-animate">
             <div class="row margin-b-20">
                 <div class="col">
                     <h2>INTRODUCING YESBIT</h2>
@@ -152,7 +155,7 @@
 
             <div class="row">
                 <div class="col-sm-7 sm-margin-b-50">
-                    <div class="margin-b-30">
+                    <div data-aos="fade-right" class="aoi-init aos-animate margin-b-30">
 
                     	<div class="icon-wrapper">
                     		<i class="logo fas fa-chart-line"></i>
@@ -162,7 +165,7 @@
                         <p>Other Stock market indices</p>
 						<p>Apple, Alibaba contract</p>
                     </div>
-                    <div class="margin-b-30">
+                    <div data-aos="fade-right" class="aoi-init aos-animate margin-b-30">
                     	<div class="icon-wrapper">
                     		<i class="logo fas fa-dollar-sign"></i>
 						</div>
@@ -175,7 +178,7 @@
                 </div>
 
 				<div class="col-sm-5 sm-margin-b-50">
-                    <div class="margin-b-30">
+                    <div data-aos="fade-left" class="aoi-init aos-animate margin-b-30">
                     	<div class="icon-wrapper">
                     		<i class="logo fas fa-shopping-cart"></i>
 						</div>
@@ -184,7 +187,7 @@
 						<p>Oil, Gas and energy futures</p>
 						<p>Rice and foodstuff futures</p>
                     </div>
-                    <div class="margin-b-30">
+                    <div data-aos="fade-left" class="aoi-init aos-animate margin-b-30">
                     	<div class="icon-wrapper">
                     		<i class="logo fab fa-bitcoin"></i>
 						</div>
@@ -247,7 +250,7 @@
 		</div> -->
 
         <!-- INTRO VIDEO -->
-		<section class="about-us" id="video">
+		<section id="video" data-aos="fade-down" class="about-us aoi-init aos-animate">
     		<div class="content-lg container" id="usecase">
     			<div class="row margin-b-20">
                     <div class="col">
@@ -299,7 +302,7 @@
 		<!-- END VIDEO -->
 
 		<!-- TOKEN CHART -->
-		<div class="content-lg container" id="tokenChart">
+		<div data-aos="fade-up" class="content-lg container aoi-init aos-animate" id="tokenChart">
 			<div class="row margin-b-20">
                 <div class="col">
                     <h2>INTRODUCING YIC TOKEN</h2>
@@ -318,7 +321,7 @@
 		<!-- END TOKEN CHART -->
 
 		<!-- GROW CHART -->
-		<div class="content-lg container" id="growChart">
+		<div data-aos="fade-up" class="content-lg container aoi-init aos-animate" id="growChart">
 			<div class="row margin-b-20">
                 <div class="col">
                     <h2>Profit from Both Crypto and Financial Markets</h2>
@@ -333,37 +336,37 @@
 		<!-- END GROW CHART -->
 
         <!-- ROADMAP -->
-        <div class="content-lg container" id="roadmap">
+        <div  class="content-lg container aoi-init aos-animate" id="roadmap">
             <div class="row margin-b-20">
                 <div class="col">
-                    <h2>Yesbit Roadmap</h2>
+                    <h2 data-aos="zoom-in">Yesbit Roadmap</h2>
                 </div>
                 <!-- <div class="roadline"></div> -->
                 <ol class='timeline'>
-                    <li class="year first">2017</li>
-                    <li class='event offset-first'>
+                    <li data-aos="fade-down" class="year first">2017</li>
+                    <li data-aos="fade-down" class='event offset-first'>
                         <div class="ctn left">
                             <div class="content ">
                                 Btcoin Hot/Cold Server Solution
                             </div>
                         </div>
                     </li>
-                    <li class='event'>
+                    <li data-aos="fade-down" class='event'>
                         <div class="ctn right">
                             <div class="content">
                                 PHP + Javascripts + Mysql website Development
                             </div>
                         </div>
                     </li>
-                    <li class="event">
+                    <li data-aos="fade-down" class="event">
                         <div class="ctn left">
                             <div class="content">
                                 JAVA trading System
                             </div>
                         </div>
                     </li>
-                    <li class="year first">2018.01</li>
-                    <li class="event">
+                    <li data-aos="fade-down" class="year first">2018.01</li>
+                    <li data-aos="fade-down" class="event">
                         <div class="ctn left">
                             <div class="content">
                                 Leverage Trading System
@@ -371,15 +374,15 @@
                         </div>
                     </li>
 
-                    <li class="year first">2018.03</li>
-                    <li class="event offset-first">
+                    <li data-aos="fade-down" class="year first">2018.03</li>
+                    <li data-aos="fade-down" class="event offset-first">
                         <div class="ctn left">
                             <div class="content">
                                 ETH contract pair solution
                             </div>
                         </div>
                     </li>
-                    <li class="event">
+                    <li data-aos="fade-down" class="event">
                         <div class="ctn right">
                             <div class="content">
                                 Beta launch!
@@ -388,15 +391,18 @@
                     </li>
                 </ol> 
             </div>
-
-
         </div>
         <!-- END ROADMAP -->
 
         <!-- FAQ -->
-        <div class="content-lg container" id="FAQ">
-            
-        </div>
+        <!-- <div class="content-lg container" id="FAQ">
+            <div class="row margin-b-20">
+                <h2 data-aos="fade-down" class="aoi-init aos-animate">F&Q</h2>
+                <ol class="faq-list">
+                    <li data-aos="fade-down" class="aoi-init aos-animate"><h6 class="faq-q">question</h6><p class="faq-a">answer</p></li>
+                </ol>
+            </div>
+        </div> -->
         <!-- END FAQ -->
 
         <!-- TEAM -->

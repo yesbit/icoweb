@@ -1735,6 +1735,17 @@ fieldset[disabled] .btn-theme {
 
     #pie-legend-wrapper {
       height: auto;
+      padding: 0 0;
+    }
+  }
+
+  @media(max-width: 390px) {
+    #tokenChart .col-sm-6 {
+      padding: 0 0;
+    }
+
+    #legendDiv {
+      font-size: 80%;
     }
   }
 
@@ -2147,8 +2158,6 @@ fieldset[disabled] .btn-theme {
   }
 }
 
-
-
 /*--------------------------------------------------
     [Roadmap]
 ----------------------------------------------------*/
@@ -2294,3 +2303,11 @@ fieldset[disabled] .btn-theme {
   .timeline .event::after {
     left: 4.4%;
   }
+}
+
+
+/*--------------------------------------------------
+    [FAQ]
+----------------------------------------------------*/
+
+

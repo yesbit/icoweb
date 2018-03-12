@@ -243,6 +243,12 @@ var Layout = function () {
         });
     }
 
+    var handleAnimation = function() {
+        AOS.init();
+        console.log("we are starting animation!!");
+    }
+
+
     return {
         init: function () {
             handleHeaderOnScroll(); // initial setup for fixed header
@@ -252,6 +258,7 @@ var Layout = function () {
             handlePie(); //piechart initialisation
             handleLine();
             handleVideo();
+            handleAnimation();
             // handle minimized header on page scroll
             $(window).scroll(function() {
                 handleHeaderOnScroll();

@@ -1255,15 +1255,7 @@ fieldset[disabled] .btn-theme {
   	[Content]
 ------------------------------------------------------------------*/
 .content {
-  margin:  0 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  -webkit-transition: background 0.30s linear;
-  -moz-transition: background 0.30s linear;
-  -ms-transition: background 0.30s linear;
-  -o-transition: background 0.30s linear;
-  transition: background 0.30s linear;
+  padding: 40px;
 }
 
 .content-sm {
@@ -2166,6 +2158,19 @@ fieldset[disabled] .btn-theme {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.timeline .content {
+  margin:  0 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  -webkit-transition: background 0.30s linear;
+  -moz-transition: background 0.30s linear;
+  -ms-transition: background 0.30s linear;
+  -o-transition: background 0.30s linear;
+  transition: background 0.30s linear;
+}
+
 .timeline {
   margin: 0px auto;
   max-width: 40em;
@@ -2302,6 +2307,10 @@ fieldset[disabled] .btn-theme {
 
   .timeline .event::after {
     left: 4.4%;
+  }
+
+  .ctn {
+    width:  100%;
   }
 }
 

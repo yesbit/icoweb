@@ -2059,6 +2059,10 @@ fieldset[disabled] .btn-theme {
     color: #000000;
   }
 
+  li.linkcoin-whitepaper {
+  }
+
+
 
   @media (max-width: 460px) {
     .contact-list li {

@@ -40,6 +40,7 @@ body {
       background: #000000;
       font-family: 'b';
       line-height: 1.5;
+      overflow-x: hidden;
 }
 
 p {
@@ -2324,4 +2325,72 @@ fieldset[disabled] .btn-theme {
     [FAQ]
 ----------------------------------------------------*/
 
+.faq-list {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.faq-line {
+  border-bottom:  solid thin #eb8908;
+}
+
+.faq-line :after {
+  content: "";
+}
+
+.faq-q h6{
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.faq-a p{
+  text-align: left;
+  display: none;
+}
+
+.accordion-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -25px;
+}
+
+.accordion {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.active {
+
+}
+
+.accordion-icon .h {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+  opacity: 1;
+  position: absolute;
+  background-color: #eb8908;
+  width: 16px;
+  height: 2px;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.accordion-icon .v {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+  opacity: 1;
+  position: absolute;
+  background-color: #eb8908;
+  width: 2px;
+  height: 16px;
+  left: 50%;
+  margin-left: -1px;
+  top: 50%;
+  margin-top: -8px;
+}
 

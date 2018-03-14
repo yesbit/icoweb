@@ -1649,11 +1649,16 @@ fieldset[disabled] .btn-theme {
     height: 250px;
     text-align: center;
     width: 90%;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .icon-wrapper h4{
     border: none;
+  }
+
+  @media(max-width: 831px) {
+
   }
 
   @media(max-width: 360px) {

@@ -267,6 +267,10 @@ var Layout = function () {
         }
     }
 
+    var handleData = function() {
+        
+    }
+
 
     return {
         init: function () {

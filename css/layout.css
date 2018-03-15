@@ -498,10 +498,8 @@ fieldset[disabled] .btn-theme {
 /* Fixed Top */
 .navbar-fixed-top .navbar-collapse {
   max-height: 100%;
-  /* background: transparent; */
 }
 .header {
-  /* background-color:rgba(0, 0, 0, 0.5); */
   background-color: transparent;
 }
 /* Navbar */
@@ -2331,32 +2329,45 @@ fieldset[disabled] .btn-theme {
 ----------------------------------------------------*/
 
 .faq-list {
-  padding-left: 12%;
-  padding-right: 12%;
+  padding: 8% 12%;
 }
 
 .faq-line {
-  border-bottom:  solid thin #eb8908;
+  border-bottom:  solid thin #fff;
 }
 
 .faq-line :after {
   content: "";
 }
 
-.faq-q h6{
-  padding: 0;
-  margin: 0;
+.faq-q {
+  padding: 10px;
+  margin: 10px;
   text-align: left;
+  color: #fff;
+  font-size: 20px;
 }
 
-.faq-a p{
+.faq-a {
+  height: 0px;
+  max-height: 300px;
   text-align: left;
-  display: none;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  color: #fff;
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+  
 }
 
 .accordion-icon {
   width: 20px;
-  height: 20px;
+  height: 54px;
   display: block;
   position: absolute;
   left: -25px;
@@ -2367,16 +2378,12 @@ fieldset[disabled] .btn-theme {
   transition: 0.4s;
 }
 
-.active {
-
-}
-
 .accordion-icon .h {
   transition: all 0.5s ease-in-out;
   transform: rotate(-90deg);
   opacity: 1;
   position: absolute;
-  background-color: #eb8908;
+  background-color: #fff;
   width: 16px;
   height: 2px;
   left: 50%;
@@ -2390,7 +2397,7 @@ fieldset[disabled] .btn-theme {
   transform: rotate(-90deg);
   opacity: 1;
   position: absolute;
-  background-color: #eb8908;
+  background-color: #fff;
   width: 2px;
   height: 16px;
   left: 50%;
@@ -2398,4 +2405,39 @@ fieldset[disabled] .btn-theme {
   top: 50%;
   margin-top: -8px;
 }
+
+.faq-line .active .accordion-icon {
+  opacity: 1;
+}
+
+.faq-line .active .faq-q {
+  color: #eb8908;
+}
+
+.faq-line .active .faq-a{
+  height: 100px;
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+}
+
+.faq-line .active .accordion-icon .h {
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  opacity: 0;
+  background-color: #eb8908;
+}
+
+.faq-line .active .accordion-icon .v {
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #eb8908;
+}
+
+
+
 

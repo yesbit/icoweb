@@ -1897,6 +1897,11 @@ li.linkcoin-whitepaper {
   padding: 10px 0px; }
   #team .member-wrapper .member-photo {
     width: 150px;
-    height: 150px; }
+    height: 150px;
+    margin-top: 15px 0px; }
+  #team .member-wrapper .member-intro {
+    padding: 30px; }
+    #team .member-wrapper .member-intro .member-title {
+      color: #eb8908; }
 
 /*# sourceMappingURL=layout.css.map */

@@ -1545,6 +1545,11 @@ iframe {
   .footer .footer-info {
     padding-left: 10px;
     padding-right: 10px; }
+  .footer .animation-wrapper {
+    text-align: center; }
+  .footer .footer-animation {
+    width: 100%;
+    height: 240px; }
   .footer ul {
     list-style-type: none;
     margin-left: 0;

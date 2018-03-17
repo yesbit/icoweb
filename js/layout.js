@@ -253,16 +253,6 @@ var Layout = function () {
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
                 this.classList.toggle("active");
-                // this.parentElement.children[1].classList.toggle("open");
-                // console.log("this is the height " + acc)
-                // if (answer.style.maxheight === "0px") {
-                //     answer.style.maxHeight = "300px";
-                //     // answer.style.height = "300px";
-                //     console.log("now we open!!")
-                // } else {
-                //     answer.style.maxheight = "0px";
-                //     console.log("now we closed")
-                // }
             });
         }
     }

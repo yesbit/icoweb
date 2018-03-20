@@ -117,7 +117,7 @@ var Layout = function () {
             //"descriptionField": "value",
             "outlineAlpha": 0.4,
             "depth3D": 15,
-            "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> </span>",
+            "balloonText": "[[title]]<br><span style='font-size:14px; color:#000000'><b style='color:#000000'>[[value]]</b> </span>",
             "angle": 30,
             "export": {
               "enabled": false
@@ -126,17 +126,22 @@ var Layout = function () {
             "marginTop": 0,
             "visibleInLegendField": "showInLegend",
             "legend": {
+                "enabled": true,
                 "markerType": "circle",
                 "markerColor": "transparent",
                 "align": "center",
-                "divId": "legendDiv"
+                "width": 100,
+                "divId": "legendDiv",
+                "valueWidth": 14,
+                "spacing": 0
             },
             "percentFormatter": {
 				"precision": 0
 				
      	    },
             "minRadius": 40,
-            "maxLabelWidth": 100
+            "maxLabelWidth": 100,
+            "pullOutEffect": "bounce"
         });
     }
 

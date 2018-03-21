@@ -645,6 +645,24 @@ fieldset[disabled] .btn-theme {
       transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
     }
   }
+  .lang {
+    .lang-tab {
+      cursor: pointer;
+      .lang-icon {
+        height: 20px;
+        width:  20px;
+        position: relative;
+        top: 4px;
+        display: inline-block;
+      }
+      #en {
+          display: inline-block;
+      }
+      #cn {
+        display: none;
+      }
+    }
+  }
 }
 
 /* Navbar */
@@ -2393,8 +2411,5 @@ li.linkcoin-whitepaper {
         color: #eb8908;
       }
     }
-
-
   }
-
 }

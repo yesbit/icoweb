@@ -534,6 +534,18 @@ fieldset[disabled] .btn-theme {
       transition-duration: 400ms;
       transition-property: all;
       transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
+  .header .lang .lang-tab {
+    cursor: pointer; }
+    .header .lang .lang-tab .lang-icon {
+      height: 20px;
+      width: 20px;
+      position: relative;
+      top: 4px;
+      display: inline-block; }
+    .header .lang .lang-tab #en {
+      display: inline-block; }
+    .header .lang .lang-tab #cn {
+      display: none; }
 
 /* Navbar */
 /* Navbar Toggle */

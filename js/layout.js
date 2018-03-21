@@ -83,7 +83,46 @@ var Layout = function () {
         var particleCanvas = new ParticleNetwork(canvasDiv, options);
     }
 
-    
+    var handleLang = function() {
+        var lang = document.getElementsByClassName("lang-icon");
+        lang[0].addEventListener("click", function() {
+            // if (this.style.display == "inline-block") {
+            //     this.style.display = "none";
+            // }
+            // else {
+            //     this.style.display = "inline-block";
+            // }
+            var en = this.parentElement.children[0];
+            var cn = this.parentElement.children[1];
+            if (en.style.display == "inline-block") {
+                cn.style.display = "inline-block";
+                en.style.display = "none";
+            }
+            else {
+                en.style.display = "inline-block";
+                cn.style.display = "none";
+            }
+        });
+        lang[1].addEventListener("click", function() {
+            // if (this.style.display == "inline-block") {
+            //     this.style.display = "none";
+            // }
+            // else {
+            //     this.style.display = "inline-block";
+            // }
+            var en = this.parentElement.children[0];
+            var cn = this.parentElement.children[1];
+            if (en.style.display == "inline-block") {
+                cn.style.display = "inline-block";
+                en.style.display = "none";
+            }
+            else {
+                en.style.display = "inline-block";
+                cn.style.display = "none";
+            }
+        });
+    }
+
     var handlePie = function(){
         var pieChart = AmCharts.makeChart( "pieChart", {
             "type": "pie",
@@ -278,6 +317,7 @@ var Layout = function () {
             handleVideo();
             handleAnimation();
             handleAccordion();
+            handleLang();
             // handle minimized header on page scroll
             $(window).scroll(function() {
                 handleHeaderOnScroll();

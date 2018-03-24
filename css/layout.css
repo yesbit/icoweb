@@ -1834,17 +1834,19 @@ li.linkcoin-whitepaper {
 
 .faq-a {
   max-height: 0;
-  text-align: left;
   overflow: hidden;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 18px;
-  color: #fff;
-  -moz-transition: max-height 1s;
-  -ms-transition: max-height 1s;
-  -o-transition: max-height 1s;
-  -webkit-transition: max-height 1s;
-  transition: max-height 1s; }
+  -moz-transition: max-height linear 1s;
+  -ms-transition: max-height linear 1s;
+  -o-transition: max-height linear 1s;
+  -webkit-transition: max-height linear 1s;
+  transition: max-height linear 1s; }
+  .faq-a p {
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px; }
 
 .accordion-icon {
   width: 20px;
@@ -1887,12 +1889,7 @@ li.linkcoin-whitepaper {
 .faq-line .active .faq-q {
   color: #eb8908; }
 .faq-line .active .faq-a {
-  max-height: 500px;
-  -moz-transition: max-height 1.5s;
-  -ms-transition: max-height 1.5s;
-  -o-transition: max-height 1.5s;
-  -webkit-transition: max-height 1.5s;
-  transition: max-height 1.5s; }
+  max-height: 500px; }
 .faq-line .active .accordion-icon .h {
   transition: all 0.5s ease-in-out;
   -webkit-transform: rotate(90deg);

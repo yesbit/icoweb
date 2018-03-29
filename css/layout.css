@@ -53,18 +53,18 @@ em {
   font-size: 16px;
   font-weight: 500;
   font-family: 'b';
-  color: #515769; }
+  color: #a6a7aa; }
 
 li {
   font-size: 16px;
   font-weight: 500;
   font-family: 'b';
-  color: #515769; }
+  color: #a6a7aa; }
   li a {
     font-size: 16px;
     font-weight: 500;
     font-family: 'b';
-    color: #515769; }
+    color: #a6a7aa; }
 
 a {
   font-family: 'b';
@@ -74,6 +74,9 @@ a {
     outline: 0;
     color: #999caa;
     text-decoration: none; }
+
+.left {
+  vertical-align: left; }
 
 .link {
   position: relative;
@@ -534,17 +537,17 @@ fieldset[disabled] .btn-theme {
       transition-duration: 400ms;
       transition-property: all;
       transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
-  .header .lang .lang-tab {
+  .header .lang-wrap .lang-tab {
     cursor: pointer; }
-    .header .lang .lang-tab .lang-icon {
+    .header .lang-wrap .lang-tab .lang-icon {
       height: 20px;
       width: 20px;
       position: relative;
       top: 4px;
       display: inline-block; }
-    .header .lang .lang-tab #en {
+    .header .lang-wrap .lang-tab #en {
       display: inline-block; }
-    .header .lang .lang-tab #cn {
+    .header .lang-wrap .lang-tab #cn {
       display: none; }
 
 /* Navbar */

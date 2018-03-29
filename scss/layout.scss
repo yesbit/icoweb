@@ -59,19 +59,19 @@ em {
   font-size: 16px;
   font-weight: 500;
   font-family: 'b';
-  color: #515769;
+  color: #a6a7aa;
 }
 
 li {
   font-size: 16px;
   font-weight: 500;
   font-family: 'b';
-  color: #515769;
+  color: #a6a7aa;
   a {
     font-size: 16px;
     font-weight: 500;
     font-family: 'b';
-    color: #515769;
+    color: #a6a7aa;
   }
 }
 
@@ -84,6 +84,10 @@ a {
     color: #999caa;
     text-decoration: none;
   }
+}
+
+.left {
+  vertical-align: left
 }
 
 .link {
@@ -645,7 +649,7 @@ fieldset[disabled] .btn-theme {
       transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
     }
   }
-  .lang {
+  .lang-wrap {
     .lang-tab {
       cursor: pointer;
       .lang-icon {

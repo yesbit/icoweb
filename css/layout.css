@@ -1834,6 +1834,9 @@ li.linkcoin-whitepaper {
   text-align: left;
   color: #fff;
   font-size: 20px; }
+  .faq-q p {
+    color: #fff;
+    font-size: 20px; }
 
 .faq-a {
   max-height: 0;
@@ -1889,7 +1892,7 @@ li.linkcoin-whitepaper {
 
 .faq-line .active .accordion-icon {
   opacity: 1; }
-.faq-line .active .faq-q {
+.faq-line .active .faq-q p {
   color: #eb8908; }
 .faq-line .active .faq-a {
   max-height: 500px; }

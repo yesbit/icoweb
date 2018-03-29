@@ -4,6 +4,7 @@ var Layout = function () {
 
     var arrlang = {
         "en" : {
+            //intro
             "YESBIT简介" : "INTRODUCING YESBIT",
             "合约" : "CONTRACT",
             "用户可以用加密货币进行多种操作" : "Users can use cryptocurrency to",
@@ -26,13 +27,17 @@ var Layout = function () {
             "BTC/USD, ETH/USD" : "BTC/USD, ETH/USD",
             "BTC/ETH, EOS/ETH" : "BTC/ETH, EOS/ETH",
             "各类加密货币的价格合约" : "Other Altcoin price contracte",
+            //video
             "用加密货币投资" : "INVESTING WITH CRYPTO",
             "比特币/以太坊的使用" : "Settlement in BTC/ETH",
             "不用担心踏空币市行情" : "No Fiat Currency",
             "YIC代币介绍" : "INTRODUCIN YIC TOKEN",
+            //pie
             "在以太坊区块链上发行的YIC代币， 总量将达到2千亿" : "YIC Token on Ethereum public chain, total volume is 200 million.",
             "加密货币和金融市场的盈利对比" : "Profit from Both Crypto and Financial Markets",
+            //line
             "比特币对与S&P500指数的预期增值对比" : "Expected growth of the bitcoin(BTC) compares to S&P500",
+            //roadmap
             "Yesbit的成长轨迹" : "Yesbit Roadmap",
             "比特币冷/热储存技术研发" : "Bitcoin Hot/Cold Server Solution",
             "PHP+JS+MySQL网页开发" : "PHP + Javascripts + Mysql website Development",
@@ -40,6 +45,7 @@ var Layout = function () {
             "交易杠杆系统开发" : "Leverage Trading System",
             "以太坊合约匹配技术开发" : "ETH contract pair solution",
             "测试版发布" : "Beta launch!",
+            //faq
             "常见问题" : "F&Q",
             "什么是Yesbit ?" : "What is YesBit ?",
             "YesBit 是一个以合约形式来用加密货币购买 股票, 指数, 期货, 或者 外汇 甚至 加密货币自己的一个平台" : "YesBit is a platform where users can use their cryptocurrency to purchase, invest and sell financial contract, future, foreign exchange and long or short index.",
@@ -61,17 +67,34 @@ var Layout = function () {
             "我们已经成功实现了用比特币做空做多纳斯达克和标普500，欢迎大家在我们的官网进行体验。 https://pro.yesbit.ca/ 公司正在开发智能合约版本。" : "We have already made a centralized version where users can place long or short on NASDAQ and S&P500, you can try our demo at https:pro.yesbit.ca/lang/en We are developing the smart contract.",
             "政策将对Yesbit有什么影响？" : "How will the regulation affect Yesbit ?",
             "老实说，我们无法做过多评论。区块链技术是非常新锐的技术，将对很多产业带来颠覆性的革命尤其是金融，各国政府也都在探索和挖掘区块链技术的可能性。我们的法律顾问团队有丰富的从业经验和对区块链深刻的理解，因此我们将密切关注法规动向，同时稳步推进我们的重磅产品。" : "Blockchain is cutting-edge technology, and everyone is exploring its possibility. We have advisor team who masters both law and Blockchain principle, so we will advance steady and stable.",
+            //footer
             "关于我们" : "About",
             "我们的团队" : "Team",
             "最新动态" : "Update",
             "我们的足迹" : "Roadmap",
             "联系我们" : "Contacts",
             "订阅" : "Newsletter",
-            "新闻" : "News"
-
+            "新闻" : "News",
+            "白皮书" : "Whitepaper",
+            "代币" : "Token",
+            "测试版" : "Beta Test",
+            "订阅" : "Subscribe",
+            //team
+            "我们的团队" : "YESBIT Team",
+            "YESBIT 总裁" : "YESBIT CEO",
+            "业务总监" : "Director of Business",
+            "区块链基金总监" : "Director of Blockchain Fund",
+            "高级项目经理" : "Senior PM Developer",
+            "开发人员" : "Developer",
+            "加密货币博览会成员" : "Cryptocurrency World Expo",
+            "谷歌软件工程师" : "Google Software Engineer",
+            "Ryatta Group主席" : "President at Ryatta Group",
+            "Blockchain Mind创始人" : "Founder of Blockchain Mind",
+            "区块链投资人" : "Blockchain Angle Investor"
 
         },
         "cn" : {
+            //intro
             "INTRODUCING YESBIT" : "YESBIT简介",
             "CONTRACT" : "合约",
             "Users can use cryptocurrency to" : "用户可以用加密货币进行多种操作",
@@ -93,13 +116,17 @@ var Layout = function () {
             "BTC/USD, ETH/USD" : "BTC/USD, ETH/USD",
             "BTC/ETH, EOS/ETH" : "BTC/ETH, EOS/ETH",
             "Other Altcoin price contracte" : "各类加密货币的价格合约",
+            //video
             "INVESTING WITH CRYPTO" : "用加密货币投资",
             "Settlement in BTC/ETH" : "比特币/以太坊的使用",
             "No Fiat Currency" : "不用担心踏空币市行情",
+            //pie
             "INTRODUCING YIC TOKEN" : "YIC代币介绍",
             "YIC Token on Ethereum public chain, total volume is 200 million." : "在以太坊区块链上发行的YIC代币， 总量将达到2千亿",
             "Profit from Both Crypto and Financial Markets" : "加密货币和金融市场的盈利对比",
+            //line
             "Expected growth of the bitcoin(BTC) compares to S&P500" : "比特币对与S&P500指数的预期增值对比",
+            //roadmap
             "Yesbit Roadmap" : "Yesbit的成长轨迹",
             "Bitcoin Hot/Cold Server Solution" : "比特币冷/热储存技术研发",
             "PHP + Javascripts + Mysql website Development" : "PHP+JS+MySQL网页开发",
@@ -107,6 +134,7 @@ var Layout = function () {
             "Leverage Trading System" : "交易杠杆系统开发",
             "ETH contract pair solution" : "以太坊合约匹配技术开发",
             "Beta launch!" : "测试版发布",
+            //faq
             "F&Q" : "常见问题",
             "What is YesBit ?" : "什么是Yesbit ?",
             "YesBit is a platform where users can use their cryptocurrency to purchase, invest and sell financial contract, future, foreign exchange and long or short index." : "YesBit 是一个以合约形式来用加密货币购买 股票, 指数, 期货, 或者 外汇 甚至 加密货币自己的一个平台",
@@ -128,13 +156,30 @@ var Layout = function () {
             "We have already made a centralized version where users can place long or short on NASDAQ and S&P500, you can try our demo at https:pro.yesbit.ca/lang/en We are developing the smart contract." : "我们已经成功实现了用比特币做空做多纳斯达克和标普500，欢迎大家在我们的官网进行体验。 https://pro.yesbit.ca/ 公司正在开发智能合约版本。",
             "How will the regulation affect Yesbit ?" : "政策将对Yesbit有什么影响？",
             "Blockchain is cutting-edge technology, and everyone is exploring its possibility. We have advisor team who masters both law and Blockchain principle, so we will advance steady and stable." : "老实说，我们无法做过多评论。区块链技术是非常新锐的技术，将对很多产业带来颠覆性的革命尤其是金融，各国政府也都在探索和挖掘区块链技术的可能性。我们的法律顾问团队有丰富的从业经验和对区块链深刻的理解，因此我们将密切关注法规动向，同时稳步推进我们的重磅产品。",
+            //footer
             "About" : "关于我们",
             "Team" : "我们的团队",
             "Update" : "最新动态",
             "Roadmap" : "我们的足迹",
             "Contacts" : "联系我们",
             "Newsletter" : "订阅",
-            "News" : "新闻"
+            "News" : "新闻",
+            "Whitepaper" : "白皮书",
+            "Token" : "代币",
+            "Beta Test" : "测试版",
+            "Subscribe" : "订阅",
+            "YESBIT Team" : "我们的团队",
+            "YESBIT CEO" : "YESBIT 总裁",
+            "Director of Business" : "业务总监",
+            "Director of Blockchain Fund" : "区块链基金总监",
+            "Senior PM Developer" : "高级项目经理",
+            "Developer" : "开发人员",
+            "Cryptocurrency World Expo" : "加密货币博览会成员",
+            "Google Software Engineer" : "谷歌软件工程师",
+            "President at Ryatta Group" : "Ryatta Group主席",
+            "Founder of Blockchain Mind" : "Blockchain Mind创始人",
+            "Blockchain Angle Investor" : "区块链投资人"
+
         }
     }
 
@@ -178,13 +223,7 @@ var Layout = function () {
             }
             ]
         },
-        "video": {},
-        "pie": {},
-        "line": {},
-        "roadmap": {},
-        "faq": {},
-        "team": {},
-        "footer": {}
+        "team": {}
     };
 
 
@@ -284,12 +323,13 @@ var Layout = function () {
                     cn.style.display = "inline-block";
                     en.style.display = "none";
                     lang = "cn";
-
+                    document.getElementById("lang-btn").childNodes[0].nodeValue = "语言:"
                 }
                 else {
                     en.style.display = "inline-block";
                     cn.style.display = "none";
                     lang = "en";
+                    document.getElementById("lang-btn").childNodes[0].nodeValue = "LAN:"
                 }
                 //render data
                 if (lang == "cn") {
@@ -327,8 +367,7 @@ var Layout = function () {
                     }
 
                     $('.lang').each(function(index, element) {
-                        console.log("we are changing to cn " + this.textContent + arrlang['en'][this.textContent])
-                        // console.log(document.getElementsByClassName("ctn").textContent)
+                        // console.log("we are changing to cn " + this.textContent + arrlang['en'][this.textContent])
                         this.textContent = arrlang['en'][this.textContent];
                     });
                 }

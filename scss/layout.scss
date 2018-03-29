@@ -2299,6 +2299,11 @@ li.linkcoin-whitepaper {
   text-align: left;
   color: #fff;
   font-size: 20px;
+
+  p {
+    color: #fff;
+    font-size: 20px;
+  }
 }
 
 .faq-a {
@@ -2367,7 +2372,9 @@ li.linkcoin-whitepaper {
     opacity: 1;
   }
   .faq-q {
-    color: #eb8908;
+    p {
+      color: #eb8908;
+    }
   }
   .faq-a {
     max-height: 500px;

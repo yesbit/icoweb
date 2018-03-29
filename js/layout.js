@@ -90,8 +90,9 @@ var Layout = function () {
             "谷歌软件工程师" : "Google Software Engineer",
             "Ryatta Group主席" : "President at Ryatta Group",
             "Blockchain Mind创始人" : "Founder of Blockchain Mind",
-            "区块链投资人" : "Blockchain Angle Investor"
-
+            "区块链投资人" : "Blockchain Angle Investor",
+            "Yesbit有限责任公司 2018" : "2018 Yesbit Ltd"
+ 
         },
         "cn" : {
             //intro
@@ -178,7 +179,8 @@ var Layout = function () {
             "Google Software Engineer" : "谷歌软件工程师",
             "President at Ryatta Group" : "Ryatta Group主席",
             "Founder of Blockchain Mind" : "Blockchain Mind创始人",
-            "Blockchain Angle Investor" : "区块链投资人"
+            "Blockchain Angle Investor" : "区块链投资人",
+            "2018 Yesbit Ltd" : "Yesbit有限责任公司 2018"
 
         }
     }

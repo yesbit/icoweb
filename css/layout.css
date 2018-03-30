@@ -1762,6 +1762,8 @@ li.linkcoin-whitepaper {
       max-width: 100%; }
     .timeline .event:hover .content {
       background: #eb8908; }
+      .timeline .event:hover .content p {
+        color: #fff; }
     .timeline .event:hover:after {
       background: #eb8908;
       border: none; }

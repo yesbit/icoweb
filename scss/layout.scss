@@ -2145,6 +2145,8 @@ li.linkcoin-whitepaper {
     -ms-transition: background 0.30s linear;
     -o-transition: background 0.30s linear;
     transition: background 0.30s linear;
+
+
   }
   margin: 0px auto;
   max-width: 40em;
@@ -2203,6 +2205,10 @@ li.linkcoin-whitepaper {
     &:hover {
       .content {
         background: #eb8908;
+        
+        p {
+          color: #fff;
+        }
       }
       &:after {
         background: #eb8908;

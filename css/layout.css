@@ -1720,6 +1720,8 @@ li.linkcoin-whitepaper {
     -ms-transition: background 0.30s linear;
     -o-transition: background 0.30s linear;
     transition: background 0.30s linear; }
+    .timeline .content p {
+      margin-bottom: 0; }
   .timeline::after {
     content: '';
     position: absolute;

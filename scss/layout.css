@@ -1290,12 +1290,15 @@ fieldset[disabled] .btn-theme {
     [About]
 ----------------------------------------------------*/
 .icon-wrapper .logo {
-  width: 100px !important;
+  width: 100px;
   height: 100px;
-  color: #a6a7aa; }
-
-.logo:hover {
-  color: #EB8909; }
+  color: #a6a7aa;
+  transition: color ease-in-out .30s, width ease-in-out .30s, height ease-in-out .30s; }
+  .icon-wrapper .logo:hover {
+    color: #EB8909;
+    width: 110px;
+    height: 110px;
+    transition: color ease-in-out .30s, width ease-in-out .30s, height ease-in-out .30s; }
 
 .container h2 {
   color: #fff; }
@@ -1573,9 +1576,11 @@ iframe {
     .footer ul li a {
       line-height: 1.9;
       color: #fff;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      transition: background-color ease-in-out .30s; }
     .footer ul li:hover {
-      background-color: #EB8909; }
+      background-color: #EB8909;
+      transition: background-color ease-in-out .30s; }
 
 /*--------------------------------------------------
     [Contact]
@@ -1613,14 +1618,19 @@ iframe {
     line-height: 1.5;
     margin: 3px 20px;
     display: inline-block; }
-  .contact-list .logo {
-    height: 25px;
-    width: 25px;
-    color: #EB8909;
-    border-radius: 8px; }
-    .contact-list .logo:hover {
-      background-color: #EB8909;
-      color: #000000; }
+    .contact-list li:hover {
+      background-color: transparent !important; }
+    .contact-list li .logo {
+      height: 25px;
+      width: 25px;
+      color: #a6a7aa;
+      border-radius: 8px;
+      transition: height  ease-in-out .30s, width ease-in-out .30s, color ease-in-out .30s; }
+      .contact-list li .logo:hover {
+        color: #EB8909;
+        height: 35px;
+        width: 35px;
+        transition: height  ease-in-out .30s, width ease-in-out .30s, color ease-in-out .30s; }
 
 li.linkcoin-whitepaper {
   visibility: hidden; }

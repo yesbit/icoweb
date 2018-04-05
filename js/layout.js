@@ -33,7 +33,7 @@ var Layout = function () {
             "不用担心踏空币市行情" : "No Fiat Currency",
             "YIC代币介绍" : "INTRODUCIN YIC TOKEN",
             //pie
-            "在以太坊区块链上发行的YIC代币， 总量将达到2千亿" : "YIC Token on Ethereum public chain, total volume is 200 million.",
+            "在以太坊区块链上发行的YIC代币， 总量将达到2亿" : "YIC Token on Ethereum public chain, total volume is 200 million.",
             "加密货币和金融市场的盈利对比" : "Profit from Both Crypto and Financial Markets",
             //line
             "比特币对与S&P500指数的预期增值对比" : "Expected growth of the bitcoin(BTC) compares to S&P500",
@@ -123,7 +123,7 @@ var Layout = function () {
             "No Fiat Currency" : "不用担心踏空币市行情",
             //pie
             "INTRODUCING YIC TOKEN" : "YIC代币介绍",
-            "YIC Token on Ethereum public chain, total volume is 200 million." : "在以太坊区块链上发行的YIC代币， 总量将达到2千亿",
+            "YIC Token on Ethereum public chain, total volume is 200 million." : "在以太坊区块链上发行的YIC代币， 总量将达到2亿",
             "Profit from Both Crypto and Financial Markets" : "加密货币和金融市场的盈利对比",
             //line
             "Expected growth of the bitcoin(BTC) compares to S&P500" : "比特币对与S&P500指数的预期增值对比",

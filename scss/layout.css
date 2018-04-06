@@ -1625,12 +1625,10 @@ iframe {
       width: 25px;
       color: #a6a7aa;
       border-radius: 8px;
-      transition: height  ease-in-out .30s, width ease-in-out .30s, color ease-in-out .30s; }
+      transition: transform .3s; }
       .contact-list li .logo:hover {
         color: #EB8909;
-        height: 35px;
-        width: 35px;
-        transition: height  ease-in-out .30s, width ease-in-out .30s, color ease-in-out .30s; }
+        transform: scale(1.5); }
 
 li.linkcoin-whitepaper {
   visibility: hidden; }

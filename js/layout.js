@@ -47,7 +47,7 @@ var Layout = function () {
             "测试版发布" : "Beta launch!",
             //faq
             "常见问题" : "F&Q",
-            "什么是Yesbit ?" : "What is YesBit ?",
+            "什么是Yesbit ?" : "What is Yesbit ?",
             "YesBit 是一个以合约形式来用加密货币购买 股票, 指数, 期货, 或者 外汇 甚至 加密货币自己的一个平台" : "YesBit is a platform where users can use their cryptocurrency to purchase, invest and sell financial contract, future, foreign exchange and long or short index.",
             "Yesbit的价值在于什么？" : "What's the value of Yesbit?",
             "加密货币的金融属性还处于非常原始的水平，Yesbit打通了加密货币和传统金融产品的通道，是具有里程碑意义的突破。" : "We build a bridge between cryptocurrency and financial derivatives, where nobody has ever made it.",
@@ -137,7 +137,7 @@ var Layout = function () {
             "Beta launch!" : "测试版发布",
             //faq
             "F&Q" : "常见问题",
-            "What is YesBit ?" : "什么是Yesbit ?",
+            "What is Yesbit ?" : "什么是Yesbit ?",
             "YesBit is a platform where users can use their cryptocurrency to purchase, invest and sell financial contract, future, foreign exchange and long or short index." : "YesBit 是一个以合约形式来用加密货币购买 股票, 指数, 期货, 或者 外汇 甚至 加密货币自己的一个平台",
             "What's the value of Yesbit?" : "Yesbit的价值在于什么？",
             "We build a bridge between cryptocurrency and financial derivatives, where nobody has ever made it." : "加密货币的金融属性还处于非常原始的水平，Yesbit打通了加密货币和传统金融产品的通道，是具有里程碑意义的突破。",

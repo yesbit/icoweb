@@ -25,8 +25,8 @@
 html {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased; }
-html a {
-  -webkit-font-smoothing: antialiased; }
+  html a {
+    -webkit-font-smoothing: antialiased; }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -39,9 +39,7 @@ body {
   background: #000000;
   font-family: 'b';
   line-height: 1.5;
-  overflow-x: hidden; 
-}
-
+  overflow-x: hidden; }
 
 p {
   font-size: 17px;
@@ -1936,5 +1934,8 @@ li.linkcoin-whitepaper {
     padding: 30px; }
     #team .member-wrapper .member-intro .member-title {
       color: #eb8908; }
+  #team .member-wrapper .square {
+    border-radius: 50%;
+    border: 1.8px solid #fff; }
 
 /*# sourceMappingURL=layout.css.map */

@@ -86,6 +86,7 @@ var Layout = function () {
             "区块链基金总监" : "Director of Blockchain Fund",
             "高级项目经理" : "Senior PM Developer",
             "开发人员" : "Developer",
+            "市场运营" : "Operation and Marketing",
             "加密货币博览会成员" : "Cryptocurrency World Expo",
             "谷歌软件工程师" : "Google Software Engineer",
             "Ryatta Group主席" : "President at Ryatta Group",
@@ -175,6 +176,7 @@ var Layout = function () {
             "Director of Blockchain Fund" : "区块链基金总监",
             "Senior PM Developer" : "高级项目经理",
             "Developer" : "开发人员",
+            "Operation and Marketing" : "市场运营",
             "Cryptocurrency World Expo" : "加密货币博览会成员",
             "Google Software Engineer" : "谷歌软件工程师",
             "President at Ryatta Group" : "Ryatta Group主席",
@@ -316,7 +318,7 @@ var Layout = function () {
         //switch language
         var i;
         var toggle = document.getElementsByClassName("lang-icon");
-        var lang = "en";
+        var lang;
         for (i = 0; i < toggle.length; i++) {
             toggle[i].addEventListener("click", function() {
                 var en = this.parentElement.children[0];

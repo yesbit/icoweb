@@ -327,13 +327,13 @@ var Layout = function () {
                     cn.style.display = "inline-block";
                     en.style.display = "none";
                     lang = "cn";
-                    document.getElementById("lang-btn").childNodes[0].nodeValue = "语言:"
+                    document.getElementById("lang-btn").childNodes[0].nodeValue = "选择语言:"
                 }
                 else {
                     en.style.display = "inline-block";
                     cn.style.display = "none";
                     lang = "en";
-                    document.getElementById("lang-btn").childNodes[0].nodeValue = "LAN:"
+                    document.getElementById("lang-btn").childNodes[0].nodeValue = "LAN SWITCH:"
                 }
                 //render data
                 if (lang == "cn") {

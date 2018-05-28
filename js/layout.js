@@ -560,7 +560,7 @@ var Layout = function () {
     }
 
     var handleScroll = function() {
-        $('#nav').localScroll(); 
+        $('.nav-scroll').localScroll(); 
     }
 
     return {

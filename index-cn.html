@@ -73,6 +73,10 @@
         <!-- AOS Animation -->
         <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
         <script src="bower_components/aos/dist/aos.js"></script>
+
+        <!-- Scroll -->
+        <script src="bower_components/jquery.localScroll/jquery.localScroll.min.js"></script>
+        <script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
     </head>
 
 	<body>
@@ -101,7 +105,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
-                            <ul id = "nav" class="navbar-nav navbar-nav-right">
+                            <ul class="navbar-nav navbar-nav-right nav-scroll">
                             	<li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.html">首页</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="https://yesbit.github.io/YesbitVideo/Yesbit_EN_Feb21.pdf">白皮书</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#kyc">认证</a></li>
@@ -222,7 +226,7 @@
             	<div class="col-md-6">
     				<div class="video-container">
     					<video id="video1" class="videos" width="420" height="280"  name="Introducing YESBIT" controls>
-    						<source src="animation/intro.mp4">
+    						<source src="animation/new.mp4">
     					</video>
                         <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">
                             <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/>
@@ -647,7 +651,7 @@
                     <div class="content footer-info">
                         <div class="col-md-4">
                             <h3>Yesbit</h3>
-                            <ul>
+                            <ul class="nav-scroll">
                                 <li><a  class="lang" href="https://yesbit.github.io/YesbitVideo/Yesbit_EN_Feb21.pdf">白皮书</a></li>
                                 <li><a  class="lang" href="index.html">代币</a></li>
                                 <li><a  class="lang" href="https://pro.yesbit.ca">测试版</a></li>
@@ -656,7 +660,7 @@
                         </div>
                         <div class="col-md-4">
                             <h3 class="lang">关于我们</h3>
-                            <ul>
+                            <ul class="nav-scroll">
                                 <li><a class="lang" href="#team">我们的团队</a></li>
                                 <li><a class="lang" href="#FAQ">常见问题</a></li>
                                 <li><a  href="https://www.linkcoin.pro/">Linkcoin</a></li>
@@ -664,7 +668,7 @@
                         </div>
                         <div class="col-md-4">
                             <h3 class="lang">最新动态</h3>
-                            <ul>
+                            <ul class="nav-scroll">
                                 <li><a class="lang" href="index.html">新闻</a></li>
                                 <li><a class="lang" href="#roadmap">我们的足迹</a></li>
                                 <li class="linkcoin-whitepaper"><a href="whitepaper/linkcoin-cn.pdf">Whitepaper-cn</a></li>

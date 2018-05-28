@@ -559,6 +559,9 @@ var Layout = function () {
         }
     }
 
+    var handleScroll = function() {
+        $('#nav').localScroll(); 
+    }
 
     return {
         init: function () {
@@ -572,7 +575,7 @@ var Layout = function () {
             handleLine();
             handleAnimation();
             handleAccordion();
-            
+            handleScroll();
             // handle minimized header on page scroll
             $(window).scroll(function() {
                 handleHeaderOnScroll();

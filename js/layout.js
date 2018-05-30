@@ -345,7 +345,7 @@ var Layout = function () {
                     document.getElementById("banner-btn2").textContent = data.banner.button[1].cn;
                     //nav
                     var nav = document.getElementById("nav");
-                    for (var i = 0; i < nav.children.length - 1; i++ ){
+                    for (var i = 0; i < nav.children.length - 2; i++ ){
                         nav.children[i].children[0].textContent = data.nav[i].cn
                         
                     }

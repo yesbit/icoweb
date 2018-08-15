@@ -1,3 +1,3 @@
 # icoweb
 
-https://yesbit.github.io/icoweb/
+http://yesbit.io

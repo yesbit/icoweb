@@ -81,7 +81,7 @@ var Layout = function () {
             "订阅" : "Subscribe",
             //team
             "我们的团队" : "Yesbit Team",
-            "Yesbit 总裁" : "Yesbit CEO",
+            "Yesbit 首席执行官&首席技术官" : "Yesbit CEO & CTO",
             "业务总监" : "Director of Business",
             "区块链基金总监" : "Director of Blockchain Fund",
             "高级项目经理" : "Senior PM Developer",
@@ -92,8 +92,13 @@ var Layout = function () {
             "Ryatta Group主席" : "President at Ryatta Group",
             "Blockchain Mind创始人" : "Founder of Blockchain Mind",
             "区块链投资人" : "Blockchain Angle Investor",
-            "Yesbit有限责任公司 2018" : "2018 Yesbit Ltd"
- 
+            "Yesbit有限责任公司 2018" : "2018 Yesbit Ltd",
+            "智能合约开发员" : "Smart Contract Developer",
+            "区块链开发员" : "Blockchain Developer",
+            "营销主管" : "Marketing Lead",
+            "产品设计" : "Product Design",
+            "数字媒体营销" : "Digital Marketing Coordinator",
+            "前端设计师" : "Front-end Designer"
         },
         "cn" : {
             //intro
@@ -171,7 +176,7 @@ var Layout = function () {
             "Beta Test" : "测试版",
             "Subscribe" : "订阅",
             "Yesbit Team" : "我们的团队",
-            "Yesbit CEO" : "Yesbit 总裁",
+            "Yesbit CEO & CTO" : "Yesbit 首席执行官&首席技术官",
             "Director of Business" : "业务总监",
             "Director of Blockchain Fund" : "区块链基金总监",
             "Senior PM Developer" : "高级项目经理",
@@ -182,8 +187,13 @@ var Layout = function () {
             "President at Ryatta Group" : "Ryatta Group主席",
             "Founder of Blockchain Mind" : "Blockchain Mind创始人",
             "Blockchain Angle Investor" : "区块链投资人",
-            "2018 Yesbit Ltd" : "Yesbit有限责任公司 2018"
-
+            "2018 Yesbit Ltd" : "Yesbit有限责任公司 2018",
+            "Smart Contract Developer" : "智能合约开发员",
+            "Blockchain Developer" : "区块链开发员",
+            "Marketing Lead" : "营销主管",
+            "Product Design" : "产品设计",
+            "Digital Marketing Coordinator" : "数字媒体营销",
+            "Front-end Designer" : "前端设计师"
         }
     }
 

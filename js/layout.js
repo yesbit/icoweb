@@ -46,7 +46,7 @@ var Layout = function () {
             "以太坊合约匹配技术开发" : "ETH contract pair solution",
             "测试版发布" : "Beta launch!",
             //faq
-            "常见问题" : "F&Q",
+            "常见问题" : "FAQ",
             "什么是Yesbit ?" : "What is Yesbit ?",
             "YesBit 是一个以合约形式来用加密货币购买 股票, 指数, 期货, 或者 外汇 甚至 加密货币自己的一个平台" : "YesBit is a platform where users can use their cryptocurrency to purchase, invest and sell financial contract, future, foreign exchange and long or short index.",
             "Yesbit的价值在于什么？" : "What's the value of Yesbit?",
@@ -142,7 +142,7 @@ var Layout = function () {
             "ETH contract pair solution" : "以太坊合约匹配技术开发",
             "Beta launch!" : "测试版发布",
             //faq
-            "F&Q" : "常见问题",
+            "FAQ" : "常见问题",
             "What is Yesbit ?" : "什么是Yesbit ?",
             "YesBit is a platform where users can use their cryptocurrency to purchase, invest and sell financial contract, future, foreign exchange and long or short index." : "YesBit 是一个以合约形式来用加密货币购买 股票, 指数, 期货, 或者 外汇 甚至 加密货币自己的一个平台",
             "What's the value of Yesbit?" : "Yesbit的价值在于什么？",

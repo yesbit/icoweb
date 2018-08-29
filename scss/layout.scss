@@ -1,29 +1,5 @@
 @charset "UTF-8";
 
-/*----------------------------------------------------------------------
-
-  MASTER STYLESHEET
-
-  Project:        Metronic "Asentus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-  Version:        1.0
-  Author:         KeenThemes
-  Primary use:    Corporate, Business Themes.
-  Email:      support@keenthemes.com
-  Follow:     http://www.twitter.com/keenthemes
-  Like:       http://www.facebook.com/keenthemes
-  Website:    http://www.keenthemes.com
-  Premium:    Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-
------------------------------------------------------------------------*/
-/* eg: @include user-select(none); */
-/* eg: @include rotate(45deg); */
-/* eg: @include translate3d(0,0,0); */
-/* eg: @include border-radius(3px); */
-/*------------------------------------------------------------------
-    [The "base.scss" contains basic default element styles
-      (colors, typography, margins & padding).]
-------------------------------------------------------------------*/
-
 html {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -87,7 +63,7 @@ a {
 }
 
 .left {
-  vertical-align: left
+  vertical-align: left;
 }
 
 .link {
@@ -649,36 +625,29 @@ fieldset[disabled] .btn-theme {
       transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
     }
   }
-  .lang-wrap {
-    .lang-tab {
-      cursor: pointer;
-      .lang-icon {
-        height: 20px;
-        width:  20px;
-        position: relative;
-        top: 4px;
-        display: inline-block;
-      }
-      #en {
-          display: inline-block;
-      }
-      #cn {
-        display: none;
-      }
+  .lang-wrap .lang-tab {
+    cursor: pointer;
+    .lang-icon {
+      height: 20px;
+      width: 20px;
+      position: relative;
+      top: 4px;
+      display: inline-block;
+    }
+    #en {
+      display: inline-block;
+    }
+    #cn {
+      display: none;
     }
   }
 }
 
 /* Navbar */
-
 /* Navbar Toggle */
-
 /* Navbar Logo */
-
 /* Navbar */
-
 /* Nav */
-
 /* Media Queries below 991px */
 @media (max-width: 991px) {
   .header {
@@ -766,7 +735,6 @@ fieldset[disabled] .btn-theme {
 }
 
 /* Page On Scroll */
-
 /* full screen */
 
 .page-on-scroll .header {
@@ -910,9 +878,7 @@ fieldset[disabled] .btn-theme {
 }
 
 /* The Button Becomes Visible */
-
 /* If the user keeps scrolling down, the button is out of focus and becomes less visible */
-
 /*------------------------------------------------------------------
     [Form Control]
 ------------------------------------------------------------------*/
@@ -1009,10 +975,10 @@ fieldset[disabled] .btn-theme {
     }
   }
   &:last-child {
+    overflow: inherit !important;
     > img {
       display: none;
     }
-    overflow: inherit !important;
     &:after {
       position: absolute;
       top: 0;
@@ -1026,11 +992,8 @@ fieldset[disabled] .btn-theme {
 }
 
 /* Arrow colour */
-
 /* Let's remove image icon inside close button */
-
 /* New arrow style */
-
 /* Positioning of infowindow */
 
 .gm-style-iw {
@@ -1616,7 +1579,6 @@ fieldset[disabled] .btn-theme {
   height: 100px;
   color: #a6a7aa;
   transition: color ease-in-out .30s, width ease-in-out .30s, height ease-in-out .30s;
-
   &:hover {
     color: #EB8909;
     width: 110px;
@@ -1624,8 +1586,6 @@ fieldset[disabled] .btn-theme {
     transition: color ease-in-out .30s, width ease-in-out .30s, height ease-in-out .30s;
   }
 }
-
-
 
 .container h2 {
   color: #fff;
@@ -1642,8 +1602,6 @@ fieldset[disabled] .btn-theme {
 .icon-wrapper h4 {
   border: none;
 }
-
-@media (max-width: 831px) {}
 
 @media (max-width: 360px) {
   #about .margin-b-30 {
@@ -1680,7 +1638,6 @@ iframe {
 }
 
 @media screen and (max-width: 1080px) {
-  #bowl {}
   #usecase .margin-b-50 img {
     height: 70%;
     width: 70%;
@@ -1933,7 +1890,6 @@ iframe {
 /*--------------------------------------------------
     [Roadmap]
 ----------------------------------------------------*/
-
 /*------------------------------------------------------------------
     [Footer]
 ------------------------------------------------------------------*/
@@ -2026,23 +1982,20 @@ iframe {
     margin: 3px 20px;
     display: inline-block;
     &:hover {
-      background-color: transparent!important;
+      background-color: transparent !important;
     }
     .logo {
-    height: 25px;
-    width: 25px;
-    color: #a6a7aa;
-    border-radius: 8px;
-    transition: transform .3s;
+      height: 25px;
+      width: 25px;
+      color: #a6a7aa;
+      border-radius: 8px;
+      transition: transform .3s;
       &:hover {
-        // background-color: #EB8909;
         color: #EB8909;
         transform: scale(1.5);
       }
     }
   }
-
-  
 }
 
 li.linkcoin-whitepaper {
@@ -2151,6 +2104,13 @@ li.linkcoin-whitepaper {
 }
 
 .timeline {
+  margin: 0px auto;
+  max-width: 40em;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  padding: 0px;
+  list-style-type: none;
   .content {
     margin: 0 10px;
     padding-top: 20px;
@@ -2160,19 +2120,10 @@ li.linkcoin-whitepaper {
     -ms-transition: background 0.30s linear;
     -o-transition: background 0.30s linear;
     transition: background 0.30s linear;
-    
     p {
       margin-bottom: 0;
     }
-
   }
-  margin: 0px auto;
-  max-width: 40em;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  padding: 0px;
-  list-style-type: none;
   &::after {
     content: '';
     position: absolute;
@@ -2223,7 +2174,6 @@ li.linkcoin-whitepaper {
     &:hover {
       .content {
         background: #eb8908;
-
         p {
           color: #fff;
         }
@@ -2323,7 +2273,6 @@ li.linkcoin-whitepaper {
   text-align: left;
   color: #fff;
   font-size: 20px;
-
   p {
     color: #fff;
     font-size: 20px;
@@ -2340,7 +2289,6 @@ li.linkcoin-whitepaper {
   -o-transition: max-height linear 1s;
   -webkit-transition: max-height linear 1s;
   transition: max-height linear 1s;
-
   p {
     text-align: left;
     font-size: 18px;
@@ -2395,14 +2343,11 @@ li.linkcoin-whitepaper {
   .accordion-icon {
     opacity: 1;
   }
-  .faq-q {
-    p {
-      color: #eb8908;
-    }
+  .faq-q p {
+    color: #eb8908;
   }
   .faq-a {
     max-height: 500px;
-    // padding-bottom: 20px;
   }
   .accordion-icon {
     .h {
@@ -2425,29 +2370,24 @@ li.linkcoin-whitepaper {
     [TEAM]
 ----------------------------------------------------*/
 
-#team {
-  .member-wrapper {
-    text-align: center;
-    padding: 10px 0px;
-
-
-    .member-photo {
-      width: 150px;
-      height: 150px;
-      margin-top: 15px 0px;
-    }
-
-    .member-intro {
-      padding: 30px;
-
-      .member-title {
-        color: #eb8908;
-      }
-    }
-
-    .square {
-     border-radius: 50%;
-     border: 1.8px solid #fff;   
+#team .member-wrapper {
+  text-align: center;
+  padding: 10px 0px;
+  .member-photo {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px 0px;
+  }
+  .member-intro {
+    padding: 30px;
+    .member-title {
+      color: #eb8908;
     }
   }
+  .square {
+    border-radius: 50%;
+    border: 1.8px solid #fff;
+  }
 }
+
+/*# sourceMappingURL=layout.css.map */

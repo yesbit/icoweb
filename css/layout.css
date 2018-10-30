@@ -1335,7 +1335,18 @@ fieldset[disabled] .btn-theme {
     position: relative; }
 
 iframe {
-  max-width: 100% !important; }
+  max-width: 100% !important; 
+  max-height: 100% !important;
+  /* height: auto; */
+} 
+
+@media screen and (max-width: 499px) {
+  iframe {
+    height: 120px;
+    width: 200px;
+  }
+}
+
 
 @media screen and (max-width: 1080px) {
   #usecase .margin-b-50 img {
@@ -1456,7 +1467,9 @@ iframe {
   .video-overlay-play-button {
     padding: 30px;
     width: 80%;
-    left: 10%; } }
+    left: 10%; } 
+  }
+
 /*--------------------------------------------------
     [Main Playbutton]
 ----------------------------------------------------*/

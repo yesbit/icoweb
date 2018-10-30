@@ -33,6 +33,8 @@ var Layout = function () {
             "不用担心踏空币市行情" : "No Fiat Currency",
             "YIC代币介绍" : "INTRODUCIN YIC TOKEN",
             //pie
+            "盈利模式" : "OUR REVENUE DISTRIBUTION",
+            "杠杆利息 + 交易手续费" : "Overnight Interests + Transaction Fee",
             "在以太坊区块链上发行的YIC代币， 总量将达到2亿" : "YIC Token on Ethereum public chain, total volume is 200 million.",
             "加密货币和金融市场的盈利对比" : "Profit from Both Crypto and Financial Markets",
             //line
@@ -128,8 +130,8 @@ var Layout = function () {
             "Settlement in BTC/ETH" : "比特币/以太坊的使用",
             "No Fiat Currency" : "不用担心踏空币市行情",
             //pie
-            "INTRODUCING YIC TOKEN" : "YIC代币介绍",
-            "YIC Token on Ethereum public chain, total volume is 200 million." : "在以太坊区块链上发行的YIC代币， 总量将达到2亿",
+            "OUR REVENUE DISTRIBUTION" : "盈利模式",
+            "Overnight Interests + Transaction Fee" : "杠杆利息 + 交易手续费",
             "Profit from Both Crypto and Financial Markets" : "加密货币和金融市场的盈利对比",
             //line
             "Expected growth of the bitcoin(BTC) compares to S&P500" : "比特币对与S&P500指数的预期增值对比",
@@ -417,24 +419,12 @@ var Layout = function () {
             "fontSize": 14,
             "labelText": "[[percents]]%",
             "dataProvider": [ {
-              "group": "Fund Raising (Million tokens)",
-              "token": 80,
-             // "value": "Million Tokens",
-              "showInLegend": true
-            }, {
-              "group": "Team",
+              "group": "Overnight Interests",
               "token": 60,
-             // "value": "Million Tokens",
               "showInLegend": true
             }, {
-              "group": "Derivatives Foundation",
+              "group": "Transaction Fee",
               "token": 40,
-              //"value": "Million Tokens",
-              "showInLegend": true
-            }, {
-              "group": "Community Contributors",
-              "token": 20,
-              //"value": "Million Tokens",
               "showInLegend": true
             }],
             "valueField": "token",
@@ -457,7 +447,7 @@ var Layout = function () {
                 "align": "center",
                 "width": 100,
                 "divId": "legendDiv",
-                "valueWidth": 14,
+                "valueWidth": 20,
                 "spacing": 0
             },
             "percentFormatter": {

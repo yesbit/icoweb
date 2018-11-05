@@ -770,7 +770,7 @@ fieldset[disabled] .btn-theme {
 @media (max-width: 991px) {
   .page-on-scroll .header {
     .navbar {
-      background: #transparent;
+      background: transparent;
       transition-duration: 300ms;
       transition-property: all;
       transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -928,7 +928,7 @@ fieldset[disabled] .btn-theme {
 
 .carousel-centered {
   position: relative;
-  bottom: 30%;
+  bottom: 40%;
   /* left: 44%; */
   z-index: 999;
   text-align: center;

@@ -1,27 +1,4 @@
 @charset "UTF-8";
-/*----------------------------------------------------------------------
-
-  MASTER STYLESHEET
-
-  Project:        Metronic "Asentus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-  Version:        1.0
-  Author:         KeenThemes
-  Primary use:    Corporate, Business Themes.
-  Email:      support@keenthemes.com
-  Follow:     http://www.twitter.com/keenthemes
-  Like:       http://www.facebook.com/keenthemes
-  Website:    http://www.keenthemes.com
-  Premium:    Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-
------------------------------------------------------------------------*/
-/* eg: @include user-select(none); */
-/* eg: @include rotate(45deg); */
-/* eg: @include translate3d(0,0,0); */
-/* eg: @include border-radius(3px); */
-/*------------------------------------------------------------------
-    [The "base.scss" contains basic default element styles
-      (colors, typography, margins & padding).]
-------------------------------------------------------------------*/
 html {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased; }
@@ -154,14 +131,6 @@ h3, h4 {
 
 .flex-wrap {
   flex-wrap: wrap !important; }
-
-.unselectable {
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 /*------------------------------------------------------------------
     [Blockquote]
@@ -651,7 +620,7 @@ fieldset[disabled] .btn-theme {
 
 @media (max-width: 991px) {
   .page-on-scroll .header .navbar {
-    background: #transparent;
+    background: transparent;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
@@ -782,7 +751,7 @@ fieldset[disabled] .btn-theme {
 
 .carousel-centered {
   position: relative;
-  bottom: 30%;
+  bottom: 40%;
   /* left: 44%; */
   z-index: 999;
   text-align: center;
@@ -1343,18 +1312,9 @@ fieldset[disabled] .btn-theme {
     position: relative; }
 
 iframe {
-  max-width: 100% !important; 
+  max-width: 100% !important;
   max-height: 100% !important;
-  /* height: auto; */
-} 
-
-@media screen and (max-width: 499px) {
-  iframe {
-    height: 120px;
-    width: 200px;
-  }
-}
-
+  height: auto; }
 
 @media screen and (max-width: 1080px) {
   #usecase .margin-b-50 img {
@@ -1475,9 +1435,7 @@ iframe {
   .video-overlay-play-button {
     padding: 30px;
     width: 80%;
-    left: 10%; } 
-  }
-
+    left: 10%; } }
 /*--------------------------------------------------
     [Main Playbutton]
 ----------------------------------------------------*/
@@ -1958,5 +1916,7 @@ li.linkcoin-whitepaper {
   #team .member-wrapper .square {
     border-radius: 50%;
     border: 1.8px solid #fff; }
+
+/*# sourceMappingURL=layout.css.map */
 
 /*# sourceMappingURL=layout.css.map */

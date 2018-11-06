@@ -87,6 +87,7 @@ var Layout = function () {
             "区块链基金总监" : "Director of Blockchain Fund",
             "高级项目经理" : "Senior PM Developer",
             "开发人员" : "Developer",
+            "全栈开发人员" : "Full-stack Developer",
             "区块链开发人员" : "Blockchain Developer",
             "市场运营" : "Operation and Marketing",
             "加密货币博览会成员" : "Cryptocurrency World Expo",

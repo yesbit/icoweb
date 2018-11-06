@@ -87,6 +87,7 @@ var Layout = function () {
             "区块链基金总监" : "Director of Blockchain Fund",
             "高级项目经理" : "Senior PM Developer",
             "开发人员" : "Developer",
+            "区块链开发人员" : "Blockchain Developer",
             "市场运营" : "Operation and Marketing",
             "加密货币博览会成员" : "Cryptocurrency World Expo",
             "谷歌软件工程师" : "Google Software Engineer",
@@ -99,7 +100,7 @@ var Layout = function () {
             "营销主管" : "Marketing Lead",
             "产品设计" : "Product Design",
             "数字媒体营销" : "Digital Marketing Coordinator",
-            "前端设计师" : "Front-end Designer"
+            "前端开发人员" : "Front-end Developer"
         },
         "cn" : {
             //intro
@@ -182,6 +183,8 @@ var Layout = function () {
             "Director of Blockchain Fund" : "区块链基金总监",
             "Senior PM Developer" : "高级项目经理",
             "Developer" : "开发人员",
+            "Blockchain Developer" : "区块链开发人员",
+            "Full-stack Developer" : "全栈开发人员",
             "Operation and Marketing" : "市场运营",
             "Cryptocurrency World Expo" : "加密货币博览会成员",
             "Google Software Engineer" : "谷歌软件工程师",
@@ -190,11 +193,10 @@ var Layout = function () {
             "Blockchain Angle Investor" : "区块链投资人",
             "2018 Yesbit Ltd" : "Yesbit有限责任公司 2018",
             "Smart Contract Developer" : "智能合约开发员",
-            "Blockchain Developer" : "区块链开发员",
             "Marketing Lead" : "营销主管",
             "Product Design" : "产品设计",
             "Digital Marketing Coordinator" : "数字媒体营销",
-            "Front-end Designer" : "前端设计师"
+            "Front-end Developer" : "前端开发人员"
         }
     }
 

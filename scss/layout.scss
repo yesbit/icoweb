@@ -2060,7 +2060,7 @@ li.linkcoin-whitepaper {
   letter-spacing: 1px !important;
   font-size: 15px;
   z-index: 2;
-  margin-left: -1px;
+  margin-left: 5px;
 }
 
 @media (max-width: 1199px) {
@@ -2107,7 +2107,7 @@ li.linkcoin-whitepaper {
 
 .timeline {
   margin: 0px auto;
-  max-width: 40em;
+  max-width: 48em;
   overflow: hidden;
   height: auto;
   position: relative;
@@ -2391,5 +2391,7 @@ li.linkcoin-whitepaper {
     border: 1.8px solid #fff;
   }
 }
+
+/*# sourceMappingURL=layout.css.map */
 
 /*# sourceMappingURL=layout.css.map */

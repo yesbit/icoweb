@@ -46,6 +46,13 @@ var Layout = function () {
             "交易杠杆系统开发" : "Leverage Trading System",
             "以太坊合约匹配技术开发" : "ETH contract pair solution",
             "测试版发布" : "Beta launch!",
+            "中心化测试版发布" : "Centralized Beta Version",
+            "去中心化APP" : "Decentralized ETH DAPP",
+            "Alpha版测试主链" : "Alpha Blockchain",
+            "Beta版测试主链" : "Beta Yesbit Blockchain",
+            "去中心化数据源" : "Decentralized Data Feed",
+            "主网发布" : "Main-Net Launch",
+
             //faq
             "常见问题" : "FAQ",
             "什么是Yesbit ?" : "What is Yesbit ?",
@@ -144,6 +151,12 @@ var Layout = function () {
             "Leverage Trading System" : "交易杠杆系统开发",
             "ETH contract pair solution" : "以太坊合约匹配技术开发",
             "Beta launch!" : "测试版发布",
+            "Centralized Beta Version" : "中心化测试版发布",
+            "Decentralized ETH DAPP" : "去中心化APP",
+            "Alpha Blockchain" : "Alpha版测试主链",
+            "Beta Yesbit Blockchain" : "Beta版测试主链",
+            "Decentralized Data Feed" : "去中心化数据源",
+            "Main-Net Launch" : "主网发布",
             //faq
             "FAQ" : "常见问题",
             "What is Yesbit ?" : "什么是Yesbit ?",
@@ -211,14 +224,6 @@ var Layout = function () {
             {
                 "en": "WHITE PAPERS",
                 "cn": "白皮书"
-            },
-            {
-                "en": "KYC",
-                "cn": "认证"
-            },
-            {
-                "en": "SUBSCRIPTION",
-                "cn": "订阅"
             },
             {
                 "en": "VIDEO",
@@ -359,7 +364,7 @@ var Layout = function () {
                     document.getElementById("banner-btn2").textContent = data.banner.button[1].cn;
                     //nav
                     var nav = document.getElementById("nav");
-                    for (var i = 0; i < nav.children.length - 1; i++ ){
+                    for (var i = 0; i < nav.children.length - 2; i++ ){
                         nav.children[i].children[0].textContent = data.nav[i].cn
                         
                     }
@@ -379,7 +384,7 @@ var Layout = function () {
                     document.getElementById("banner-btn2").textContent = data.banner.button[1].en;
 
                     var nav = document.getElementById("nav");
-                    for (var i = 0; i < nav.children.length - 1; i++ ){
+                    for (var i = 0; i < nav.children.length - 2; i++ ){
                         nav.children[i].children[0].textContent = data.nav[i].en
                         
                     }

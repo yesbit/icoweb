@@ -1658,7 +1658,7 @@ li.linkcoin-whitepaper {
   letter-spacing: 1px !important;
   font-size: 15px;
   z-index: 2;
-  margin-left: -1px; }
+  margin-left: 5px; }
 
 @media (max-width: 1199px) {
   .sub {

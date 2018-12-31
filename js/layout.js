@@ -39,7 +39,7 @@ var Layout = function () {
             //line
             "比特币对与S&P500指数的预期增值对比" : "Expected growth of the bitcoin(BTC) compares to S&P500",
             //roadmap
-            "Yesbit的成长轨迹" : "Yesbit Roadmap",
+            "Yesbit产品路线图" : "Yesbit Roadmap",
             "比特币冷/热储存技术研发" : "Bitcoin Hot/Cold Server Solution",
             "PHP+JS+MySQL网页开发" : "PHP + Javascripts + Mysql website Development",
             "Java交易系统开发" : "JAVA trading System",
@@ -144,7 +144,7 @@ var Layout = function () {
             //line
             "Expected growth of the bitcoin(BTC) compares to S&P500" : "比特币对与S&P500指数的预期增值对比",
             //roadmap
-            "Yesbit Roadmap" : "Yesbit的成长轨迹",
+            "Yesbit Roadmap" : "Yesbit产品路线图",
             "Bitcoin Hot/Cold Server Solution" : "比特币冷/热储存技术研发",
             "PHP + Javascripts + Mysql website Development" : "PHP+JS+MySQL网页开发",
             "JAVA trading System" : "Java交易系统开发",
@@ -228,6 +228,10 @@ var Layout = function () {
             {
                 "en": "VIDEO",
                 "cn": "视频介绍"
+            },
+            {
+                "en": "Subscribe",
+                "cn": "订阅"
             }
         ],
         "banner": {
@@ -366,6 +370,8 @@ var Layout = function () {
                     var nav = document.getElementById("nav");
                     for (var i = 0; i < nav.children.length - 2; i++ ){
                         nav.children[i].children[0].textContent = data.nav[i].cn
+                        console.log('this is current nav', nav.children[i].children[0])
+                        nav.children[i].children[0].value = data.nav[i].cn
                         
                     }
                     //intro
@@ -375,7 +381,6 @@ var Layout = function () {
 
 
                 }
-
                 else {
                     console.log("now we are in en " + lang);
                     document.getElementById("title-full").textContent = data.banner.title.en;
@@ -386,18 +391,15 @@ var Layout = function () {
                     var nav = document.getElementById("nav");
                     for (var i = 0; i < nav.children.length - 2; i++ ){
                         nav.children[i].children[0].textContent = data.nav[i].en
-                        
+                        nav.children[i].children[0].value = data.nav[i].en
                     }
 
                     $('.lang').each(function(index, element) {
-                        // console.log("we are changing to cn " + this.textContent + arrlang['en'][this.textContent])
                         this.textContent = arrlang['en'][this.textContent];
                     });
                 }
             });
         }
-        
-
     }
 
     var handleVideo = function(){ 

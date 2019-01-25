@@ -770,7 +770,7 @@ fieldset[disabled] .btn-theme {
 @media (max-width: 991px) {
   .page-on-scroll .header {
     .navbar {
-      background: transparent;
+      background: #000;
       transition-duration: 300ms;
       transition-property: all;
       transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);

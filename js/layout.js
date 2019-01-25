@@ -330,6 +330,7 @@ var Layout = function () {
         var options = {
           particleColor: '#888',
           background: 'https://raw.githubusercontent.com/yesbit/icoweb/master/img/bgd.jpg',
+        // background: './img/new_bg.png',
           interactive: true,
           speed: 'slow',
           density: 'high'

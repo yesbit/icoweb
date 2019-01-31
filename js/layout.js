@@ -85,7 +85,7 @@ var Layout = function () {
             "新闻" : "News",
             "白皮书" : "Whitepaper",
             "代币" : "Token",
-            "测试版" : "Beta Test",
+            "Yesbit平台" : "Yesbit Platform",
             "订阅" : "Subscribe",
             //team
             "我们的团队" : "Yesbit Team",
@@ -189,7 +189,7 @@ var Layout = function () {
             "News" : "新闻",
             "Whitepaper" : "白皮书",
             "Token" : "代币",
-            "Beta Test" : "测试版",
+            "Go to Yesbit" : "前往Yesbit平台",
             "Subscribe" : "订阅",
             "Yesbit Team" : "我们的团队",
             "Yesbit CEO & CTO" : "Yesbit 首席执行官&首席技术官",
@@ -245,8 +245,8 @@ var Layout = function () {
                 "cn": "白皮书"
             },
             {
-                "en": "Try Beta Test",
-                "cn": "测试版"
+                "en": "Go to Yesbit",
+                "cn": "前往平台"
             }
             ]
         },

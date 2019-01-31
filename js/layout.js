@@ -189,7 +189,7 @@ var Layout = function () {
             "News" : "新闻",
             "Whitepaper" : "白皮书",
             "Token" : "代币",
-            "Go to Yesbit" : "前往Yesbit平台",
+            "Yesbit Platform" : "Yesbit平台",
             "Subscribe" : "订阅",
             "Yesbit Team" : "我们的团队",
             "Yesbit CEO & CTO" : "Yesbit 首席执行官&首席技术官",
@@ -246,7 +246,7 @@ var Layout = function () {
             },
             {
                 "en": "Go to Yesbit",
-                "cn": "前往平台"
+                "cn": "前往Yesbit平台"
             }
             ]
         },

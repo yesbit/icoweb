@@ -245,7 +245,7 @@ var Layout = function () {
                 "cn": "白皮书"
             },
             {
-                "en": "Go to Yesbit",
+                "en": "Start Playing",
                 "cn": "前往Yesbit平台"
             }
             ]

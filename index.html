@@ -77,10 +77,6 @@
         <!-- Scroll -->
         <script src="bower_components/jquery.localScroll/jquery.localScroll.min.js"></script>
         <script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
-        <script>
-            document.getElementById('logo-animation').play();
-        </script>
-
     </head>
 
 	<body>
@@ -726,9 +722,12 @@
 				</div>
 			</div>
             <div class="row animation-wrapper">
-                <video id="logo-animation"class="footer-animation" playsinline autoplay loop>
+                <video id="logo-animation"class="footer-animation" playsinline autoplay loop muted>
                     <source src="animation/white.mp4" type="video/mp4">
                 </video>
+                <script>
+                    document.getElementById('logo-animation').play();
+                </script>
                 <p class="lang">2018-2019 Yesbit Ltd <a href="mailto:admin@yesbit.ca">admin@yesbit.ca</a></p>
             </div>
 		</div>

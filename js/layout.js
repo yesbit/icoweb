@@ -378,6 +378,7 @@ var Layout = function () {
                     //intro
                     $('.lang').each(function(index, element) {
                         this.textContent = arrlang['cn'][this.textContent];
+                        this.value = arrlang['cn'][this.value];
                     });
 
 
@@ -397,6 +398,7 @@ var Layout = function () {
 
                     $('.lang').each(function(index, element) {
                         this.textContent = arrlang['en'][this.textContent];
+                        this.value = arrlang['en'][this.value];
                     });
                 }
             });

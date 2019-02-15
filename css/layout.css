@@ -552,6 +552,11 @@ fieldset[disabled] .btn-theme {
       background-color: #000000; }
       .header .navbar-nav .nav-item {
         float: none; }
+      .header .navbar-nav .nav-item.email .nav-item-child form .row {
+        display: inline-block !important; }
+        .header .navbar-nav .nav-item.email .nav-item-child form .row .clear input {
+          border-radius: 5px;
+          margin-top: 10px; }
     .header .menu-container:before {
       content: " ";
       display: table; }
@@ -1556,10 +1561,17 @@ iframe {
       line-height: 1.9;
       color: #fff;
       text-transform: uppercase;
-      transition: background-color ease-in-out .30s; }
+      transition: all ease .50s; }
     .footer ul li:hover {
-      background-color: #EB8909;
-      transition: background-color ease-in-out .30s; }
+      transition: all ease .50s; }
+    .footer ul li a.tag {
+      border-bottom: solid thin transparent; }
+      .footer ul li a.tag:hover {
+        border-bottom: solid thin #EB8909;
+        transition: all ease .50s; }
+    .footer ul li a.bounty {
+      color: #EB8909;
+      font-weight: bolder; }
 
 /*--------------------------------------------------
     [Contact]
@@ -1645,6 +1657,7 @@ li.linkcoin-whitepaper {
   color: #EB8909;
   background-color: #fff;
   background-clip: padding-box;
+  border-radius: 5px;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
 
 .btn {
@@ -1674,7 +1687,18 @@ li.linkcoin-whitepaper {
 
   .sub {
     margin-left: 30px;
-    margin-right: 30px; } }
+    margin-right: 30px; }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    min-width: 100px;
+    line-height: 1.25;
+    color: #EB8909;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 5px;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; } }
 @media (max-width: 314px) {
   .btn-theme-sm {
     padding: 10px; } }
@@ -1702,6 +1726,7 @@ li.linkcoin-whitepaper {
     margin: 0 10px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-radius: 10px;
     -webkit-transition: background 0.30s linear;
     -moz-transition: background 0.30s linear;
     -ms-transition: background 0.30s linear;

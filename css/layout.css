@@ -382,6 +382,10 @@ fieldset[disabled] .btn-theme {
 .navbar-fixed-top .navbar-collapse {
   max-height: 100%; }
 
+.bounty {
+  color: #EB8909 !important;
+  font-weight: bolder !important; }
+
 .header {
   background-color: transparent; }
   .header .navbar {
@@ -1569,9 +1573,6 @@ iframe {
       .footer ul li a.tag:hover {
         border-bottom: solid thin #EB8909;
         transition: all ease .50s; }
-    .footer ul li a.bounty {
-      color: #EB8909;
-      font-weight: bolder; }
 
 /*--------------------------------------------------
     [Contact]

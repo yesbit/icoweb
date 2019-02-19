@@ -473,6 +473,11 @@ fieldset[disabled] .btn-theme {
   max-height: 100%;
 }
 
+.bounty {
+  color: $theme !important;
+  font-weight: bolder !important;
+}
+
 .header {
   background-color: transparent;
   .navbar {
@@ -1965,11 +1970,6 @@ iframe {
           transition: all ease .50s;
         }
       }
-      a.bounty {
-        color: $theme;
-        font-weight: bolder;
-      }
-
     }
   }
 }

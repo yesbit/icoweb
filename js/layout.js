@@ -221,10 +221,10 @@ var Layout = function () {
                 "en": "HOME",
                 "cn": "首页"
             },
-            {
-                "en": "WHITE PAPERS",
-                "cn": "白皮书"
-            },
+            // {
+            //     "en": "WHITE PAPERS",
+            //     "cn": "白皮书"
+            // },
             {
                 "en": "VIDEO",
                 "cn": "视频介绍"
@@ -240,10 +240,10 @@ var Layout = function () {
                 "cn": "千里兰博， 始于Yesbit"
             },
             "button": [
-            {
-                "en": "Whitepaper",
-                "cn": "白皮书"
-            },
+            // {
+            //     "en": "Whitepaper",
+            //     "cn": "白皮书"
+            // },
             {
                 "en": "Start Playing",
                 "cn": "前往Yesbit平台"
@@ -365,8 +365,8 @@ var Layout = function () {
                     //banner
                     document.getElementById("title-full").textContent = data.banner.title.cn;
                     document.getElementById("title-responsive").textContent = data.banner.title.cn;
-                    document.getElementById("banner-btn1").textContent = data.banner.button[0].cn;
-                    document.getElementById("banner-btn2").textContent = data.banner.button[1].cn;
+                    // document.getElementById("banner-btn1").textContent = data.banner.button[0].cn;
+                    document.getElementById("banner-btn2").textContent = data.banner.button[0].cn;
                     //nav
                     var nav = document.getElementById("nav");
                     for (var i = 0; i < nav.children.length - 2; i++ ){
@@ -387,8 +387,8 @@ var Layout = function () {
                     console.log("now we are in en " + lang);
                     document.getElementById("title-full").textContent = data.banner.title.en;
                     document.getElementById("title-responsive").textContent = data.banner.title.en;
-                    document.getElementById("banner-btn1").textContent = data.banner.button[0].en;
-                    document.getElementById("banner-btn2").textContent = data.banner.button[1].en;
+                    // document.getElementById("banner-btn1").textContent = data.banner.button[0].en;
+                    document.getElementById("banner-btn2").textContent = data.banner.button[0].en;
 
                     var nav = document.getElementById("nav");
                     for (var i = 0; i < nav.children.length - 2; i++ ){

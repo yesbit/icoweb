@@ -1943,6 +1943,30 @@ li.linkcoin-whitepaper {
     border-radius: 50%;
     border: 1.8px solid #fff; }
 
+/*--------------------------------------------------
+    [NEWS]
+----------------------------------------------------*/
+
+#news .news-wrapper{
+  text-align: center;
+  padding: 10px 0px;}
+  #news .news-wrapper .news-photo{
+    width: 250px;
+    height: 136px;
+    margin: 0px;}
+  #news .news-wrapper .news-intro{
+    display: inline-block;
+  }
+    #news .news-wrapper .news-intro .news-title{
+      color: #eb8908;}
+
+  #news .news-source{
+    border-bottom: 3px solid #7A287B;
+    width: 250px;}
+  #news .news-title{
+    width: 250px;
+  }
+
 /*# sourceMappingURL=layout.css.map */
 /*# sourceMappingURL=layout.css.map */
 

@@ -16,7 +16,8 @@ body {
   background: #000000;
   font-family: 'b';
   line-height: 1.5;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  touch-action: none; }
 
 p {
   font-size: 17px;
@@ -556,11 +557,11 @@ fieldset[disabled] .btn-theme {
       background-color: #000000; }
       .header .navbar-nav .nav-item {
         float: none; }
-      .header .navbar-nav .nav-item.email .nav-item-child form .row {
-        display: inline-block !important; }
-        .header .navbar-nav .nav-item.email .nav-item-child form .row .clear input {
-          border-radius: 5px;
-          margin-top: 10px; }
+        .header .navbar-nav .nav-item.email .nav-item-child form .row {
+          display: inline-block !important; }
+          .header .navbar-nav .nav-item.email .nav-item-child form .row .clear input {
+            border-radius: 5px;
+            margin-top: 10px; }
     .header .menu-container:before {
       content: " ";
       display: table; }
@@ -1946,27 +1947,24 @@ li.linkcoin-whitepaper {
 /*--------------------------------------------------
     [NEWS]
 ----------------------------------------------------*/
-
-#news .news-wrapper{
+#news .news-wrapper {
   text-align: center;
-  padding: 10px 0px;}
-  #news .news-wrapper .news-photo{
+  padding: 10px 0px; }
+  #news .news-wrapper .news-photo {
     width: 250px;
     height: 136px;
-    margin: 0px;}
-  #news .news-wrapper .news-intro{
-    display: inline-block;
-  }
-    #news .news-wrapper .news-intro .news-title{
-      color: #eb8908;}
+    margin: 0px; }
+  #news .news-wrapper .news-intro {
+    display: inline-block; }
+    #news .news-wrapper .news-intro .news-title {
+      color: #eb8908; }
+#news .news-source {
+  border-bottom: 3px solid #7A287B;
+  width: 250px; }
+#news .news-title {
+  width: 250px; }
 
-  #news .news-source{
-    border-bottom: 3px solid #7A287B;
-    width: 250px;}
-  #news .news-title{
-    width: 250px;
-  }
-
+/*# sourceMappingURL=layout.css.map */
 /*# sourceMappingURL=layout.css.map */
 /*# sourceMappingURL=layout.css.map */
 

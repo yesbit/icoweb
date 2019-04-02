@@ -108,7 +108,13 @@ var Layout = function () {
             "营销主管" : "Marketing Lead",
             "产品设计" : "Product Design",
             "数字媒体营销" : "Digital Marketing Coordinator",
-            "前端开发人员" : "Front-end Developer"
+            "前端开发人员" : "Front-end Developer",
+                        //news
+            "新闻":"News",
+            "-路透社-":"-Reuters-",
+            "-雅虎财经-": "-Yahoo Finance-",
+            "-晨星网-": "-Morning Star-",
+            "Yesbit，连接数字资产与全球市场的去中心化应用":"Yesbit, the Derivatives DApp that Connects Digital Assets to Global Markets",
         },
         "cn" : {
             //intro
@@ -210,7 +216,13 @@ var Layout = function () {
             "Marketing Lead" : "营销主管",
             "Product Design" : "产品设计",
             "Digital Marketing Coordinator" : "数字媒体营销",
-            "Front-end Developer" : "前端开发人员"
+            "Front-end Developer" : "前端开发人员",
+            //news
+            "News":"新闻",
+            "-Reuters-":"-路透社-",
+            "-Yahoo Finance-": "-雅虎财经-",
+            "-Morning Star-": "-晨星网-",
+            "Yesbit, the Derivatives DApp that Connects Digital Assets to Global Markets":"Yesbit，连接数字资产与全球市场的去中心化应用",
         }
     }
 
@@ -261,14 +273,14 @@ var Layout = function () {
         } else {
             $('body').removeClass('page-on-scroll');
         }
-    }   
+    }
 
     // handle carousel
     var handleCarousel = function() {
-        var $item = $('.carousel .item'); 
+        var $item = $('.carousel .item');
         var $wHeight = $(window).height();
         $item.eq(0).addClass('active');
-        $item.height($wHeight); 
+        $item.height($wHeight);
         $item.addClass('full-screen');
 
         $('.carousel img').each(function() {
@@ -324,7 +336,7 @@ var Layout = function () {
             }
        });
     }
-   
+
     var handleCube = function(){
         var canvasDiv = document.getElementById('particle-canvas');
         var options = {
@@ -373,7 +385,7 @@ var Layout = function () {
                         nav.children[i].children[0].textContent = data.nav[i].cn
                         console.log('this is current nav', nav.children[i].children[0])
                         nav.children[i].children[0].value = data.nav[i].cn
-                        
+
                     }
                     //intro
                     $('.lang').each(function(index, element) {
@@ -405,20 +417,20 @@ var Layout = function () {
         }
     }
 
-    var handleVideo = function(){ 
+    var handleVideo = function(){
         $(document).ready(function(){
-            //control play 
-            $(".video-overlay-play-button").click(function() {   
+            //control play
+            $(".video-overlay-play-button").click(function() {
                 if (this.style.display === "none") {
                     this.style.display = "block";
-                    
-                } 
+
+                }
                 else {
                     this.style.display = "none";
                     this.parentElement.children[2].setAttribute("style", "display: none");
                     this.parentElement.children[0].play();
 
-                }             
+                }
             });
         });
     }
@@ -464,7 +476,7 @@ var Layout = function () {
             },
             "percentFormatter": {
 				"precision": 0
-				
+
      	    },
             "minRadius": 40,
             "maxLabelWidth": 100,
@@ -572,7 +584,7 @@ var Layout = function () {
     }
 
     var handleScroll = function() {
-        $('.nav-scroll').localScroll(); 
+        $('.nav-scroll').localScroll();
     }
 
     return {

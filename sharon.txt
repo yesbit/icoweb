@@ -1,0 +1,18 @@
+router.get('/factory-reset', async (req, res) => {
+  res.setHeader('Content-Type', 'application/json')
+  config.set('SC_MY_FEED', '')
+  config.set('SC_PRIV_KEY', '')
+  config.set('SC_PUB_KEY', '')
+  await config.save()
+  res.status(200)
+    .send(JSON.stringify({
+      status: 'success'
+    }))
+    .end()
+})
+
+
+E36297203 CN
+L0802347  AM
+420500195702190688
+15871610268

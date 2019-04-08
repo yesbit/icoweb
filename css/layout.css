@@ -992,7 +992,7 @@ fieldset[disabled] .btn-theme {
     [Container Full Width]
 ------------------------------------------------------------------*/
 .container {
-  max-width: 90%;
+  max-width: 100%;
   width: 1150px;
   border-bottom: solid thin rgba(255, 255, 255, 0.14); }
 

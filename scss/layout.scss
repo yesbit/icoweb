@@ -23,6 +23,12 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   touch-action: none;
+  -webkit-touch-callout: none !important; /* iOS Safari */
+    -webkit-user-select: none !important; /* Safari */
+     -khtml-user-select: none !important; /* Konqueror HTML */
+       -moz-user-select: none !important; /* Firefox */
+        -ms-user-select: none !important; /* Internet Explorer/Edge */
+            user-select: none !important; /* Non-prefixed version, current */
 }
 
 p {
@@ -191,6 +197,48 @@ h3, h4 {
 /*------------------------------------------------------------------
     [Button]
 ------------------------------------------------------------------*/
+.yesbit {
+  &:hover:before {
+    transition: all .5s ease;
+    content: 'Go To Yesbit site';
+  }
+}
+
+.krawlcat {
+  &:hover:before {
+    transition: all .5s ease;
+    content: 'Go To KrawlCat site';
+  }
+}
+
+.linkcoin {
+  &:hover:before {
+    transition: all .5s ease;
+    content: 'Go To LinkCoin site';
+  }
+}
+
+.yesbit-cn {
+  &:hover:before {
+    transition: all .5s ease;
+    content: '前往Yesbit平台';
+  }
+}
+
+.krawlcat-cn {
+  &:hover:before {
+    transition: all .5s ease;
+    content: '前往KrawlCat网站';
+  }
+}
+
+.linkcoin-cn {
+  &:hover:before {
+    transition: all .5s ease;
+    content: '前往LinkCoin平台';
+  }
+}
+
 
 .btn-theme {
   position: relative;
@@ -216,6 +264,10 @@ h3, h4 {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
     text-decoration: none;
+    color: black;
+    span {
+      display: none;
+    }
   }
   &:focus, &.focus {
     text-decoration: none;

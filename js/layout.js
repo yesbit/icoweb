@@ -371,11 +371,11 @@ var Layout = function () {
     var handleCube = function(){
         var canvasDiv = document.getElementById('particle-canvas');
         var options = {
-          particleColor: '#888',
+        //   particleColor: '#888',
           background: './img/bgd.jpg',
-          interactive: true,
-          speed: 'slow',
-          density: 'high'
+        //   interactive: true,
+        //   speed: 'slow',
+        //   density: 'high'
         };
         var particleCanvas = new ParticleNetwork(canvasDiv, options);
     }

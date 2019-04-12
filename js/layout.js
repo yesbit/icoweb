@@ -107,6 +107,17 @@ var Layout = function () {
             "-雅虎财经-": "-Yahoo Finance-",
             "-晨星网-": "-Morning Star-",
             "Yesbit，连接数字资产与全球市场的去中心化应用":"Yesbit, the Derivatives DApp that Connects Digital Assets to Global Markets",
+            "探索应用": "Start Playing",
+            "了解矿机": "Start Mining",
+            "前往交易": "Start Trading",
+            "前往Yesbit平台": "Go To Yesbit site",
+            "前往KrawlCat网站": "Go To KrawlCat site",
+            "前往LinkCoin平台": "Go To LinkCoin site",
+            "去中心化应用, 矿机, 交易平台": "DAPP, MINER, EXCHANGE",
+            "了解我们": "KNOW MORE ABOUT WHAT WE DO",
+            "去中心化数据源": "Distributed Data-Feeder",
+            "去中心化应用": "Our First DApp",
+            "虚拟货币场外交易平台": "OTC Crypto Exchange"
         },
         "cn" : {
             //intro
@@ -207,6 +218,18 @@ var Layout = function () {
             "-Yahoo Finance-": "-雅虎财经-",
             "-Morning Star-": "-晨星网-",
             "Yesbit, the Derivatives DApp that Connects Digital Assets to Global Markets":"Yesbit，连接数字资产与全球市场的去中心化应用",
+            "Start Playing": "探索应用",
+            "Start Mining": "了解矿机",
+            "Start Trading": "前往交易",
+            "Go To Yesbit site": "前往Yesbit平台",
+            "Go To KrawlCat site": "前往KrawlCat网站",
+            "Go To LinkCoin site": "前往LinkCoin平台",
+            "DAPP, MINER, EXCHANGE": "去中心化应用, 矿机, 交易平台",
+            "KNOW MORE ABOUT WHAT WE DO": "了解我们",
+            "Distributed Data-Feeder": "去中心化数据源",
+            "Our First DApp": "去中心化应用",
+            "OTC Crypto Exchange": "虚拟货币场外交易平台"
+
         }
     }
 
@@ -226,6 +249,10 @@ var Layout = function () {
                 "cn": "视频介绍"
             },
             {
+                "en": "BOUNTY",
+                "cn": "赏金计划"
+            },
+            {
                 "en": "Subscribe",
                 "cn": "订阅"
             }
@@ -242,7 +269,27 @@ var Layout = function () {
             // },
             {
                 "en": "Start Playing",
+                "cn": "探索应用"
+            },
+            {
+                "en": "Start Mining",
+                "cn": "了解矿机"
+            },
+            {
+                "en": "Start Trading",
+                "cn": "前往交易"
+            },
+            {
+                "en": "Go To Yesbit site",
                 "cn": "前往Yesbit平台"
+            },
+            {
+                "en": "Go To KrawlCat site",
+                "cn": "前往KrawlCat网站"
+            },
+            {
+                "en": "Go To LinkCoin site",
+                "cn": "前往LinkCoin平台"
             }
             ]
         },
@@ -360,8 +407,6 @@ var Layout = function () {
                     //banner
                     document.getElementById("title-full").textContent = data.banner.title.cn;
                     document.getElementById("title-responsive").textContent = data.banner.title.cn;
-                    // document.getElementById("banner-btn1").textContent = data.banner.button[0].cn;
-                    document.getElementById("banner-btn2").textContent = data.banner.button[0].cn;
                     //nav
                     var nav = document.getElementById("nav");
                     for (var i = 0; i < nav.children.length - 2; i++ ){
@@ -382,8 +427,6 @@ var Layout = function () {
                     console.log("now we are in en " + lang);
                     document.getElementById("title-full").textContent = data.banner.title.en;
                     document.getElementById("title-responsive").textContent = data.banner.title.en;
-                    // document.getElementById("banner-btn1").textContent = data.banner.button[0].en;
-                    document.getElementById("banner-btn2").textContent = data.banner.button[0].en;
 
                     var nav = document.getElementById("nav");
                     for (var i = 0; i < nav.children.length - 2; i++ ){
@@ -467,91 +510,6 @@ var Layout = function () {
         });
     }
 
-    var handleLine = function(){
-        function generateChartData() {
-            var chartData = [];
-            var firstDate = new Date();
-            firstDate.setDate(firstDate.getDate() - 365);
-
-                var SP500Index = 0;
-                var BTC = 0;
-
-            for (var i = 0; i < 100; i++) {
-                // we create date objects here. In your data, you can have date strings
-                // and then set format of your dates using chart.dataDateFormat property,
-                // however when possible, use date objects, as this will speed up chart rendering.
-                var newDate = new Date(firstDate);
-                newDate.setDate(newDate.getDate() + i);
-
-                SP500Index += Math.round((Math.random()<0.53?1:-1)*Math.random()*10);
-                BTC += Math.round((Math.random()<0.6?1:-1)*Math.random()*10);
-                chartData.push({
-                    date: newDate,
-                    SP500Index: SP500Index,
-                    BTC: BTC
-                });
-            }
-            return chartData;
-        }
-        var chartData = generateChartData();
-        var lineChart = AmCharts.makeChart( "lineChart", {
-            "type": "serial",
-            "theme": "black",
-            "marginRight": 80,
-            "dataProvider": chartData,
-            "valueAxes": [{
-                    "id":"v1",
-                    "axisColor": "#FF6600",
-                    "axisThickness": 2,
-                    "axisAlpha": 1,
-                    "position": "left",
-                    "max": 1800
-                }],
-            "graphs": [{
-                "valueAxis": "v1",
-                "lineColor": "#FF6600",
-                "bullet": "round",
-                "bulletBorderThickness": 1,
-                "hideBulletsCount": 30,
-                "title": "BTC",
-                "valueField": "BTC",
-                "fillAlphas": 0,
-                "type": "smoothedLine"
-            }, {
-                "valueAxis": "v1",
-                "lineColor": "#FCD202",
-                "bullet": "square",
-                "bulletBorderThickness": 1,
-                "hideBulletsCount": 30,
-                "title": "S&P 500 Index",
-                "valueField": "SP500Index",
-                "fillAlphas": 0,
-                "type": "smoothedLine"
-            }],
-            "chartScrollbar": {
-                "enabled": false
-            },
-            "chartCursor": {
-                "cursorPosition": "mouse"
-            },
-            "categoryField": "date",
-            "categoryAxis": {
-                "parseDates": true,
-                "axisColor": "#DADADA",
-                "minorGridEnabled": true,
-                "equalSpacing": false,
-                "twoLineMode": true
-            },
-            "hideCredits": true,
-            "pulledField": "pullOut",
-            "legend": {
-                "markerType": "circle",
-                "markerColor": "transparent",
-                "align": "center"
-            }
-        });
-    }
-
     var handleAnimation = function() {
         AOS.init();
     }
@@ -579,7 +537,6 @@ var Layout = function () {
             handleData();
             handleVideo();
             handlePie(); //piechart initialisation
-            handleLine();
             handleAnimation();
             handleAccordion();
             handleScroll();

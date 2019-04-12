@@ -112,7 +112,12 @@ var Layout = function () {
             "前往交易": "Start Trading",
             "前往Yesbit平台": "Go To Yesbit site",
             "前往KrawlCat网站": "Go To KrawlCat site",
-            "前往LinkCoin平台": "Go To LinkCoin site"
+            "前往LinkCoin平台": "Go To LinkCoin site",
+            "去中心化应用, 矿机, 交易平台": "DAPP, MINER, EXCHANGE",
+            "了解我们": "KNOW MORE ABOUT WHAT WE DO",
+            "去中心化数据源": "Distributed Data-Feeder",
+            "去中心化应用": "Our First DApp",
+            "虚拟货币场外交易平台": "OTC Crypto Exchange"
         },
         "cn" : {
             //intro
@@ -219,11 +224,11 @@ var Layout = function () {
             "Go To Yesbit site": "前往Yesbit平台",
             "Go To KrawlCat site": "前往KrawlCat网站",
             "Go To LinkCoin site": "前往LinkCoin平台",
-            "DAPP, MINER, EXCHANGE": "",
-            "KNOW MORE ABOUT WHAT WE DO": "",
-            "Distributed Data-Feeder": "",
-            "Our First DApp": "",
-            "OTC Crypto Exchange": ""
+            "DAPP, MINER, EXCHANGE": "去中心化应用, 矿机, 交易平台",
+            "KNOW MORE ABOUT WHAT WE DO": "了解我们",
+            "Distributed Data-Feeder": "去中心化数据源",
+            "Our First DApp": "去中心化应用",
+            "OTC Crypto Exchange": "虚拟货币场外交易平台"
 
         }
     }
@@ -367,8 +372,7 @@ var Layout = function () {
         var canvasDiv = document.getElementById('particle-canvas');
         var options = {
           particleColor: '#888',
-          background: 'https://raw.githubusercontent.com/yesbit/icoweb/master/img/bgd.jpg',
-        // background: './img/new_bg.png',
+          background: './img/bgd.jpg',
           interactive: true,
           speed: 'slow',
           density: 'high'

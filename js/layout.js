@@ -117,7 +117,13 @@ var Layout = function () {
             "了解我们": "KNOW MORE ABOUT WHAT WE DO",
             "去中心化数据源": "Distributed Data-Feeder",
             "去中心化应用": "Our First DApp",
-            "虚拟货币场外交易平台": "OTC Crypto Exchange"
+            "虚拟货币场外交易平台": "OTC Crypto Exchange",
+            "滑铁卢地区创建公司": "Founded Yesbit in Waterloo",
+            "钱包交易所技术研究": "Researching trading wallet technology",
+            "成立区块链基金获得初始投资": "Started blockchain found and received start-up capital",
+            "运营Linkcoin交易所": "Taking charge of Linkcoin operation in Canada",
+            "启动区块链金融平台": "Started blockchain finanicial platform",
+            "Krawlcat区块链数据源矿机首发": "Krawlcat Blockchain Data-feed launch"
         },
         "cn" : {
             //intro
@@ -228,8 +234,14 @@ var Layout = function () {
             "KNOW MORE ABOUT WHAT WE DO": "了解我们",
             "Distributed Data-Feeder": "去中心化数据源",
             "Our First DApp": "去中心化应用",
-            "OTC Crypto Exchange": "虚拟货币场外交易平台"
-
+            "OTC Crypto Exchange": "虚拟货币场外交易平台",
+            "OTC Crypto Exchange": "虚拟货币场外交易平台",
+            "Founded Yesbit in Waterloo": "滑铁卢地区创建公司",
+            "Researching trading wallet technology": "钱包交易所技术研究",
+            "Started blockchain found and received start-up capital": "成立区块链基金获得初始投资",
+            "Taking charge of Linkcoin operation in Canada": "运营Linkcoin交易所",
+            "Started blockchain finanicial platform": "启动区块链金融平台",
+            "Krawlcat Blockchain Data-feed launch": "Krawlcat区块链数据源矿机首发"
         }
     }
 

@@ -1009,6 +1009,7 @@ fieldset[disabled] .btn-theme {
   color: #eb8908;
   line-height: 1.3;
   text-transform: uppercase;
+  letter-spacing: 8px;
 }
 
 #title-responsive {
@@ -1021,6 +1022,8 @@ fieldset[disabled] .btn-theme {
   }
   #title-responsive {
     display: inline-block;
+    letter-spacing: 5px;
+    font-size: 18px;
   }
 }
 

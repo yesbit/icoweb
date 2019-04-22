@@ -812,7 +812,8 @@ fieldset[disabled] .btn-theme {
   font-weight: 700;
   color: #eb8908;
   line-height: 1.3;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 8px; }
 
 #title-responsive {
   display: none; }
@@ -822,7 +823,9 @@ fieldset[disabled] .btn-theme {
     display: none; }
 
   #title-responsive {
-    display: inline-block; } }
+    display: inline-block;
+    letter-spacing: 5px;
+    font-size: 18px; } }
 /*----------------------------------
   Custome Style of Info Window
 ------------------------------------*/

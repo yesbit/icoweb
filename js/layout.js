@@ -110,6 +110,7 @@ var Layout = function () {
             "探索应用": "Start Playing",
             "了解矿机": "Start Mining",
             "前往交易": "Start Trading",
+            "启动活动": "Launch Event",
             "前往Yesbit平台": "Go To Yesbit site",
             "前往KrawlCat网站": "Go To KrawlCat site",
             "前往LinkCoin平台": "Go To LinkCoin site",
@@ -227,6 +228,7 @@ var Layout = function () {
             "Start Playing": "探索应用",
             "Start Mining": "了解矿机",
             "Start Trading": "前往交易",
+            "Launch Event": "启动活动",
             "Go To Yesbit site": "前往Yesbit平台",
             "Go To KrawlCat site": "前往KrawlCat网站",
             "Go To LinkCoin site": "前往LinkCoin平台",
@@ -288,8 +290,8 @@ var Layout = function () {
                 "cn": "了解矿机"
             },
             {
-                "en": "Start Trading",
-                "cn": "前往交易"
+                "en": "Launch Event",
+                "cn": "启动活动"
             },
             {
                 "en": "Go To Yesbit site",

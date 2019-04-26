@@ -290,8 +290,8 @@ var Layout = function () {
                 "cn": "了解矿机"
             },
             {
-                "en": "Launch Event",
-                "cn": "启动活动"
+                "en": "Start Trading",
+                "cn": "购买比特币"
             },
             {
                 "en": "Go To Yesbit site",

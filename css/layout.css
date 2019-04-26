@@ -179,7 +179,7 @@ h3, h4 {
 
 .linkcoin:hover:before {
   transition: all .5s ease;
-  content: 'Check Event Page'; }
+  content: 'Go To Linkcoin Site'; }
 
 .yesbit-cn:hover:before {
   transition: all .5s ease;
@@ -191,7 +191,7 @@ h3, h4 {
 
 .linkcoin-cn:hover:before {
   transition: all .5s ease;
-  content: '前往活动页面'; }
+  content: '前往Linkcoin网站'; }
 
 .btn-theme {
   position: relative;

@@ -1,0 +1,109 @@
+// "intro": {
+        //     "main-title": {
+        //         "en": "INTRODUCING YESBIT",
+        //         "cn": "YESBIT简介"
+        //     },
+        //     "sub-title": {
+        //         "en": "CONTRACT",
+        //         "cn": "合约"
+        //     },
+        //     "main-content": [
+        //         {
+        //             "en": "Users can use cryptocurrency to",
+        //             "cn": "用户可以用加密货币进行多种操作"
+        //         },
+        //         {
+        //             "en": "• Purchase financial contract",
+        //             "cn": "购买金融合约"
+        //         },
+        //         {
+        //             "en": "• Long or short index, future, foreign exchange",
+        //             "cn": "长短期指数，期货，外币"
+        //         },
+        //         {
+        //             "en": "• Invest cryptocurrency contract",
+        //             "cn": "投资加密合约"
+        //         }
+        //         ],
+        //     "stock": {
+        //         "title": {
+        //             "en": "STOCK INDEX",
+        //             "cn": "股票&指数"
+        //         },
+        //         "content": [
+        //             {
+        //                 "en": "NASDAQ, S&P500, Dow Jones 30 DAX ",
+        //                 "cn": "NASDAQ, S&P500, Dow Jones 30 DAX 等指数"
+        //             },
+        //             {
+        //                 "en": "Other Stock market indices",
+        //                 "cn": "各国证券市场的指数"
+        //             },
+        //             {
+        //                 "en": "Apple, Alibaba contract",
+        //                 "cn": "苹果，阿里巴巴等股票价格合约"
+        //             }
+        //         ]
+        //     },
+        //     "FOREIGN CURRENCY": {
+        //         "title": {
+        //             "en": "FOREIGN CURRENCY",
+        //             "cn": "外汇"
+        //         },
+        //         "content": [
+        //             {
+        //                 "en": "USD/JPY, USD/CAD",
+        //                 "cn": "USD/JPY, USD/CAD"
+        //             },
+        //             {
+        //                 "en": "EUR/HKD, GBP/CAD",
+        //                 "cn": "EUR/HKD, GBP/CAD"
+        //             },
+        //             {
+        //                 "en": "Other foreign exchange",
+        //                 "cn": "各种外汇价格合约"
+        //             }
+        //         ]
+        //     },
+        //     "COMMODITY FUTURE": {
+        //         "title": {
+        //             "en": "COMMODITY FUTURE",
+        //             "cn": "商品期货"
+        //         },
+        //         "content": [
+        //             {
+        //                 "en": "Gold and metal futures",
+        //                 "cn": "黄金，白银，各种金属期货"
+        //             },
+        //             {
+        //                 "en": "Oil, Gas and energy futures",
+        //                 "cn": "石油，天然气等能源期货"
+        //             },
+        //             {
+        //                 "en": "Rice and foodstuff futures",
+        //                 "cn": "大豆，玉米等粮食期货"
+        //             }
+        //         ]
+        //     },
+        //     "CRYPTO CONTRACT": {
+        //         "title": {
+        //             "en": "CRYPTO CONTRACT",
+        //             "cn": "加密货币"
+        //         },
+        //         "content": [
+        //             {
+        //                 "en": "BTC/USD, ETH/USD",
+        //                 "cn": "BTC/USD, ETH/USD"
+        //             },
+        //             {
+        //                 "en": "BTC/ETH, EOS/ETH",
+        //                 "cn": "BTC/ETH, EOS/ETH"
+        //             },
+        //             {
+        //                 "en": "Other Altcoin price contracte",
+        //                 "cn": "各类加密货币的价格合约"
+        //             }
+        //         ]
+        //     }
+
+        // },

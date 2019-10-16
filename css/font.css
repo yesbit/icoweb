@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "b"; /*a name to be used later*/
+  src: url("../fonts/Abel/Abel-Regular.ttf"); /*URL to font*/
+}
+
+@font-face {
+  font-family: "a"; /*a name to be used later*/
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf"); /*URL to font*/
+}

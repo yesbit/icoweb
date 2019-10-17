@@ -6,7 +6,7 @@ var Layout = function () {
         "en": {
             "关于YESBIT": "INTRODUCING YESBIT",
             "开发区块链技术解决方案": "Develope the Technical Support on Blockchain",
-            "Yesbit Technology Ltd.于2015年创立之时，只有一个目的，即“让区块链技术成为更多人的可选项”。为了实现这个目标，我们分别上线了一个OTC加密货币交易所，向有购币需求的用户提供法币入金通道；一种可泛用区块链预言机，为区块链的落地之路打下基础；以及一类技术支持服务，将专业的区块链开发技术带给想使用区块链技术的公司。我们希望通过我们的产出，可以使区块链技术早日成为人人可用，人人愿用的日常科技之一。": "There is only one single purpose when Yesbit was founded in 2015 by our founder Blues Qin: To make blockchain technology more accessible to everybody. We are trying to achieve that goal by dividing our business into three parts - OTC trading (allowing people to have access to crypto currencies), Blockchain Infrastructure Development (showing people what blockchain is capable of doing in the future) and through Technology Support (allowing companies that have great ideas to take advantage of our full stack blockchain development team).",
+            "Yesbit Technology Ltd.于2015年创立之时，只有一个目的，即“让区块链技术成为更多人的可选项”。为了实现这个目标，我们分别上线了一个OTC加密货币交易所，向有购币需求的用户提供法币入金通道；一种可泛用区块链预言机，为区块链的落地之路打下基础；以及一类技术支持服务，将专业的区块链开发技术带给想使用区块链技术的公司。我们希望通过我们的产出，可以使区块链技术早日成为人人可用，人人愿用的日常科技之一。": "There is only one single purpose when Yesbit was founded in 2015 by our founder Blues Qin: To make blockchain technology more accessible to everybody. We are trying to achieve that goal by dividing our business into three parts - OTC trading, allowing people to have access to crypto currencies; Blockchain Infrastructure Development, showing people what blockchain is capable of doing in the future and through Technology Support, allowing companies that have great ideas to take advantage of our full stack blockchain development team.",
             "LinkCoin": "LinkCoin",
             "OTC 加密货币交易平台": "OTC Fiat-Crypto Trading platform",
             "克拉猫": "KrawlCat",
@@ -35,7 +35,7 @@ var Layout = function () {
         "cn": {
             "INTRODUCING YESBIT": "关于YESBIT",
             "Develope the Technical Support on Blockchain": "开发区块链技术解决方案",
-            "There is only one single purpose when Yesbit was founded in 2015 by our founder Blues Qin: To make blockchain technology more accessible to everybody. We are trying to achieve that goal by dividing our business into three parts - OTC trading (allowing people to have access to crypto currencies), Blockchain Infrastructure Development (showing people what blockchain is capable of doing in the future) and through Technology Support (allowing companies that have great ideas to take advantage of our full stack blockchain development team).": "Yesbit Technology Ltd.于2015年创立之时，只有一个目的，即“让区块链技术成为更多人的可选项”。为了实现这个目标，我们分别上线了一个OTC加密货币交易所，向有购币需求的用户提供法币入金通道；一种可泛用区块链预言机，为区块链的落地之路打下基础；以及一类技术支持服务，将专业的区块链开发技术带给想使用区块链技术的公司。我们希望通过我们的产出，可以使区块链技术早日成为人人可用，人人愿用的日常科技之一。",
+            "There is only one single purpose when Yesbit was founded in 2015 by our founder Blues Qin: To make blockchain technology more accessible to everybody. We are trying to achieve that goal by dividing our business into three parts - OTC trading, allowing people to have access to crypto currencies; Blockchain Infrastructure Development, showing people what blockchain is capable of doing in the future and through Technology Support, allowing companies that have great ideas to take advantage of our full stack blockchain development team.": "Yesbit Technology Ltd.于2015年创立之时，只有一个目的，即“让区块链技术成为更多人的可选项”。为了实现这个目标，我们分别上线了一个OTC加密货币交易所，向有购币需求的用户提供法币入金通道；一种可泛用区块链预言机，为区块链的落地之路打下基础；以及一类技术支持服务，将专业的区块链开发技术带给想使用区块链技术的公司。我们希望通过我们的产出，可以使区块链技术早日成为人人可用，人人愿用的日常科技之一。",
             "LinkCoin": "LinkCoin",
             "OTC Fiat-Crypto Trading platform": "OTC 加密货币交易平台",
             "KrawlCat": "克拉猫",
@@ -206,24 +206,18 @@ var Layout = function () {
     var handleData = function () {
         //switch language
         var i;
-        var toggle = document.getElementsByClassName("lang-icon");
+        var toggle = document.getElementsByClassName("lang-tab")[0];
         var lang;
-        for (i = 0; i < toggle.length; i++) {
-            toggle[i].addEventListener("click", function () {
-                var en = this.parentElement.children[0];
-                var cn = this.parentElement.children[1];
-                if (en.style.display == "inline-block") {
-                    cn.style.display = "inline-block";
-                    en.style.display = "none";
-                    lang = "cn";
-                    document.getElementById("lang-btn").childNodes[0].nodeValue = "选择语言:"
-                }
-                else {
-                    en.style.display = "inline-block";
-                    cn.style.display = "none";
-                    lang = "en";
-                    document.getElementById("lang-btn").childNodes[0].nodeValue = "LAN SWITCH:"
-                }
+        toggle.addEventListener("click", function (){
+            console.log('111'+ toggle.childNodes[0].nodeValue);
+            if (toggle.childNodes[0].nodeValue== "EN"){
+                lang = "cn";
+                document.getElementById("lang-btn").childNodes[0].nodeValue="中文"
+            }
+            else {
+                lang="en";
+                document.getElementById("lang-btn").childNodes[0].nodeValue="EN"
+            }
                 //render data
                 if (lang == "cn") {
                     console.log("now we are in cn " + lang);
@@ -268,7 +262,6 @@ var Layout = function () {
                 }
             });
         }
-    }
 
     var handleVideo = function () {
         $(document).ready(function () {

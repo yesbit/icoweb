@@ -1,0 +1,51 @@
+{
+    "navbar": {
+        "home": "HOME",
+        "about": "ABOUT US",
+        "projects": "PROJECTS",
+        "career": "JOIN US"
+    },
+    "title": {
+        "full": "Develope the Technical Support on Blockchain",
+        "responsive": "Develope the Technical Support on Blockchain"
+    },
+    "about": {
+        "title": "INTRODUCING YESBIT",
+        "content": "Yesbit is a Toronto-based company focusing on the Blockchain technology and cryptocurrency usage, we run an OTC trading platform called LinkCoin, develope an KrawlCat protocol with ERC 1973, and provide the Blockchain technical support.",
+        "linkcoin": "LinkCoin",
+        "linkcoincontent": "OTC Fiat-Crypto Trading platform",
+        "krawlcat": "KrawlCat",
+        "krawlcatcontent": "Generalized Oracles for Blockchain",
+        "techs": "Technical Support",
+        "techscontent": "Provide the technical development service"
+    },
+    "subtitle": {
+        "full": "KNOW MORE ABOUT WHAT WE DO",
+        "responsive": "KNOW MORE ABOUT WHAT WE DO",
+    },
+    "subintro": {
+        "full": "OTC EXCHANGE·PROTOCOL·TECHNICAL SUPPORT"
+    },
+    "projects": {
+        "linkcoin": "LinkCoin",
+        "linkcoindes": "Fiat-Crypto OTC trading platform ",
+        "linkcoincontent": "Fiat-currency can be used during the crypto trading. The 24/7 customer service is provided to protect every eser's funds. LinkCoin is also the strategic partner of Bibox exchange. Users can transfer their funds on LinkCoin and Bibox with no fees.",
+        "linkcoinbtn": "Go to LinkCoin",
+        "krawlcat": "KrawlCat",
+        "krawlcatdes": "A generalized Oracle for Blockchains",
+        "krawlcatcontent": "KrawlCat Generalized Oracles bridges the gap between the current internet infrastructure and closed blockchain networks by bringing off-chain data to on-chain. Moreover, its generalized nature allows it to facilitate cross chain communication between solitary blockchain protocols.",
+        "krawlcatbtn": "Go to KrawlCat",
+        "techs": "Technical Support",
+        "techsdes": "The professional Blockchain development service",
+        "techsbtn": "Contact us"
+    },
+    "career": {
+        "title": "JOIN US",
+        "des": "We are always looking for the talented people to join our team!",
+        "content": "See our available positions"
+    },
+    "footer": {
+        "address": "Address: Unit 1220, 5255 Yonge Street, Toronto, ON, Canada",
+        "copyright": "Copyright © 2019-2020 Yesbit Technology Ltd."
+    }
+}

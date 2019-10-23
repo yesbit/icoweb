@@ -19,7 +19,7 @@ body {
   font-family: "b";
   line-height: 1.5;
   overflow-x: hidden;
-  touch-action: none;
+  touch-action: auto;
   -webkit-touch-callout: none !important;
   /* iOS Safari */
   -webkit-user-select: none !important;
@@ -41,6 +41,7 @@ p {
   color: #a6a7aa;
   line-height: 1.4;
   margin-bottom: 15px;
+  letter-spacing:1px;
 }
 
 em {
@@ -370,19 +371,23 @@ fieldset[disabled] .btn-theme {
   width: 100px;
 }
 
+@media screen and (min-width: 768px) {
 .intro > p {
   font-size: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
   line-height: 2;
+  letter-spacing:2px;
   /* margin-left: 50px;
   margin-right:50px; */
+}
 }
 
 hr.style-one {
   border: solid 1px #eb8909;
   /* height: 1px; */
   width: 80%;
+  margin-top:80px;
 }
 
 .alignright {
@@ -1860,7 +1865,7 @@ hr.style-one {
     position: absolute;
     width: 250px;
     right: 90px;
-    top: 20px;
+    top: 100px;
   }
 }
 
@@ -1877,7 +1882,7 @@ hr.style-one {
     height: auto;
     position: absolute;
     width: 250px;
-    top:30px;
+    top:60px;
   }
 }
 
@@ -2699,6 +2704,7 @@ li.linkcoin-whitepaper {
 
 .career-position{
   text-decoration: underline;
+  font-size:15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -2718,6 +2724,7 @@ li.linkcoin-whitepaper {
   }
   .left-box-button {
     margin-left: -20px;
+    font-size:17px;
   }
 }
 
@@ -2729,6 +2736,7 @@ li.linkcoin-whitepaper {
   }
   .right-box-button {
     margin-right: -20px;
+    font-size:17px;
   }
 }
 
@@ -2742,16 +2750,110 @@ li.linkcoin-whitepaper {
   .career-title {
     margin-bottom: 40px;
   }
+  .career-des{
+  margin-left:20px;
+  margin-right:20px;
+  letter-spacing:1px;
+  font-size:20px;
+/*  color:white;*/
+}
+
+.career-subtitle{
+  margin-top:40px;
+  color:white;
+}
+
+.career{
+margin-right:30px;
+margin-bottom:80px;
+}
+
+.career-ben{
+  text-align:left;
+}
+
+.career-con{
+  color:#eb8908;
+  font-weight: 600;
+  margin-top:20px;
+  letter-spacing:2px;
+}
+
+.career{
+  top:30px;
+}
+.intro-des{
+  color:white;
+}
 }
 
 @media screen and (max-width: 767px) {
   .career-title {
     margin-bottom: 40px;
+    font-size:22px;
   }
   .subtitle{
     margin-left:40px;
     margin-right:40px;
   }
+  .career-con{
+  color:#eb8908;
+  font-weight: 600;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top:40px;
+}
+
+.career-ben{
+  color:white;
+  font-size:15px;
+  margin-left:-20px;
+  margin-right:-20px;
+}
+
+.career-des{
+/*  text-align:justify;*/
+  margin-left:-25px;
+  margin-right:-25px;
+  font-size:15px;
+}
+.intro-des{
+  color:white;
+  font-size:15px;
+}
+.intro-title{
+  font-size:22px;
+}
+.intro-intro{
+/*  text-align:justify;*/
+  font-size:15px;
+  margin-left:-25px;
+  margin-right:-25px;
+}
+.project-img{
+  width:50px;
+}
+.projects-con{
+  font-size:15px;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+.about-title{
+  font-size:16px;
+}
+.intro-con{
+  font-size:15px;
+  margin-left:-20px;
+  margin-right:-20px;
+}
+.subtitle{
+  font-size:22px;
+}
+/*  .career-des{
+  margin-left:100px;
+  margin-right:100px;
+}*/
+
 }
 
 #footer {
@@ -2777,6 +2879,7 @@ li.linkcoin-whitepaper {
 
 .projects-des{
   color:white;
+  font-size:15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2796,6 +2899,10 @@ li.linkcoin-whitepaper {
   width:600px;
 }
 
+#title-full{
+  margin-left:20px;
+  margin-right:20px;
+}
 
 /*# sourceMappingURL=layout.css.map */
 /*# sourceMappingURL=layout.css.map */

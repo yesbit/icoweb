@@ -122,7 +122,7 @@ var Layout = function () {
         ],
         "banner": {
             "title": {
-                "en": "Make Blockchain Technology More Accessible to People's Everyday Life",
+                "en": "Deliver Blockchain to Each Person",
                 "cn": "让区块链技术成为更多人的日常选择"
             },
             "button": [

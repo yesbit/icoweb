@@ -1859,7 +1859,7 @@ hr.style-one {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
   .test22 {
     height: auto;
     position: absolute;
@@ -1868,6 +1868,8 @@ hr.style-one {
     top: 100px;
   }
 }
+
+
 
 @media screen and (min-width: 751px) and (max-width: 767px) {
   .test-22 {

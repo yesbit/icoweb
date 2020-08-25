@@ -11,9 +11,9 @@
     },
     "about": {
         "title": "关于YESBIT",
-        "content": "Yesbit是一家在多伦多的科技公司，专注于区块链技术与加密货币改善及研发。我们同时运营一家OTC加密货币交易平台、自主研发克拉猫预言机（ERC1973），以及提供区块链开发技术服务。",
-        "linkcoin": "LinkCoin",
-        "linkcoincontent": "OTC 加密货币交易平台",
+        "content": "Yesbit Technology Ltd.于2015年创立之时，只有一个目的，即“让区块链技术成为更多人的日常选择”。为了实现这个目标，我们分别上线了三大业务:",
+        "otc": "Yesbit OTC",
+        "otccontent": "OTC 加密货币交易平台",
         "krawlcat": "克拉猫",
         "krawlcatcontent": "区块链预言机",
         "techs": "技术支持",
@@ -27,10 +27,10 @@
         "full": "OTC交易所·预言机·技术支持"
     },
     "projects": {
-        "linkcoin": "LinkCoin",
-        "linkcoindes": "OTC加密货币交易平台",
-        "linkcoincontent": "可使用法定货币交易加密货币，7天24小时在线客服全方位保障您的财产安全。LinkCoin是Bibox的战略合作伙伴。用户可在两平台间无手续费进行资产一键划转。",
-        "linkcoinbtn": "访问LinkCoin",
+        "otc": "YesbitOTC",
+        "otcdes": "OTC加密货币交易平台",
+        "otccontent": "可使用法定货币交易加密货币.",
+        "otcbtn": "访问OTC",
         "krawlcat": "克拉猫",
         "krawlcatdes": "区块链预言机",
         "krawlcatcontent": "克拉猫区块链预言机填补连接了目前由于互联网与封闭式区块链协议的制式不同导致的信息断层，将链下数据传输上链。此外，其可广泛运用的性质还允许了不同区块链协议间的信息沟通。",

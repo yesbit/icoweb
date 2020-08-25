@@ -11,9 +11,9 @@
     },
     "about": {
         "title": "INTRODUCING YESBIT",
-        "content": "Yesbit is a Toronto-based company focusing on the Blockchain technology and cryptocurrency usage, we run an OTC trading platform called LinkCoin, develope an KrawlCat protocol with ERC 1973, and provide the Blockchain technical support.",
-        "linkcoin": "LinkCoin",
-        "linkcoincontent": "OTC Fiat-Crypto Trading platform",
+        "content": "Yesbit is a Toronto-based company focusing on the Blockchain technology and cryptocurrency usage, we run an OTC trading platform called YesbitOTC, develope an KrawlCat protocol with ERC 1973, and provide the Blockchain technical support.",
+        "otc": "otc",
+        "otccontent": "OTC Fiat-Crypto Trading platform",
         "krawlcat": "KrawlCat",
         "krawlcatcontent": "Generalized Oracles for Blockchain",
         "techs": "Technical Support",
@@ -27,10 +27,10 @@
         "full": "OTC EXCHANGE·PROTOCOL·TECHNICAL SUPPORT"
     },
     "projects": {
-        "linkcoin": "LinkCoin",
-        "linkcoindes": "Fiat-Crypto OTC trading platform ",
-        "linkcoincontent": "Fiat-currency can be used during the crypto trading. The 24/7 customer service is provided to protect every eser's funds. LinkCoin is also the strategic partner of Bibox exchange. Users can transfer their funds on LinkCoin and Bibox with no fees.",
-        "linkcoinbtn": "Go to LinkCoin",
+        "otc": "YesbitOTC",
+        "otcdes": "Fiat-Crypto OTC trading platform ",
+        "otccontent": "Fiat-currency can be used during the crypto trading. The 24/7 customer service is provided to protect every ueser's funds. ",
+        "otcbtn": "Go to YesbitOTC",
         "krawlcat": "KrawlCat",
         "krawlcatdes": "A generalized Oracle for Blockchains",
         "krawlcatcontent": "KrawlCat Generalized Oracles bridges the gap between the current internet infrastructure and closed blockchain networks by bringing off-chain data to on-chain. Moreover, its generalized nature allows it to facilitate cross chain communication between solitary blockchain protocols.",

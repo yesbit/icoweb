@@ -8,7 +8,7 @@ var Layout = function () {
             "开发区块链技术解决方案": "Develope the Technical Support on Blockchain",
             "Yesbit Technology Ltd.于2015年创立之时，只有一个目的，即“让区块链技术成为更多人的日常选择”。为了实现这个目标，我们分别上线了三大业务:":"There is only one single purpose when Yesbit was founded in 2015: To make blockchain technology more accessible to everybody. We are trying to achieve that goal by dividing our business into three parts:",
             "Yesbit Technology Ltd.于2015年创立之时，只有一个目的，即“让区块链技术成为更多人的选择”。为了实现这个目标，我们分别上线了 —— LinkCoin：OTC加密货币交易所，向有购币需求的用户提供法币入金通道；克拉猫：可泛用区块链预言机，为区块链的落地之路打下基础；以及技术支持服务：将专业的区块链开发技术带给想使用区块链技术的公司。我们希望通过我们的产出，可以使区块链技术早日成为人人可用，人人愿用的日常科技之一。": "There is only one single purpose when Yesbit was founded in 2015: To make blockchain technology more accessible to everybody. We are trying to achieve that goal by dividing our business into three parts - LinkCoin: OTC trading, allowing people to have access to crypto currencies; KrawlCat: Blockchain Infrastructure Development, showing people what blockchain is capable of doing in the future and through Technology Support, allowing companies that have great ideas to take advantage of our full stack blockchain development team.",
-            "YesbitOTC": "YesbitOTC",
+            "Yesbit OTC": "Yesbit OTC",
             "OTC场外加密货币交易平台": "OTC Fiat-Crypto Trading platform",
             "向有购币需求的用户提供法币入金通道":"Entry Point for the cryptocurrency world",
             "克拉猫": "KrawlCat",
@@ -18,12 +18,12 @@ var Layout = function () {
             "企业级区块链战略与技术服务": "Full Strategy & Technology Planning",
             "为区块链公司规划实现可持续增长性发展的最佳路线":"Develop and integrate the strategy for the profit-maximizing path",
             "了解我们": "KNOW MORE ABOUT WHAT WE DO",
-            "OTC交易所·区块链开发·技术支持": "OTC EXCHANGE·BLOCKCHAIN DEVELOPMENT·TECHNICAL SUPPORT",
-            "YesbitOTC": "YesbitOTC",
+            "OTC交易所·区块链预言机·技术支持": "OTC EXCHANGE·BLOCKCHAIN ORACLE·TECHNICAL SUPPORT",
+            "Yesbit OTC": "Yesbit OTC",
             "OTC场外加密货币交易平台": "Fiat-Crypto OTC trading platform",
             "作为场外交易平台，用户可以通过使用法定货币进行加密货币交易。加密交易与在线客服全方位保障您的财产安全。": "An Over The Counter (OTC) platform which allows Fiat-currency to be used to trade Cryptocurrencies. The encrypted transaction and the professional customer service are provided to protect every user's funds.",
-            "平台支持BTC比特币、ETH以太坊、USDT泰达币等多币种交易。YesbitOTC致力于为用户提供比传统交易平台更快，更实惠的服务。":"The cryptocurrencies available on the website include BTC, ETH and USDT. It’s much faster and cheaper compared with traditional exchanges.",
-            "即将上线": "Coming Soon",
+            "平台支持BTC比特币、ETH以太坊、USDT泰达币等多币种交易。Yesbit OTC致力于为用户提供比传统交易平台更快，更实惠的服务。":"The cryptocurrencies available on the website include BTC, ETH and USDT. It’s much faster and cheaper compared with traditional exchanges.",
+            "获取报价": "Go get Quote",
             "克拉猫": "KrawlCat",
             "可泛用区块链预言机 ": "A Generalized Oracle for Blockchains",
             "克拉猫区块链预言机填补连接了目前由于互联网与封闭式区块链协议的制式不同导致的信息断层，将链下数据传输上链。此外，其可广泛运用的性质还允许了不同区块链协议间的信息沟通。": "KrawlCat Generalized Oracles bridges the gap between the current internet infrastructure and closed blockchain networks by bringing off-chain data to on-chain. Moreover, its generalized nature allows it to facilitate cross chain communication between solitary blockchain protocols.",
@@ -44,14 +44,14 @@ var Layout = function () {
             "员工福利":"Benefit to join Yesbit",
             "查看职位": "See our available positions",
             "公司地址: 1220, 央街5255号， 多伦多，安大略省， 加拿大": "Address: Unit 1220, 5255 Yonge Street, Toronto, ON, Canada",
-            "Copyright © 2019-2020 Yesbit Technology Ltd.": "Copyright © 2019-2020 Yesbit Technology Ltd."
+            "Copyright © 2020-2021 Yesbit Technology Ltd.": "Copyright © 2020-2021 Yesbit Technology Ltd."
         },
         "cn": {
             "INTRODUCING YESBIT": "关于YESBIT",
             "Develope the Technical Support on Blockchain": "开发区块链技术解决方案",
             "There is only one single purpose when Yesbit was founded in 2015: To make blockchain technology more accessible to everybody. We are trying to achieve that goal by dividing our business into three parts - LinkCoin: OTC trading, allowing people to have access to cryptocurrencies; KrawlCat: Blockchain Infrastructure Development, showing people what blockchain is capable of doing in the future and through Technology Support, allowing companies that have great ideas to take advantage of our full stack blockchain development team.": "Yesbit Technology Ltd.于2015年创立之时，只有一个目的，即“让区块链技术成为每个人的日常选择”。为了实现这个目标，我们分别上线了 —— LinkCoin：OTC加密货币交易所，向有购币需求的用户提供法币入金通道；克拉猫：可泛用区块链预言机，为区块链的落地之路打下基础；以及技术支持服务：将专业的区块链开发技术带给想使用区块链技术的公司。我们希望通过我们的产出，可以使区块链技术早日成为人人可用，人人愿用的日常科技之一。",
             "There is only one single purpose when Yesbit was founded in 2015: To make blockchain technology more accessible to everybody. We are trying to achieve that goal by dividing our business into three parts:":"Yesbit Technology Ltd.于2015年创立之时，只有一个目的，即“让区块链技术成为更多人的日常选择”。为了实现这个目标，我们分别上线了三大业务:",
-            "YesbitOTC": "YesbitOTC",
+            "Yesbit OTC": "Yesbit OTC",
             "OTC Fiat-Crypto Trading platform": "OTC场外加密货币交易平台",
             "Entry Point for the cryptocurrency world":"向有购币需求的用户提供法币入金通道",
             "KrawlCat": "克拉猫",
@@ -61,13 +61,13 @@ var Layout = function () {
             "Full Strategy & Technology Planning": "企业级区块链战略与技术服务",
             "Develop and integrate the strategy for the profit-maximizing path":"为区块链公司规划实现可持续增长性发展的最佳路线",
             "KNOW MORE ABOUT WHAT WE DO": "了解我们",
-            "OTC EXCHANGE·BLOCKCHAIN DEVELOPMENT·TECHNICAL SUPPORT": "OTC交易所·区块链开发·技术支持",
+            "OTC EXCHANGE·BLOCKCHAIN ORACLE·TECHNICAL SUPPORT": "OTC交易所·区块链预言机·技术支持",
             "YesbitOTC": "YesbitOTC",
             "Fiat-Crypto OTC trading platform": "OTC场外加密货币交易平台",
             "An Over The Counter (OTC) platform which allows Fiat-currency to be used to trade Cryptocurrencies. The encrypted transaction and the professional customer service are provided to protect every user's funds.":
                 "作为场外交易平台，用户可以通过使用法定货币进行加密货币交易。加密交易与在线客服全方位保障您的财产安全。",
-            "The cryptocurrencies available on the website include BTC, ETH and USDT. It’s much faster and cheaper compared with traditional exchanges.":"平台支持BTC比特币、ETH以太坊、USDT泰达币等多币种交易。YesbitOTC致力于为用户提供比传统交易平台更快，更实惠的服务。",
-            "Coming Soon": "即将上线",
+            "The cryptocurrencies available on the website include BTC, ETH and USDT. It’s much faster and cheaper compared with traditional exchanges.":"平台支持BTC比特币、ETH以太坊、USDT泰达币等多币种交易。Yesbit OTC致力于为用户提供比传统交易平台更快，更实惠的服务。",
+            "Go get Quote": "获取报价",
             "KrawlCat": "克拉猫",
             "A Generalized Oracle for Blockchains": "可泛用区块链预言机 ",
             "KrawlCat Generalized Oracles bridges the gap between the current internet infrastructure and closed blockchain networks by bringing off-chain data to on-chain. Moreover, its generalized nature allows it to facilitate cross chain communication between solitary blockchain protocols.":
@@ -89,7 +89,7 @@ var Layout = function () {
             "There is no better place to learn about cryptocurrencies or blockchain other than working at a blockchain company. Yesbit is made up of people who are open minded and forward thinking. We believe blockchain and decentralization is the future of human society and we are grateful and excited to be part of this journey.":"区块链行业作为新生行业，进入区块链公司工作是快速了解加密行业和区块链技术最直接的途径。Yesbit由思维敏捷开放，有前瞻性的人才组成。我们坚信区块链和去中心化代表了人类社会的未来，作为带动发展方向的一员，我们为此感到自豪。",
             "Benefit to join Yesbit":"员工福利",
             "Address: Unit 1220, 5255 Yonge Street, Toronto, ON, Canada": "公司地址: 1220, 央街5255号， 多伦多，安大略省， 加拿大",
-            "Copyright © 2019-2020 Yesbit Technology Ltd.": "Copyright © 2019-2020 Yesbit Technology Ltd."
+            "Copyright © 2020-2021 Yesbit Technology Ltd.": "Copyright © 2020-2021 Yesbit Technology Ltd."
         }
     }
 
@@ -109,8 +109,8 @@ var Layout = function () {
                 "cn": "关于YESBIT"
             },
             {
-                "en": "PROJECTS",
-                "cn": "产品"
+                "en": "SERVICES",
+                "cn": "业务项目"
             },
             {
                 "en": "Career",

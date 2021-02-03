@@ -44,7 +44,12 @@ var Layout = function () {
             "员工福利":"Benefit to join Yesbit",
             "查看职位": "See our available positions",
             "公司地址: 1220, 央街5255号， 多伦多，安大略省， 加拿大": "Address: Unit 1220, 5255 Yonge Street, Toronto, ON, Canada",
-            "Copyright © 2020-2021 Yesbit Technology Ltd.": "Copyright © 2020-2021 Yesbit Technology Ltd."
+            "Copyright © 2020-2021 Yesbit Technology Ltd.": "Copyright © 2020-2021 Yesbit Technology Ltd.",
+             "软件开发":"Software Devlopment",
+            "技术规划":"Technology Planning",
+            "规划实现可持续增长性发展的最佳路线":"Develop the software for the technical path",
+            "进入科技公司工作是快速了解革新技术最直接的途径。自创立以来，我们不仅发展成了行业佼佼者，更积累了深厚的经验和知识。":"There is no better place to learn about innovation than working at a tech company. Yesbit is made up of people who are open minded and forward thinking. We believe the innovation is the future of human society and we are grateful and excited to be part of this journey.",
+            "我们的员工是公司最重要的资源，照顾员工的需求是公司最优先的任务。与我们一起，造就更多可能！":"Our employees are our most important asset and taking care of them has always been our top priority. If you have the same mindset, please don’t hesitate to contact us!"
         },
         "cn": {
             "INTRODUCING YESBIT": "关于YESBIT",
@@ -89,7 +94,12 @@ var Layout = function () {
             "There is no better place to learn about cryptocurrencies or blockchain other than working at a blockchain company. Yesbit is made up of people who are open minded and forward thinking. We believe blockchain and decentralization is the future of human society and we are grateful and excited to be part of this journey.":"区块链行业作为新生行业，进入区块链公司工作是快速了解加密行业和区块链技术最直接的途径。Yesbit由思维敏捷开放，有前瞻性的人才组成。我们坚信区块链和去中心化代表了人类社会的未来，作为带动发展方向的一员，我们为此感到自豪。",
             "Benefit to join Yesbit":"员工福利",
             "Address: Unit 1220, 5255 Yonge Street, Toronto, ON, Canada": "公司地址: 1220, 央街5255号， 多伦多，安大略省， 加拿大",
-            "Copyright © 2020-2021 Yesbit Technology Ltd.": "Copyright © 2020-2021 Yesbit Technology Ltd."
+            "Copyright © 2020-2021 Yesbit Technology Ltd.": "Copyright © 2020-2021 Yesbit Technology Ltd.",
+            "Software Devlopment":"软件开发",
+            "Technology Planning":"技术规划",
+            "Develop the software for the technical path":"规划实现可持续增长性发展的最佳路线",
+            "There is no better place to learn about innovation than working at a tech company. Yesbit is made up of people who are open minded and forward thinking. We believe the innovation is the future of human society and we are grateful and excited to be part of this journey.": "进入科技公司工作是快速了解革新技术最直接的途径。自创立以来，我们不仅发展成了行业佼佼者，更积累了深厚的经验和知识。",
+            "Our employees are our most important asset and taking care of them has always been our top priority. If you have the same mindset, please don’t hesitate to contact us!":"我们的员工是公司最重要的资源，照顾员工的需求是公司最优先的任务。与我们一起，造就更多可能！"
         }
     }
 
@@ -122,8 +132,8 @@ var Layout = function () {
         ],
         "banner": {
             "title": {
-                "en": "Deliver Blockchain to Each Person",
-                "cn": "让区块链技术成为更多人的日常选择"
+                "en": "Deliver Innovation to Each Person",
+                "cn": "让革新技术成为更多人的日常选择"
             },
             "button": [
                 // {

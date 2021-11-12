@@ -49,7 +49,9 @@ var Layout = function () {
             "技术规划":"Technology Planning",
             "规划实现可持续增长性发展的最佳路线":"Develop the software for the technical path",
             "进入科技公司工作是快速了解革新技术最直接的途径。自创立以来，我们不仅发展成了行业佼佼者，更积累了深厚的经验和知识。":"There is no better place to learn about innovation than working at a tech company. Yesbit is made up of people who are open minded and forward thinking. We believe the innovation is the future of human society and we are grateful and excited to be part of this journey.",
-            "我们的员工是公司最重要的资源，照顾员工的需求是公司最优先的任务。与我们一起，造就更多可能！":"Our employees are our most important asset and taking care of them has always been our top priority. If you have the same mindset, please don’t hesitate to contact us!"
+            "我们的员工是公司最重要的资源，照顾员工的需求是公司最优先的任务。与我们一起，造就更多可能！":"Our employees are our most important asset and taking care of them has always been our top priority. If you have the same mindset, please don’t hesitate to contact us!",
+            "大宗交易" : "Large Block Transactions",
+            "Yesbit 场外数字货币交易平台，为客户提供合规、安全、透明、便捷的私人定制化VIP金融服务" : "Yesbit OTC cryptocurrency trading platform, offering private and personalized services for clients with compliance, security, transparency and convenience"
         },
         "cn": {
             "INTRODUCING YESBIT": "关于YESBIT",
@@ -99,7 +101,9 @@ var Layout = function () {
             "Technology Planning":"技术规划",
             "Develop the software for the technical path":"规划实现可持续增长性发展的最佳路线",
             "There is no better place to learn about innovation than working at a tech company. Yesbit is made up of people who are open minded and forward thinking. We believe the innovation is the future of human society and we are grateful and excited to be part of this journey.": "进入科技公司工作是快速了解革新技术最直接的途径。自创立以来，我们不仅发展成了行业佼佼者，更积累了深厚的经验和知识。",
-            "Our employees are our most important asset and taking care of them has always been our top priority. If you have the same mindset, please don’t hesitate to contact us!":"我们的员工是公司最重要的资源，照顾员工的需求是公司最优先的任务。与我们一起，造就更多可能！"
+            "Our employees are our most important asset and taking care of them has always been our top priority. If you have the same mindset, please don’t hesitate to contact us!":"我们的员工是公司最重要的资源，照顾员工的需求是公司最优先的任务。与我们一起，造就更多可能！",
+            "Large Block Transactions" :"大宗交易",
+            "Yesbit OTC cryptocurrency trading platform, offering private and personalized services for clients with compliance, security, transparency and convenience" : "Yesbit 场外数字货币交易平台，为客户提供合规、安全、透明、便捷的私人定制化VIP金融服务"
         }
     }
 
@@ -114,6 +118,10 @@ var Layout = function () {
             //     "en": "WHITE PAPERS",
             //     "cn": "白皮书"
             // },
+            {
+                "en": "YESBIT OTC",
+                "cn": "YESBIT OTC"
+            },
             {
                 "en": "ABOUT US",
                 "cn": "关于YESBIT"
